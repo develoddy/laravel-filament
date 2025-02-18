@@ -1,0 +1,10 @@
+import '../css/vendor/bootstrap.min.css';
+import '../css/vendor/animate.min.css';
+import '../css/plugins/swiper.min.css';
+import '../css/plugins/slick.css';
+import '../css/vendor/magnific-popup.css';
+import '../css/vendor/fontawesome-pro.css';
+import '../css/vendor/hover-reveal.css';
+import '../css/vendor/icomoon.css';
+import '../css/vendor/spacing.css';
+import '../css/main.css';
