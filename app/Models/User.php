@@ -43,4 +43,11 @@ class User extends Authenticatable implements FilamentUser
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    //Comprueba si el usuario de producción puede acceder al panelde Fialemnte
+    public function canAccessFilament(Panel $panel): bool
+    {
+        //return str_ends_with($this->email, '@evidenze.com') && $this->hasVerifiedEmail();
+        return true;
+    }
 }
