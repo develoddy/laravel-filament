@@ -7,7 +7,6 @@
                     <div class="header__left">
                         <div class="header__logo">
                             <a href="">
-                                {{-- <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="logo not found"> --}}
                                 <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo-white.png') }}" alt="Lujandev" title="Lujandev"> 
                             </a>
                         </div>
@@ -16,13 +15,28 @@
                         <div class="mean__menu-wrapper d-none d-md-block">
                             <div class="main-menu">
                                 <nav id="mobile-menu">
+                                    {{-- <ul class="onepage-menu">
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#homeabout">About</a>
+                                        </li>
+                                        <li><a href="#homeservices">Services</a>
+                                        </li>
+                                        <li><a href="#homeworks">Works</a>
+                                        </li>
+                                        <li><a href="#homeblog">Blog</a>
+                                        <li><a href="#homecontact">Contact</a>
+                                        </li>
+                                    </ul> --}}
                                     <ul class="onepage-menu">
                                         <li><a href="">Inicio</a></li>
-                                        <li><a href="">Sobre mí</a></li>
-                                        <li><a href="">Servicios</a></li>
-                                        <li><a href="">Portfolio</a></li>
-                                        <li><a href="">Blog</a>
-                                        <li><a href="">Contacto</a></li>
+                                        <li><a href="{{ route('about') }}">Sobre mí</a></li>
+                                        <li><a href="{{ route('service') }}">Servicios</a></li>
+                                        <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                                        <li class="d-none"><a href="">Blog</a>
+                                        <li><a href="{{ route('contact') }}">Contacto</a></li>
                                         <li class="nav-item dropdown">
                                             @auth
                                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -54,7 +68,7 @@
                     <div class="header__right">
                         <div class="header__action d-flex align-items-center">
                             <div class="header__btn-wrap d-none d-sm-inline-flex d-inline-flex align-items-center gap-5">
-                                <a class="bd-btn is-btn-anim bordered-blue" href="">
+                                <a class="bd-btn is-btn-anim bordered-blue" href="{{ route('contact') }}">
                                     <span class="bd-btn-inner"><span class="bd-btn-normal">Contáctame</span>
                                     <span class="bd-btn-hover">Contáctame</span>
                                     <i class="contentHidden"></i>

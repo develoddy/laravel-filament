@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- Body main wrapper start -->
 <main>
+
     <!-- Banner area start -->
     <section class="banner__area banner-height d-flex align-items-center p-relative">
         <div class="banner-shape d-none d-lg-block">
@@ -15,31 +17,28 @@
                         <div class="row align-items-center gy-5">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="banner__content p-relative">
-                                    <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s"
-                                        data-wow-duration=".7s">Hi, <span class="banner__shape-hand"><img
-                                                src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
-                                        I’m <span class="bd-text-primary">Portlu</span> UI Designer Based in Florida
-                                    </h1>
-                                    <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">We are a
-                                        creative agency that specializes in providing high-quality design and
-                                        branding solutions to design and coding.</p>
+                                    <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".7s">Hi, 
+                                        <span class="banner__shape-hand">
+                                            <img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found">
+                                        </span>
+                                        I’m <span class="bd-text-primary">Eddy Lujan</span> Full Stack Based in Madrid</h1>
+                                    <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
+                                        Creo experiencias digitales impactantes y funcionales. Descubre mi portafolio y ve cómo puedo hacer realidad tus ideas.
+                                    </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    <a class="bd-btn is-btn-anim" href="portfolio.html">
-                                        <span class="bd-btn-inner">
-                                            <span class="bd-btn-normal">Get my work</span>
-                                            <span class="bd-btn-hover">Get my work</span>
-                                            <i class="contentHidden"></i>
+                                    <a class="bd-btn is-btn-anim" href="">
+                                        <span class="bd-btn-inner"><span class="bd-btn-normal">Ver mi trabajo</span>
+                                        <span class="bd-btn-hover">Ver mi trabajo</span>
+                                        <i class="contentHidden"></i>
                                         </span>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6">
-                                <div class="banner__thumb-wrapper wow fadeInRight" data-wow-delay=".8s"
-                                    data-wow-duration="1.2s">
+                                <div class="banner__thumb-wrapper wow fadeInRight" data-wow-delay=".8s" data-wow-duration="1.2s">
                                     <div class="banner__shape">
-                                        <img class="banner__shape-one" src="{{ Vite::asset('resources/imgs/shape/tower-shape.png') }}"
-                                            alt="image not found">
+                                        <img class="banner__shape-one" src="{{ Vite::asset('resources/imgs/shape/tower-shape.png') }}" alt="image not found">
                                     </div>
                                     <div class="banner__bg"></div>
                                     <div class="banner__thumb">
@@ -77,7 +76,7 @@
     </section>
     <!-- Banner area end -->
 
-    <!-- About area start -->
+    <!-- About area start theme-bg-secondary-->
     <section id="homeabout" class="bd-about__area section-space theme-bg-secondary">
         <div class="container">
             <div class="row g-5 align-items-lg-center">
@@ -92,41 +91,41 @@
                     <div class="about__content wow fadeInRight" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-25">
                             <div class="section__title-wrapper">
-                                <span class="section__subtitle">ABOUT ME</span>
-                                <h2 class="section__title">Young Man Student With Notebooks</h2>
+                                <span class="section__subtitle">ACERCA DE MÍ</span>
+                                <h2 class="section__title">Soy especialista en desarrollo de aplicaciones web</h2>
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
-                        <p class="about__text">Our journey began with a simple belief that every idea, no matter how
-                            small, has the power to make a significant impact.passion meets progress and company to
-                            grow </p>
-                        <p class="about__text-two">In a world saturated with noise, we stand out by embracing a
-                            commitment to authenticity and originality. </p>
+                        <p class="about__text">
+                            Con más de cinco años de experiencia como desarrollador de aplicaciones web, he tenido el privilegio de trabajar en una variedad de proyectos desafiantes que han enriquecido mis habilidades y conocimientos en el campo de la tecnología. Cada paso en mi carrera ha sido guiado por una pasión inquebrantable por la innovación y la excelencia técnica.
+                        </p>
+                        <p class="about__text-two">
+                            Estoy emocionado por seguir creciendo y aprendiendo en este apasionante campo, y estoy comprometido a empujar los límites de lo que es posible en el desarrollo de software. Estoy listo para enfrentar nuevos desafíos y contribuir con mi experiencia y habilidades a proyectos innovadores que marquen la diferencia en el mundo digital.
+                        </p>
                         <div class="about__counter-wrapper">
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
-                                    <h3><span class="counter">20</span>th</h3>
+                                    <h3><span class="counter">5</span>th</h3>
                                 </div>
-                                <p>Years of Experience</p>
+                                <p>Años de experiencia</p>
                             </div>
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
-                                    <h3><span class="counter">150</span>+</h3>
+                                    <h3><span class="counter">10</span>+</h3>
                                 </div>
-                                <p>Project Completed</p>
+                                <p>Proyecto completado</p>
                             </div>
                         </div>
                         <div class="about__btn">
-                            <a class="bd-btn is-btn-anim" href="about.html">
+                            <a class="bd-btn is-btn-anim" href="">
                                 <span class="bd-btn-inner">
-                                    <span class="bd-btn-normal">Know more</span>
-                                    <span class="bd-btn-hover">Know more</span>
-                                    <i class="contentHidden"></i>
+                                <span class="bd-btn-normal">Saber más</span>
+                                <span class="bd-btn-hover">Saber más</span>
+                                <i class="contentHidden"></i>
                                 </span>
                             </a>
-                            <a class="play__btn popup-video animate-play"
-                                href="https://www.youtube.com/watch?v=9341cn0KokE"><span><i
-                                        class="icon-play"></i></span></a>
+                            <a class="play__btn popup-video animate-play d-none" href="https://www.youtube.com/watch?v=9341cn0KokE"><span><i
+                            class="icon-play"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -135,8 +134,8 @@
     </section>
     <!-- About area end -->
 
-     <!-- Service area start -->
-     <section id="homeservices" class="bd-service__area section-space p-relative fix">
+    <!-- Service area start -->
+    <section id="homeservices" class="bd-service__area section-space p-relative fix">
         <div class="service__shape-wrapper">
             <img class="service__shape" src="{{ Vite::asset('resources/imgs/service/shape/service-shape-01.png') }}" alt="image not found">
         </div>
@@ -144,10 +143,12 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
                     <div class="section__title-wrapper text-center section__title-space">
-                        <span class="section__subtitle">MY SERVICE</span>
-                        <h2 class="section__title mb-20">Professional Services</h2>
-                        <p class="section__paragraph is-br-none">Begin with a brief introduction or summary that
-                            <br> highlights who you are and what</p>
+                        <span class="section__subtitle">MI SERVICIO</span>
+                        <h2 class="section__title mb-20">Servicios profesionales</h2>                        
+                        {{-- <p class="section__paragraph is-br-none">Begin with a brief introduction or summary that <br> highlights who you are and what</p> --}}
+                        <p class="section__paragraph is-br-none">
+                            Desarrollador web full-stack, experto en crear soluciones funcionales y visualmente atractivas, desde la arquitectura hasta la interfaz.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -156,122 +157,96 @@
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="contentHidden"></div>
                         <div class="contentHidden"></div>
-                        <span class="service__icon-wrap">
-                            <i class="icon-ux-design"></i>
-                        </span>
+                        <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">UX/UI Design</a></h5>
-                            <p>Start with a brief introduction about your a yourself. Mention your name, your
-                                current role or status .</p>
+                            <h5 class="service__title"><a href="">UX/UI Design</a></h5>
+                            <p>Me destaco en la creación de interfaces de usuario atractivas y funcionales que equilibran la estética con la funcionalidad.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                            class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i
-                                            class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href=""> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-                            <i class="icon-design"></i>
-                        </span>
+                        <span class="service__icon-wrap"><i class="icon-design"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
-                            <p>Develop detailed case studies for a few key projects to provide deeper insights into
-                                your design process.</p>
+                            <h5 class="service__title"><a href="">Web Design</a></h5>
+                            <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                            class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i
-                                            class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href=""> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-                            <i class="icon-project"></i>
-                        </span>
+                        <span class="service__icon-wrap"><i class="icon-project"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
-                            <p>Showcase your design process, from initial concept to final execution. Include stages
-                                research, ideation.</p>
+                            <h5 class="service__title"><a href="">Project Design</a></h5>
+                            <p>Desarrollador web full stack con habilidades en diseño de proyectos, creando soluciones atractivas y funcionales.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                            class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i
-                                            class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href=""> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-                            <i class="icon-animation"></i>
-                        </span>
+                        <span class="service__icon-wrap"><i class="icon-animation"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Animation</a></h5>
-                            <p>If applicable, include storyboard sketches, concept art, or character designs that
-                                contributed to art design.</p>
+                            <h5 class="service__title"><a href="">Animation</a></h5>
+                            <p>Uso de JavaScript y Bootstrap para mejorar la interactividad y la experiencia del usuario en proyectos web.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                            class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i
-                                            class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href=""> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-                            <i class="icon-application"></i>
-                        </span>
+                        <span class="service__icon-wrap"><i class="icon-application"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Mobile Application</a></h5>
-                            <p>Whenever possible, incorporate interactive prototypes that allow visitors to
-                                experience the app's user.</p>
+                            <h5 class="service__title"><a href="">Mobile Application</a></h5>
+                            <p>Desarrollador web full stack en proceso de aprendizaje de tecnologías Swift y Android para el desarrollo de aplicaciones móviles.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                            class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i
-                                            class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href=""> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp d-none" data-wow-delay=".8s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-                            <i class="icon-game"></i>
-                        </span>
+                        <span class="service__icon-wrap"><i class="icon-game"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Game Development</a></h5>
-                            <p>Share design documents, storyboards, or game design document that illustrate your
-                                planning and concept.</p>
+                            <h5 class="service__title"><a href="">Game Development</a></h5>
+                            <p>Share design documents, storyboards, or game design document that illustrate your planning and concept.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                            class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i
-                                            class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href=""> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -284,7 +259,7 @@
     </div>
 
     <!-- Portfolio area start -->
-    <section id="homeworks" class="bd-portfolio__area section-space">
+    <section id="homeworks" class="bd-portfolio__area section-space theme-bg-secondary">
         <div class="container">
             <div class="row g-5 align-items-end section__title-space">
                 <div class="col-lg-5 col-md-7">
@@ -413,7 +388,7 @@
         </div>
     </section>
     <!-- Portfolio area start -->
-
+    
     <!-- Section divider -->
     <div class="section__divider">
         <hr>
@@ -752,7 +727,7 @@
     <!-- qualification end -->
 
     <!-- counter area start -->
-    <section class="bd-counter__area section-space">
+    <section class="bd-counter__area section-space theme-bg-secondary">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -846,6 +821,195 @@
     </section>
     <!-- counter area end -->
 
+    <!-- Section divider -->
+    <div class="section__divider">
+        <hr>
+    </div>
+
+    <!-- pricing area start -->
+    <div class="bd-pricing__area section-space d-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section__title-wrapper text-center section__title-space">
+                        <span class="section__subtitle">Costing</span>
+                        <h2 class="section__title mb-20">Make a Best Plan</h2>
+                        <p class="contentHidden">contentHiddenText</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="pricing__wrapper pricing__item">
+                        <div class="pricing__content">
+                            <h5 class=" pricing__title">Basic</h5>
+                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
+                            <h2 class="pricing__amount">
+                                <span class="dollar-sign color-primary">$</span>
+                                200
+                                <span class="duration">/monthly</span>
+                            </h2>
+                        </div>
+                        <div class="pricing__btn">
+                            <a class="bd-btn bordered-light w-100" href="contact.html">Choose this Package</a>
+                        </div>
+                        <div class="pricing__feature">
+                            <ul class="pricing__list">
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Require your wireframe</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Design with Figma</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 6 months</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 12 months</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="pricing__wrapper pricing__item active">
+                        <div class="pricing__content">
+                            <h5 class=" pricing__title">Premium</h5>
+                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
+                            <h2 class="pricing__amount">
+                                <span class="dollar-sign color-primary">$</span>
+                                400
+                                <span class="duration">/monthly</span>
+                            </h2>
+                        </div>
+                        <div class="pricing__btn">
+                            <a class="bd-btn w-100" href="contact.html">Choose this Package</a>
+                        </div>
+                        <div class="pricing__feature">
+                            <ul class="pricing__list">
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Work weekend days</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Customized Gifts</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 6 months</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 12 months</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="pricing__wrapper pricing__item">
+                        <div class="pricing__content">
+                            <h5 class=" pricing__title">Enterprise</h5>
+                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
+                            <h2 class="pricing__amount">
+                                <span class="dollar-sign color-primary">$</span>
+                                600
+                                <span class="duration">/monthly</span>
+                            </h2>
+                        </div>
+                        <div class="pricing__btn">
+                            <a class="bd-btn bordered-light w-100" href="contact.html">Choose this Package</a>
+                        </div>
+                        <div class="pricing__feature">
+                            <ul class="pricing__list">
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Customer Management</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Custom guest editors</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 6 months</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 12 months</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing area end -->
+
+    <!-- brand area start -->
+    <div class="brand__area section-space theme-bg-secondary">
+        <div class="brand__wrapper style-two wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+            <div class="container">
+                <div class="swiper brand__active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-01.png') }}" alt="image not found">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-02.png') }}" alt="image not found">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-03.png') }}" alt="image not found">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-04.png') }}" alt="image not found">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand area end -->
+
+    <!-- Section divider -->
+    <div class="section__divider">
+        <hr>
+    </div>
+
     <!-- testimonial area start -->
     <section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1">
         <div class="container">
@@ -866,8 +1030,8 @@
                 <div class="col-xl-7 col-lg-7">
                     <div class="testimonial__item">
                         <div class="section__title-wrapper mb-25">
-                            <span class="section__subtitle mb-15">Client say</span>
-                            <h2 class="section__title">Client Experiences and Testimonials</h2>
+                            <span class="section__subtitle mb-15">LOS CLIENTES DICEN</span>
+                            <h2 class="section__title">Experiencias de clientes y testimonios</h2>
                         </div>
                         <div class="swiper testimonial__active p-relative">
                             <div class="swiper-wrapper">
@@ -891,11 +1055,12 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable.
-                                                Navigation are
-                                                more intuitive and the layout our visitors through our content
-                                                seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>¡Increíble trabajo! Como propietario de un pequeño negocio, necesitaba una aplicación web para ampliar mi alcance en línea.</p>
+                                            <p>
+                                                Me conecté con Eddy Lujan y desde el primer día supe que estaba en buenas manos. No solo desarrolló una aplicación web altamente funcional, sino 
+                                                que también me guió a través de todo el proceso con claridad y profesionalismo. 
+                                            </p>
+                                            <p>¡Recomendaría sus servicios a cualquiera que necesite un desarrollador web confiable!</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
@@ -928,11 +1093,9 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable.
-                                                Navigation are
-                                                more intuitive and the layout our visitors through our content
-                                                seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>¡No podría estar más feliz con el resultado! Contraté a Eddy Lujan para desarrollar una aplicación web para mi startup y superó todas mis expectativas.</p> 
+                                            <p> Su conocimiento técnico y su enfoque creativo fueron evidentes desde el principio. Además, siempre estuvo dispuesto a escuchar mis ideas y hacer ajustes según mis necesidades. </p>
+                                            <p> ¡Gracias a su experiencia, ahora tengo una aplicación web robusta que está impulsando el crecimiento de mi negocio!</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
@@ -965,11 +1128,9 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable.
-                                                Navigation are
-                                                more intuitive and the layout our visitors through our content
-                                                seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>¡Profesionalismo y excelencia en su máxima expresión! Cuando decidí buscar un desarrollador web para mi proyecto, me recomendaron a Eddy Lujan y ahora entiendo por qué.</p>
+                                            <p>Su atención al detalle y su habilidad para transformar mis ideas en una aplicación web funcional y atractiva fueron impresionantes. Además, su capacidad para cumplir con los plazos fue fundamental para el éxito de mi proyecto.</p>
+                                            <p>¡No dudaría en trabajar con Eddy Lujan nuevamente en el futuro!</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
@@ -986,9 +1147,9 @@
                             <!-- If we need navigation buttons -->
                             <div class="testimonial__navigation d-none d-sm-block">
                                 <button class="testimonial__button-prev circle-btn slider__nav-btn"><i
-                                        class="fa-regular fa-arrow-left-long"></i></button>
+                            class="fa-regular fa-arrow-left-long"></i></button>
                                 <button class="testimonial__button-next circle-btn ml-5 slider__nav-btn"><i
-                                        class="fa-regular fa-arrow-right-long"></i></button>
+                            class="fa-regular fa-arrow-right-long"></i></button>
                             </div>
                         </div>
                     </div>
@@ -998,6 +1159,11 @@
         </div>
     </section>
     <!-- testimonial area end -->
+
+    <!-- Section divider -->
+    <div class="section__divider">
+        <hr>
+    </div>
 
     <!-- blog area start -->
     <div id="homeblog" class="bd-blog__area section-space">
@@ -1012,6 +1178,32 @@
                 </div>
             </div>
             <div class="row g-30 wow fadeInUp mb-40" data-wow-delay=".3s">
+                {{-- @if(isset($blogs) && !empty($blogs))
+                    @foreach ($blogs as $blog)
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <section class="blog__wrap blog__item bg-solid">
+                                <div class="blog__thumb is-hover">
+                                    <a  href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">
+                                        <img src="{{ Voyager::image( $blog->image ) }}" alt="{{ $blog->title }}">
+                                    </a>
+                                    <div class="blog__meta style-one">
+                                        <h2 class="date">26 <span class="month">FEB</span></h2>
+                                    </div>
+                                </div>
+                                <div class="blog__content">
+                                    <h4 class="blog__title small"><a  href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a></h4>
+                                    <p>{{ $blog->description }}</p>
+                                    <div class="blog__btn-text">
+                                        <a  href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}" class="underline-btn">
+                                            Leer más
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    @endforeach
+                @endif --}}
+                
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <section class="blog__wrap blog__item bg-solid">
                         <div class="blog__thumb is-hover">
@@ -1191,5 +1383,8 @@
         </div>
     </div>
     <!-- Contact area end -->
+
 </main>
+<!-- Body main wrapper end -->
+
 @endsection
