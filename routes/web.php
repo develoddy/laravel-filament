@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\WelcomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,12 @@ use App\Http\Controllers\PortfolioController;
 |
 */
 
-Route::get('/', function () {
+
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 
 // -- About
 Route::group(['prefix' => 'about'], function () {
@@ -38,3 +42,5 @@ Route::get('/contact', function () {
 Route::group(['prefix' => 'portafolio'], function () {
     Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
 });
+
+Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio.show');
