@@ -89,54 +89,70 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="portfolio__wrapper style-six portfolio-details wow fadeInUp" data-wow-delay=".3s"
-                        data-wow-duration="1s">
-                        <div class="swiper portfolio-details__active">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-01.png') }}" alt="">
+                    @if($detail && is_array($detail->images) && count($detail->images) > 0)
+                        <div class="portfolio__wrapper style-six portfolio-details wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                            <div class="swiper portfolio-details__active">
+                                <div class="swiper-wrapper">
+                                    @if($detail && is_array($detail->images))
+                                        @foreach($detail->images as $img)
+                                        <div class="swiper-slide">
+                                            <div class=" portfolio__item style-six portfolio-details">
+                                                <div class="portfolio__item-thumb">
+                                                    <img src="{{ asset('storage/' . $img) }}" alt="Imagen del portfolio" title="{{ $img }}" alt="{{ $img }}" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                    @endif
+    
+                                    {{-- <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-01.png') }}" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-02.png') }}" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-02.png') }}" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-03.png') }}" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-03.png') }}" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-04.png') }}" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-04.png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
-                            </div>
-                            <!-- If we need navigation buttons -->
-                            <div class="portfolio__navigation d-none d-sm-block">
-                                <button
-                                    class="portfolio__button-prev circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
-                                        class="fa-regular fa-arrow-left-long"></i></button>
-                                <button
-                                    class="portfolio__button-next circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
-                                        class="fa-regular fa-arrow-right-long"></i></button>
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="pagination__wrapper d-block d-sm-none">
-                                <div class="bd-swiper-dot text-center"></div>
+                                <!-- If we need navigation buttons -->
+                                <div class="portfolio__navigation d-none d-sm-block">
+                                    <button
+                                        class="portfolio__button-prev circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
+                                            class="fa-regular fa-arrow-left-long"></i></button>
+                                    <button
+                                        class="portfolio__button-next circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
+                                            class="fa-regular fa-arrow-right-long"></i></button>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="pagination__wrapper d-block d-sm-none">
+                                    <div class="bd-swiper-dot text-center"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @else
+                        <div class="item col-item col-lg-12 text-center"><p class="text-darkblue">No hay imágenes disponibles.</p></div>
+                    @endif
+                    
                 </div>
             </div>
         </div>
@@ -213,16 +229,25 @@
     <div class="portfolio__details-img-area section-space">
         <div class="container">
             <div class="row g-5">
-                <div class="col-md-6">
-                    <div class="portfolio__details-image-item">
-                        <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-16.png') }}" alt="image not found">
+                @if($detail && is_array($detail->related_images))
+                    @foreach($detail->related_images as $relatedImage)
+                    <div class="col-md-6">
+                        <div class="portfolio__details-image-item">
+                            <img src="{{ asset('storage/' . $relatedImage) }}" alt="image not found">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="portfolio__details-image-item">
-                        <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-20.png') }}" alt="image not found">
+                    @endforeach
+                    {{-- <div class="col-md-6">
+                        <div class="portfolio__details-image-item">
+                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-16.png') }}" alt="image not found">
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-6">
+                        <div class="portfolio__details-image-item">
+                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-20.png') }}" alt="image not found">
+                        </div>
+                    </div> --}}
+                @endif
             </div>
         </div>
     </div>
@@ -234,7 +259,7 @@
     </div>
 
     <!-- portfolio navigation area start -->
-    <section class="portfolio-navigation__area ">
+    <section class="portfolio-navigation__area">
         <div class="container">
             <div class="row">
                 <div class="col-12">

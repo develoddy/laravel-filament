@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
+use App\Models\PortfolioDetail;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -47,7 +48,12 @@ class PortfolioController extends Controller
                 "updated_at" => "2025-02-19 17:13:59"
             ]
         */
-        return view('pages.portfolio-detail', compact('portfolio'));
+
+        // Buscar el registro de PortfolioDetail que tenga el mismo portfolio_id
+        $detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
+
+        //@dd($detail);
+        return view('pages.portfolio-detail', compact('portfolio', 'detail'));
     }
 
     /**
