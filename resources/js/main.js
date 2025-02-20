@@ -1,3 +1,4 @@
+console.log('✅ main.js cargado');
 (function ($) {
   "use strict";
 
@@ -13,17 +14,22 @@
   /*======================================
   Mobile Menu Js
   ========================================*/
-  $("#mobile-menu").meanmenu({
-    meanMenuContainer: ".mobile-menu",
-    meanScreenWidth: "991",
-    meanExpand: ['<i class="fa-regular fa-arrow-right"></i>'],
-  });
+  console.log(typeof $.fn.meanmenu);
+  if (typeof $.fn.meanmenu === 'function') {
+    $("#mobile-menu").meanmenu({
+      meanMenuContainer: ".mobile-menu",
+      meanScreenWidth: "991",
+      meanExpand: ['<i class="fa-regular fa-arrow-right"></i>'],
+    });
 
-  $("#mobile-menu-2").meanmenu({
-    meanMenuContainer: ".mobile-menu-2",
-    meanScreenWidth: "4000",
-    meanExpand: ['<i class="fa-regular fa-arrow-right"></i>'],
-  });
+    $("#mobile-menu-2").meanmenu({
+      meanMenuContainer: ".mobile-menu-2",
+      meanScreenWidth: "4000",
+      meanExpand: ['<i class="fa-regular fa-arrow-right"></i>'],
+    });
+  } else {
+    console.log('Error: meanmenu no está disponible.');
+  }
 
   /*======================================
   Sidebar Toggle
