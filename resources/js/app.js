@@ -1,5 +1,5 @@
 
-console.log('✅ app.js cargado');
+console.log('✅ app.js cargado..');
 
 import.meta.glob(['../imgs/**']);
 import './bootstrap';
