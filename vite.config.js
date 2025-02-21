@@ -9,10 +9,17 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+
+    optimizeDeps: {
+        include: ['jquery'], // Convierte jQuery a ESM en desarrollo
+    },
  
     build: {
         outDir: path.resolve(__dirname, '../www/build'), // Salida hacia /www/build
         //outDir: 'public/build', // Ruta correcta
         emptyOutDir: true, // Limpia la carpeta antes de construir
+        commonjsOptions: {
+            transformMixedEsModules: true, // Convierte CommonJS a ESM en producción
+        }
     },
 });
