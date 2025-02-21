@@ -1,34 +1,27 @@
 
 console.log('✅ main.js cargado');
-// Importa los plugins en el orden correcto
-import 'waypoints/lib/jquery.waypoints'; // import './plugins/waypoints.min.js';
+import 'waypoints/lib/jquery.waypoints'; 
 import './plugins/meanmenu.min.js';
 import './plugins/counterup.js';
 import './plugins/jarallax.min.js';
 import './plugins/nice-select.min.js';
 import './plugins/parallax-scroll.js';
 import './plugins/parallax.min.js';
-import 'slick-carousel'; //import './plugins/slick.min.js';
-import Swiper from 'swiper/bundle';  // import Swiper from 'swiper'; // import './plugins/swiper.min.js';
-
-
-//import './plugins/wow.js';
+import 'slick-carousel';
+import Swiper from 'swiper/bundle'; 
 import WOW from 'wow.js';
 window.WOW = WOW;
-
-import {jarallax} from 'jarallax'; //import 'jarallax'; // Jarallax como módulo
-
-// Importa los scripts vendor que no son módulos ES (y que dependen de jQuery)
-// import './vendor/tween-max.js';
-import 'magnific-popup'; // import './vendor/magnific-popup.min.js';
-// import './vendor/isotope.pkgd.min.js';
-import imagesLoaded from "imagesloaded"; // import './vendor/imagesloaded.pkgd.min.js';
-import VanillaTilt from "vanilla-tilt"; // import './vendor/vanilla.tilt.js';
+import {jarallax} from 'jarallax'; 
+import 'magnific-popup';
+import imagesLoaded from "imagesloaded"; 
+import VanillaTilt from "vanilla-tilt"; 
 import './vendor/jquery-ui.min.js';
 import './vendor/hover-reveal.js';
+import 'js-circle-progress';
+// import './vendor/tween-max.js';
+// import './vendor/isotope.pkgd.min.js';
 // import './vendor/ajax-form.js';
 // import './vendor/js_circle-progress.min.js';
-import 'js-circle-progress';
 
 (function ($) {
   "use strict";
