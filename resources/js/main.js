@@ -9,7 +9,7 @@ import './plugins/nice-select.min.js';
 import './plugins/parallax-scroll.js';
 import './plugins/parallax.min.js';
 import 'slick-carousel'; //import './plugins/slick.min.js';
-import Swiper from 'swiper'; // import './plugins/swiper.min.js';
+import Swiper from 'swiper/bundle';  // import Swiper from 'swiper'; // import './plugins/swiper.min.js';
 
 
 //import './plugins/wow.js';
