@@ -23,7 +23,7 @@ import {jarallax} from 'jarallax'; //import 'jarallax'; // Jarallax como módulo
 import './vendor/magnific-popup.min.js';
 // import './vendor/isotope.pkgd.min.js';
 // import './vendor/imagesloaded.pkgd.min.js';
-// import './vendor/vanilla.tilt.js';
+import VanillaTilt from "vanilla-tilt"; // import './vendor/vanilla.tilt.js';
 import './vendor/jquery-ui.min.js';
 import './vendor/hover-reveal.js';
 // import './vendor/ajax-form.js';
