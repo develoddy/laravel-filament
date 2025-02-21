@@ -11,8 +11,8 @@ export default defineConfig({
     ],
  
     build: {
-        //outDir: path.resolve(__dirname, '../www/build'), // Salida hacia /www/build
-        outDir: 'public/build', // Ruta correcta
+        outDir: path.resolve(__dirname, '../www/build'), // Salida hacia /www/build
+        //outDir: 'public/build', // Ruta correcta
         emptyOutDir: true, // Limpia la carpeta antes de construir
     },
 });
