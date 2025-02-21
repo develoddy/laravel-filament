@@ -28,6 +28,7 @@ import './vendor/jquery-ui.min.js';
 import './vendor/hover-reveal.js';
 // import './vendor/ajax-form.js';
 // import './vendor/js_circle-progress.min.js';
+import 'js-circle-progress';
 
 (function ($) {
   "use strict";
