@@ -1,14 +1,14 @@
 
 console.log('✅ main.js cargado');
 // Importa los plugins en el orden correcto
-import './plugins/waypoints.min.js';
+import 'waypoints/lib/jquery.waypoints'; // import './plugins/waypoints.min.js';
 import './plugins/meanmenu.min.js';
 import './plugins/counterup.js';
 import './plugins/jarallax.min.js';
 import './plugins/nice-select.min.js';
 import './plugins/parallax-scroll.js';
 import './plugins/parallax.min.js';
-import './plugins/slick.min.js';
+import 'slick-carousel'; //import './plugins/slick.min.js';
 import Swiper from 'swiper'; // import './plugins/swiper.min.js';
 
 

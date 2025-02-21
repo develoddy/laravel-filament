@@ -20,8 +20,11 @@
         "jarallax": "^2.2.1",
         "jquery": "^3.7.1",
         "popper.js": "^1.16.1",
+        "slick": "^1.12.2",
+        "slick-carousel": "^1.8.1",
         "swiper": "^11.2.4",
         "vanilla-tilt": "^1.8.1",
+        "waypoints": "^4.0.1",
         "wow.js": "^1.2.2"
     }
 }
