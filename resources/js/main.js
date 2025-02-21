@@ -9,8 +9,7 @@ import './plugins/nice-select.min.js';
 import './plugins/parallax-scroll.js';
 import './plugins/parallax.min.js';
 import './plugins/slick.min.js';
-import './plugins/swiper.min.js';
-window.Swiper = Swiper;
+import Swiper from 'swiper'; // import './plugins/swiper.min.js';
 
 
 //import './plugins/wow.js';
