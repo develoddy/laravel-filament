@@ -22,7 +22,7 @@ import {jarallax} from 'jarallax'; //import 'jarallax'; // Jarallax como módulo
 // import './vendor/tween-max.js';
 import './vendor/magnific-popup.min.js';
 // import './vendor/isotope.pkgd.min.js';
-// import './vendor/imagesloaded.pkgd.min.js';
+import imagesLoaded from "imagesloaded"; // import './vendor/imagesloaded.pkgd.min.js';
 import VanillaTilt from "vanilla-tilt"; // import './vendor/vanilla.tilt.js';
 import './vendor/jquery-ui.min.js';
 import './vendor/hover-reveal.js';
@@ -906,8 +906,32 @@ import './vendor/hover-reveal.js';
   $('.contentHidden').remove();
 
   // Masonry Js
-  $(".grid").imagesLoaded(function () {
-    // init Isotope
+  // $(".grid").imagesLoaded(function () {
+  //   // init Isotope
+  //   var $grid = $(".grid").isotope({
+  //     itemSelector: ".grid-item",
+  //     percentPosition: true,
+  //     masonry: {
+  //       // use outer width of grid-sizer for columnWidth
+  //       columnWidth: ".grid-item",
+  //     },
+  //   });
+
+  //   // filter items on button click
+  //   $(".bf-filter-btn").on("click", "button", function () {
+  //     var filterValue = $(this).attr("data-filter");
+  //     $grid.isotope({ filter: filterValue });
+  //   });
+
+  //   //for menu active class
+  //   $(".bf-filter-btn button").on("click", function (event) {
+  //     $(this).siblings(".active").removeClass("active");
+  //     $(this).addClass("active");
+  //     event.preventDefault();
+  //   });
+  // });
+  // Masonry Js con imagesLoaded
+  imagesLoaded(document.querySelector(".grid"), function () {
     var $grid = $(".grid").isotope({
       itemSelector: ".grid-item",
       percentPosition: true,
@@ -917,13 +941,13 @@ import './vendor/hover-reveal.js';
       },
     });
 
-    // filter items on button click
+    // Filter items on button click
     $(".bf-filter-btn").on("click", "button", function () {
       var filterValue = $(this).attr("data-filter");
       $grid.isotope({ filter: filterValue });
     });
 
-    //for menu active class
+    // For menu active class
     $(".bf-filter-btn button").on("click", function (event) {
       $(this).siblings(".active").removeClass("active");
       $(this).addClass("active");
