@@ -931,29 +931,7 @@ import './vendor/hover-reveal.js';
   //   });
   // });
   // Masonry Js con imagesLoaded
-  imagesLoaded(document.querySelector(".grid"), function () {
-    var $grid = $(".grid").isotope({
-      itemSelector: ".grid-item",
-      percentPosition: true,
-      masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: ".grid-item",
-      },
-    });
-
-    // Filter items on button click
-    $(".bf-filter-btn").on("click", "button", function () {
-      var filterValue = $(this).attr("data-filter");
-      $grid.isotope({ filter: filterValue });
-    });
-
-    // For menu active class
-    $(".bf-filter-btn button").on("click", function (event) {
-      $(this).siblings(".active").removeClass("active");
-      $(this).addClass("active");
-      event.preventDefault();
-    });
-  });
+  
 
 
 
