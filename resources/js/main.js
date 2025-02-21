@@ -14,6 +14,8 @@ import './plugins/swiper.min.js';
 import WOW from 'wow.js';
 window.WOW = WOW;
 
+import {jarallax} from 'jarallax'; //import 'jarallax'; // Jarallax como módulo
+
 // Importa los scripts vendor que no son módulos ES (y que dependen de jQuery)
 // import './vendor/tween-max.js';
 import './vendor/magnific-popup.min.js';
