@@ -10,6 +10,9 @@ import './plugins/parallax-scroll.js';
 import './plugins/parallax.min.js';
 import './plugins/slick.min.js';
 import './plugins/swiper.min.js';
+window.Swiper = Swiper;
+
+
 //import './plugins/wow.js';
 import WOW from 'wow.js';
 window.WOW = WOW;
