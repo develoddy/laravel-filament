@@ -15,11 +15,9 @@ export default defineConfig({
     },
  
     build: {
-        outDir: path.resolve(__dirname, '../www/build'), // Salida hacia /www/build
-        //outDir: 'public/build', // Ruta correcta
+        //outDir: path.resolve(__dirname, '../www/build'), // Salida hacia /www/build
+        outDir: 'public/build', // Salida en public/build
         emptyOutDir: true, // Limpia la carpeta antes de construir
-        commonjsOptions: {
-            transformMixedEsModules: true, // Convierte CommonJS a ESM en producción
-        }
+        
     },
 });
