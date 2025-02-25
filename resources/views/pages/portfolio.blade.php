@@ -67,15 +67,15 @@
                         {{-- View all tab --}}
                         <div class="tab-pane fade show active" id="view" role="tabpanel" aria-labelledby="view-tab">
                             <div class="row g-5">
-                                {{-- @if(isset($portfolios) && !empty($portfolios))
+                                @if(isset($portfolios) && !empty($portfolios))
                                     @foreach ($portfolios as $portfolio)
                                         <div class="col-lg-4 col-md-6">
                                             <div class=" portfolio__item style-seven">
                                                 <div class="portfolio__item-thumb">
-                                                    <img src="{{ asset('storage/' . $portfolio->image) }}" alt="image not found">
+                                                    <img src="{{ asset('storage/' . $portfolio->imagen) }}" alt="image not found">
                                                     <div class="portfolio__item-btn">
                                                         <span class="icon__box">
-                                                            <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' .  $portfolio->image) }}">
+                                                            <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' .  $portfolio->imagen) }}">
                                                                 <i class="icon-plus"></i>
                                                             </a>
                                                         </span>
@@ -84,17 +84,18 @@
                                                 <div class="portfolio__item-content">
                                                     <div class="portfolio__item-info">
                                                         <div class="portfolio__tag">
-                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">{{ $portfolio->title }} - All</a>
+                                                            <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                            
                                                         </div>
                                                         <h5 class="portfolio__item-title underline">
-                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id, 'name' => $portfolio->link()]) }}">{{ $portfolio->title }}</a>
+                                                            <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
                                                         </h5>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     @endforeach
-                                @endif --}}
+                                @endif
                             </div>
                         </div>
 
@@ -416,7 +417,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-none">
                 <div class="col-12">
                     <div class="portfolio__more text-center mt-50">
                         <a class="bd-btn is-btn-anim" href="">
