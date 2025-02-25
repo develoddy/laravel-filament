@@ -6,7 +6,7 @@
                 <div class="header__main">
                     <div class="header__left">
                         <div class="header__logo">
-                            <a href="">
+                            <a href="{{ route('welcome') }}">
                                 <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo-white.png') }}" alt="Lujandev" title="Lujandev"> 
                             </a>
                         </div>
@@ -15,23 +15,8 @@
                         <div class="mean__menu-wrapper d-none d-md-block">
                             <div class="main-menu">
                                 <nav id="mobile-menu">
-                                    {{-- <ul class="onepage-menu">
-                                        <li>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#homeabout">About</a>
-                                        </li>
-                                        <li><a href="#homeservices">Services</a>
-                                        </li>
-                                        <li><a href="#homeworks">Works</a>
-                                        </li>
-                                        <li><a href="#homeblog">Blog</a>
-                                        <li><a href="#homecontact">Contact</a>
-                                        </li>
-                                    </ul> --}}
                                     <ul class="onepage-menu">
-                                        <li><a href="">Inicio</a></li>
+                                        <li><a href="{{ route('welcome') }}">Inicio</a></li>
                                         <li><a href="{{ route('about') }}">Sobre mí</a></li>
                                         <li><a href="{{ route('service') }}">Servicios</a></li>
                                         <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
