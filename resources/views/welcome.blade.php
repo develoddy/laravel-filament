@@ -19,16 +19,15 @@
                                         data-wow-duration=".7s">Hi, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
                                         I’m <span class="bd-text-primary">Portlu</span> UI Designer Based in Florida
                                     </h1>
-                                    <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">We are a
-                                        creative agency that specializes in providing high-quality design and
-                                        branding solutions to design and coding.
+                                    <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
+                                        Diseño y desarrollo experiencias digitales innovadoras y funcionales. Explora mi portafolio y descubre cómo puedo hacer realidad tus ideas con soluciones a medida.
                                     </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    <a class="bd-btn is-btn-anim" href="portfolio.html">
+                                    <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
                                         <span class="bd-btn-inner">
-                                            <span class="bd-btn-normal">Get my work</span>
-                                            <span class="bd-btn-hover">Get my work</span>
+                                            <span class="bd-btn-normal">Descubre mis proyectos</span>
+                                            <span class="bd-btn-hover">Descubre mis proyectos</span>
                                             <i class="contentHidden"></i>
                                         </span>
                                     </a>
@@ -92,39 +91,40 @@
                     <div class="about__content wow fadeInRight" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-25">
                             <div class="section__title-wrapper">
-                                <span class="section__subtitle">ABOUT ME</span>
-                                <h2 class="section__title">Young Man Student With Notebooks</h2>
+                                <span class="section__subtitle">ACERCA DE MÍ</span>
+                                <h2 class="section__title">Especialista en Desarrollo de Aplicaciones Web</h2>
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
-                        <p class="about__text">Our journey began with a simple belief that every idea, no matter how
-                            small, has the power to make a significant impact.passion meets progress and company to
-                            grow </p>
-                        <p class="about__text-two">In a world saturated with noise, we stand out by embracing a
-                            commitment to authenticity and originality. </p>
+                        <p class="about__text">
+                            Con más de <strong>cinco años de experiencia</strong> en el desarrollo de aplicaciones web, he tenido la oportunidad de trabajar en proyectos innovadores que han fortalecido mis habilidades técnicas y creativas. Mi enfoque está en construir soluciones digitales eficientes, escalables y con una experiencia de usuario impecable.
+                        </p>
+                        <p class="about__text-two">
+                            Mi pasión por la tecnología y la innovación me impulsa a superar desafíos constantemente. Siempre busco mejorar mis conocimientos y aplicar las mejores prácticas en cada proyecto. Estoy comprometido con la excelencia y listo para desarrollar soluciones que generen un impacto real en el mundo digital. 
+                        </p>
                         <div class="about__counter-wrapper">
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
-                                    <h3><span class="counter">20</span>th</h3>
+                                    <h3><span class="counter">5</span>+</h3>
                                 </div>
-                                <p>Years of Experience</p>
+                                <p>Años de experiencia</p>
                             </div>
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
-                                    <h3><span class="counter">150</span>+</h3>
+                                    <h3><span class="counter">10</span>+</h3>
                                 </div>
-                                <p>Project Completed</p>
+                                <p>Proyectos completados</p>
                             </div>
                         </div>
                         <div class="about__btn">
                             <a class="bd-btn is-btn-anim" href="about.html">
                                 <span class="bd-btn-inner">
-                                    <span class="bd-btn-normal">Know more</span>
-                                    <span class="bd-btn-hover">Know more</span>
+                                    <span class="bd-btn-normal">Descubrir más</span>
+                                    <span class="bd-btn-hover">Descubrir más</span>
                                     <i class="contentHidden"></i>
                                 </span>
                             </a>
-                            <a class="play__btn popup-video animate-play"
+                            <a class="play__btn popup-video animate-play d-none"
                                 href="https://www.youtube.com/watch?v=9341cn0KokE"><span><i
                                         class="icon-play"></i></span></a>
                         </div>
@@ -135,8 +135,8 @@
     </section>
     <!-- About area end -->
 
-     <!-- Service area start -->
-     <section id="homeservices" class="bd-service__area section-space p-relative fix">
+    <!-- Service area start -->
+    <section id="homeservices" class="bd-service__area section-space p-relative fix">
         <div class="service__shape-wrapper">
             <img class="service__shape" src="{{ Vite::asset('resources/imgs/service/shape/service-shape-01.png') }}" alt="image not found">
         </div>
@@ -144,10 +144,9 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
                     <div class="section__title-wrapper text-center section__title-space">
-                        <span class="section__subtitle">MY SERVICE</span>
-                        <h2 class="section__title mb-20">Professional Services</h2>
-                        <p class="section__paragraph is-br-none">Begin with a brief introduction or summary that
-                            <br> highlights who you are and what</p>
+                        <span class="section__subtitle">MIS SERVICIOS</span>
+                        <h2 class="section__title mb-20">Servicios profesionales</h2>
+                        <p class="section__paragraph is-br-none">Desarrollador web full-stack, experto en crear soluciones funcionales y visualmente atractivas, desde la arquitectura hasta la interfaz.</p>
                     </div>
                 </div>
             </div>
@@ -161,8 +160,7 @@
                         </span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">UX/UI Design</a></h5>
-                            <p>Start with a brief introduction about your a yourself. Mention your name, your
-                                current role or status .</p>
+                            <p>Me destaco en la creación de interfaces de usuario atractivas y funcionales que equilibran la estética con la funcionalidad.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i
                                             class="contentHidden"></i></span></a>
@@ -182,8 +180,7 @@
                         </span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
-                            <p>Develop detailed case studies for a few key projects to provide deeper insights into
-                                your design process.</p>
+                            <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i
                                             class="contentHidden"></i></span></a>
@@ -202,8 +199,7 @@
                         </span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
-                            <p>Showcase your design process, from initial concept to final execution. Include stages
-                                research, ideation.</p>
+                            <p>Desarrollador web full stack con habilidades en diseño de proyectos, creando soluciones atractivas y funcionales.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i
                                             class="contentHidden"></i></span></a>
@@ -289,8 +285,8 @@
             <div class="row g-5 align-items-end section__title-space">
                 <div class="col-lg-5 col-md-7">
                     <div class="section__title-wrapper">
-                        <span class="section__subtitle">MY RECENT PORTFOLIO</span>
-                        <h2 class="section__title">Check My Latest Works</h2>
+                        <span class="section__subtitle">PORTAFOLIO RECIENTE</span>
+                        <h2 class="section__title">Explora Mis Últimos Trabajos</h2>
                         <p class="contentHidden">contentHiddenText</p>
                     </div>
                 </div>
@@ -298,8 +294,8 @@
                     <div class="portfolio__more text-md-end">
                         <a class="bd-btn is-btn-anim"  href="{{ route("portfolio") }}">
                             <span class="bd-btn-inner">
-                                <span class="bd-btn-normal">View all project</span>
-                                <span class="bd-btn-hover">View all project</span>
+                                <span class="bd-btn-normal">Ver todos los proyectos</span>
+                                <span class="bd-btn-hover">Ver todos los proyectos</span>
                                 <i class="contentHidden"></i>
                             </span>
                         </a>
@@ -685,8 +681,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="section__title-wrapper section__title-space">
-                        <span class="section__subtitle">Developer experience</span>
-                        <h2 class="section__title">Developer Skills</h2>
+                        <span class="section__subtitle">Experiencia de Full-Stack Developer</span>
+                        <h2 class="section__title">Habilidades</h2>
                         <p class="contentHidden">contentHiddenText</p>
                     </div>
                 </div>
