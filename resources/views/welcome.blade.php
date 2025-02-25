@@ -16,8 +16,8 @@
                             <div class="col-xl-6 col-lg-6">
                                 <div class="banner__content p-relative">
                                     <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s"
-                                        data-wow-duration=".7s">Hi, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
-                                        I’m <span class="bd-text-primary">Portlu</span> UI Designer Based in Florida
+                                        data-wow-duration=".7s">Hola, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
+                                        Soy <span class="bd-text-primary">Eddy Lujan</span> Full Stack con sede en Madrid
                                     </h1>
                                     <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
                                         Diseño y desarrollo experiencias digitales innovadoras y funcionales. Explora mi portafolio y descubre cómo puedo hacer realidad tus ideas con soluciones a medida.
