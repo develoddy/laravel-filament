@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\WelcomeController;
 
 /*
@@ -32,6 +33,11 @@ Route::group(['prefix' => 'about'], function () {
 Route::get('/service', function () {
     return view('pages.service');
 })->name('service');
+
+// -- Service
+Route::group(['prefix' => 'service'], function () {
+    Route::get('/', [ServiceController::class, 'index'])->name('service');
+});
 
 // -- Contact
 Route::get('/contact', function () {

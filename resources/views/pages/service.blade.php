@@ -241,7 +241,33 @@
                 <div class="portfolio__wrapper style-six wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                     <div class="swiper portfolio__active">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+
+                            @foreach ($projectPortfolios as $portfolio)
+                                <div class="swiper-slide">
+                                    <div class=" portfolio__item style-six">
+                                        <div class="portfolio__item-thumb" data-background="{{ asset('storage/' . $portfolio->imagen) }}">
+                                            <div class="portfolio__item-btn">
+                                                <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}" class="circle-btn is-bg-white is-btn-large">
+                                                    <span class="icon__box">
+                                                        <i class="fa-regular fa-arrow-right-long"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio__item-content">
+                                            <div class="portfolio__item-info">
+                                                <div class="portfolio__tag">
+                                                    <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                </div>
+                                                <h5 class="portfolio__item-title underline"><a
+                                                    href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+
+                            {{-- <div class="swiper-slide">
                                 <div class=" portfolio__item style-six">
                                     <div class="portfolio__item-thumb"
                                         data-background="{{ Vite::asset('resources/imgs/portfolio/portfolio-04.png') }}">
@@ -401,7 +427,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- If we need navigation buttons -->
                         <div class="portfolio__navigation d-none d-sm-block">
