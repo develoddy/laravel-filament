@@ -85,7 +85,6 @@
                                                     <div class="portfolio__item-info">
                                                         <div class="portfolio__tag">
                                                             <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
-                                                            
                                                         </div>
                                                         <h5 class="portfolio__item-title underline">
                                                             <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
@@ -102,14 +101,14 @@
                         {{-- Brand tab --}}
                         <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="brand-tab">
                             <div class="row  g-5">
-                                {{-- @foreach ($brands as $brand)
+                                @foreach ($brandPortfolios as $portfolio)
                                     <div class="col-lg-4 col-md-6">
                                         <div class=" portfolio__item style-seven">
                                             <div class="portfolio__item-thumb">
-                                                <img src="{{ asset('storage/' . $brand->image) }}" alt="{{ $brand->title }}"> 
+                                                <img src="{{ asset('storage/' . $portfolio->imagen) }}" alt="{{ $portfolio->titulo }}"> 
                                                 <div class="portfolio__item-btn">
                                                     <span class="icon__box">
-                                                        <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' . $brand->image) }}">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' . $portfolio->imagen) }}">
                                                             <i class="icon-plus"></i>
                                                         </a>
                                                     </span>
@@ -118,30 +117,30 @@
                                             <div class="portfolio__item-content">
                                                 <div class="portfolio__item-info">
                                                     <div class="portfolio__tag">
-                                                        <a href="{{ route('portfolio-detail', ['id' => $brand->portfolio_detail_id,'name' => $brand->link() ]) }}">{{ $brand->title }} - Branding</a>
+                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
                                                     </div>
                                                     <h5 class="portfolio__item-title underline">
-                                                        <a href="{{ route('portfolio-detail', ['id' => $brand->portfolio_detail_id, 'name' => $brand->link()]) }}">{{ $brand->title }}</a>
+                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
                                                     </h5>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                @endforeach --}}
+                                @endforeach
                             </div>
                         </div>
 
                         {{-- Project tab --}}
                         <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
                             <div class="row g-5">
-                                {{-- @foreach ($projects as $project)
+                                @foreach ($projectPortfolios as $portfolio)
                                     <div class="col-lg-4 col-md-6">
                                         <div class=" portfolio__item style-seven">
                                             <div class="portfolio__item-thumb">
-                                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}">
+                                                <img src="{{ asset('storage/' . $portfolio->imagen) }}" alt="{{ $portfolio->titulo }}">
                                                 <div class="portfolio__item-btn">
                                                     <span class="icon__box">
-                                                        <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' . $project->image) }}">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' . $portfolio->imagen) }}">
                                                             <i class="icon-plus"></i>
                                                         </a>
                                                     </span>
@@ -150,16 +149,16 @@
                                             <div class="portfolio__item-content">
                                                 <div class="portfolio__item-info">
                                                     <div class="portfolio__tag">
-                                                        <a href="{{ route('portfolio-detail', ['id' => $project->portfolio_detail_id,'name' => $project->link() ]) }}">{{ $project->title }} - Projects</a>
+                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
                                                     </div>
                                                     <h5 class="portfolio__item-title underline">
-                                                        <a href="{{ route('portfolio-detail', ['id' => $project->portfolio_detail_id, 'name' => $project->link()]) }}">{{ $project->title }}</a>
+                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
                                                     </h5>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                @endforeach --}}
+                                @endforeach
                             </div>
                         </div>
 

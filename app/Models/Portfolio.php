@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Portfolio extends Model
 {
     use HasFactory;
+    
 
     protected $fillable = [
         'titulo',
@@ -49,7 +50,7 @@ class Portfolio extends Model
   
     public function category(): BelongsTo
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Category::class, 'category_id', 'id');
     }
 
     public static function getForm(): array

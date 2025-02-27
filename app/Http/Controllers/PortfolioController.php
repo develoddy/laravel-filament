@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
-use App\Models\PortfolioDetail;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Models\PortfolioDetail;
 
 class PortfolioController extends Controller
 {
@@ -13,8 +14,32 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $portfolios = Portfolio::all();
-        return view('pages.portfolio', compact('portfolios'));
+        
+        // Obtener todas las categorías
+        $categories = Category::all();
+
+        // Obtener todos los portafolios con su categoría correspondiente
+        $portfolios = Portfolio::with('category')->get();
+
+        // Filtrar los portafolios por categoría
+        $brandPortfolios = $portfolios->filter(function ($portfolio) {
+            return $portfolio->category && $portfolio->category->title === 'Brand';
+        });
+
+        // Filtrar los portafolios por categoría
+        $projectPortfolios = $portfolios->filter(function ($portfolio) {
+            return $portfolio->category && $portfolio->category->title === 'Projects';
+        });
+
+        return view('pages.portfolio', 
+            compact(
+                'portfolios', 
+                'brandPortfolios', 
+                'projectPortfolios', 
+                'categories'
+            )
+        );
+
     }
 
     /**
