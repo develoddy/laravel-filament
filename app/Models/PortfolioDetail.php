@@ -45,56 +45,56 @@ class PortfolioDetail extends Model
     public static function getForm(): array
     {
         return [
-        Section::make('Información del contenido')
-            ->columns(2)
-            ->schema([
-                TextInput::make('title')
-                ->label('Título')
-                ->columnSpanFull(),
-                RichEditor::make('description')
-                    ->label('Descripción')
+            Section::make('Información del contenido')
+                ->columns(2)
+                ->schema([
+                    TextInput::make('title')
+                    ->label('Título')
                     ->columnSpanFull(),
-                FileUpload::make('images')
-                    ->label('Multiple imagenes')
-                    ->columnSpanFull()
-                    ->image()
-                    ->multiple(),
-                TextInput::make('client')
-                    ->label('Cliente')
-                    ->columnSpanFull(),
-                TextInput::make('awards')
-                    ->label('Premios')
-                    ->columnSpanFull(),
-                TextInput::make('category')
-                    ->label('Categoría')
-                    ->columnSpanFull(),
-                FileUpload::make('related_images')
-                    ->label('Multiple imagenes relacionadas')
-                    ->columnSpanFull()
-                    ->image()
-                    ->multiple(),
-            ]),
+                    RichEditor::make('description')
+                        ->label('Descripción')
+                        ->columnSpanFull(),
+                    FileUpload::make('images')
+                        ->label('Multiple imagenes')
+                        ->columnSpanFull()
+                        ->image()
+                        ->multiple(),
+                    TextInput::make('client')
+                        ->label('Cliente')
+                        ->columnSpanFull(),
+                    TextInput::make('awards')
+                        ->label('Premios')
+                        ->columnSpanFull(),
+                    TextInput::make('category')
+                        ->label('Categoría')
+                        ->columnSpanFull(),
+                    FileUpload::make('related_images')
+                        ->label('Multiple imagenes relacionadas')
+                        ->columnSpanFull()
+                        ->image()
+                        ->multiple(),
+                ]),
 
-        Section::make('Asocia con el portafolio principal')
-            ->columns(2)
-            ->schema([
-                Select::make('portfolio_id')
-                ->label('Portafolio principal')
-                ->relationship('portfolio', 'titulo')
-                ->searchable()
-                ->preload()
-                ->createOptionForm(Portfolio::getForm())
-                ->editOptionForm(Portfolio::getForm())
-                ->required(),
-                //   Select::make('category_id')
-                //   ->label('Categoría')
-                //   ->relationship('category', 'name')
-                //   ->searchable()
-                //   ->preload()
-                //   ->createOptionForm(Category::getForm())
-                //   ->editOptionForm(Category::getForm())
-                //   ->required(),
-            ]),
+            Section::make('Asocia con el portafolio principal')
+                ->columns(2)
+                ->schema([
+                    Select::make('portfolio_id')
+                    ->label('Portafolio principal')
+                    ->relationship('portfolio', 'titulo')
+                    ->searchable()
+                    ->preload()
+                    ->createOptionForm(Portfolio::getForm())
+                    ->editOptionForm(Portfolio::getForm())
+                    ->required(),
+                    //   Select::make('category_id')
+                    //   ->label('Categoría')
+                    //   ->relationship('category', 'name')
+                    //   ->searchable()
+                    //   ->preload()
+                    //   ->createOptionForm(Category::getForm())
+                    //   ->editOptionForm(Category::getForm())
+                    //   ->required(),
+                ]),
         ];
     }
 }

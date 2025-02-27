@@ -6,9 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use App\Models\PortfolioDetail;
+use App\Models\Category;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Portfolio extends Model
@@ -20,6 +25,7 @@ class Portfolio extends Model
         'descripcion',
         'imagen',
         'slug',
+        'category_id'
     ];
 
     protected static function booted()
@@ -40,22 +46,45 @@ class Portfolio extends Model
         return $this->hasMany(PortfolioDetail::class);
     }
 
+  
+    public function category(): BelongsTo
+    {
+        return $this->belongsTo(Category::class);
+    }
+
     public static function getForm(): array
     {
-      return [
-        TextInput::make('titulo')
-            ->label('Titulo')
-            ->required()
-            ->columnSpanFull()
-            ->maxLength(255),
-        RichEditor::make('descripcion')
-            ->label('Descripción')
-            ->columnSpanFull(),
-        FileUpload::make('imagen')
-            ->label('Imagen')
-            ->image()
-            ->imageEditor()
-            ->directory('portfolios'),
-      ];
+        return [
+            Section::make('Información del contenido')
+                ->columns(2)
+                ->schema([
+                    TextInput::make('titulo')
+                        ->label('Titulo')
+                        ->required()
+                        ->columnSpanFull()
+                        ->maxLength(255),
+                    RichEditor::make('descripcion')
+                        ->label('Descripción')
+                        ->columnSpanFull(),
+                    FileUpload::make('imagen')
+                        ->label('Imagen')
+                        ->image()
+                        ->imageEditor()
+                        ->directory('portfolios')
+                ]),
+
+                Section::make('Asocia con la categoría principal')
+                ->columns(2)
+                ->schema([
+                    Select::make('category_id')
+                    ->label('Categoría principal')
+                    ->relationship('Category', 'title')
+                    ->searchable()
+                    ->preload()
+                    ->createOptionForm(Category::getForm())
+                    ->editOptionForm(Category::getForm())
+                    ->required(),
+                ]),
+        ];
     }
 }

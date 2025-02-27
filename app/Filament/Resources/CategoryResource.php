@@ -22,14 +22,7 @@ class CategoryResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                Forms\Components\TextInput::make('title')
-                    ->required()
-                    ->maxLength(2048),
-                Forms\Components\TextInput::make('slug')
-                    ->required()
-                    ->maxLength(1000),
-            ]);
+            ->schema(Category::getForm());
     }
 
     public static function table(Table $table): Table
