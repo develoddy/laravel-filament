@@ -405,10 +405,21 @@
                         </div>
                         <div class="video__content text-center">
                             <div class="video__play">
-                                <a href="https://www.youtube.com/watch?v=go7QYaQR494" class="play-btn popup-video"><i
-                             class="fa-sharp icon-play"></i></a>
+                                {{-- <div class="about__thumb"> --}}
+                                {{-- <a href="https://www.youtube.com/watch?v=go7QYaQR494" class="play-btn popup-video"><iclass="fa-sharp icon-play"></i></a> --}}
+                                <video id="videoPlayer" autoplay loop muted playsinline width="416" height="545" style="object-fit: cover; border-radius: 10px;">
+                                    <source src="{{ Vite::asset('resources/imgs/video/about-lujandev.mp4') }}" type="video/mp4">
+                                    Tu navegador no soporta la reproducción de videos.
+                                </video>
+                                
+                                {{-- </div> --}}
                             </div>
+                            
                         </div>
+                        
+                    </div>
+                    <div class="mt-3 text-center text-white">
+                        <button id="toggleSound" onclick="toggleMute()">🔊 Activar sonido</button>
                     </div>
                 </div>
             </div>
@@ -968,5 +979,13 @@
 
 </main>
 <!-- Body main wrapper end -->
+
+<script>
+    function toggleMute() {
+        let video = document.getElementById("videoPlayer");
+        video.muted = !video.muted;
+        document.getElementById("toggleSound").textContent = video.muted ? "🔊 Activar sonido" : "🔇 Silenciar";
+    }
+</script>
 
 @endsection
