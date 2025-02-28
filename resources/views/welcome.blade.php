@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="about__btn">
-                            <a class="bd-btn is-btn-anim" href="about.html">
+                            <a class="bd-btn is-btn-anim" href="{{ route('about') }}">
                                 <span class="bd-btn-inner">
                                     <span class="bd-btn-normal">Descubrir más</span>
                                     <span class="bd-btn-hover">Descubrir más</span>
@@ -691,21 +691,21 @@
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".3s">
                         <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/01.png') }}" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/nodejs.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">88</span>%</h3>
-                            <span class="skill__name">Laravel</span>
+                            <span class="skill__name">NodeJS</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".5s">
                         <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/02.png') }}" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/angular.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
-                            <h3><span class="counter">98</span>%</h3>
+                            <h3><span class="counter">78</span>%</h3>
                             <span class="skill__name">Angular</span>
                         </div>
                     </div>
@@ -713,22 +713,22 @@
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".7s">
                         <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/03.png') }}" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/laravel.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
-                            <h3><span class="counter">78</span>%</h3>
-                            <span class="skill__name">MySQL</span>
+                            <h3><span class="counter">98</span>%</h3>
+                            <span class="skill__name">Laravel</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
                         <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/04.png') }}" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/ddbb.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">68</span>%</h3>
-                            <span class="skill__name">Figma</span>
+                            <span class="skill__name">Database</span>
                         </div>
                     </div>
                 </div>

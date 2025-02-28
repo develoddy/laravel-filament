@@ -5,7 +5,7 @@
 <main>
     <!-- breadcrumb area  start -->
     <section class="breadcrumb__area p-relative style-one is-breadcrumb-space">
-        <div class="breadcrumb__thumb-bg include-bg bg__thumb-position" data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-bg-08.png') }}"></div>
+        <div class="breadcrumb__thumb-bg include-bg bg__thumb-position" data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-portfolio.png') }}"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
