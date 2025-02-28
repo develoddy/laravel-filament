@@ -46,7 +46,7 @@
                             </span>
                             <div class="service__content">
                                 <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
-                                <p>Develop detailed case studies for a few key projects.</p>
+                                <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
                                 <div class="service__more">
                                     <a class="contentHidden" href="service-details.html">contentHidden <span><i
                                                 class="fa-sharp fa-light fa-arrow-right"></i></span></a>
@@ -55,9 +55,8 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s"
+                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp d-none" data-wow-delay=".5s"
                         data-wow-duration="1s">
                         <div class="service__wrapper service__item style-three bordered-style text-center">
                             <div class="contentHidden"></div>
@@ -76,7 +75,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s"
                         data-wow-duration="1s">
@@ -97,7 +95,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s"
                         data-wow-duration="1s">
@@ -109,7 +106,7 @@
                             </span>
                             <div class="service__content">
                                 <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
-                                <p>Showcase your design from process, initial concept.</p>
+                                <p>Desarrollador web full stack con habilidades en diseño de proyectos, creando soluciones atractivas y funcionales.</p>
                                 <div class="service__more">
                                     <a class="contentHidden" href="service-details.html">contentHidden <span><i
                                                 class="fa-sharp fa-light fa-arrow-right"></i></span></a>
@@ -118,7 +115,27 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
+                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s"
+                        data-wow-duration="1s">
+                        <div class="service__wrapper service__item style-three bordered-style text-center">
+                            <div class="contentHidden"></div>
+                            <div class="contentHidden"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-application"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="service-details.html">Mobile Application</a></h5>
+                                <p>Whenever possible, incorporate interactive prototypes that allow visitors to experience the app's user.</p>
+                                <div class="service__more">
+                                    <a class="contentHidden" href="service-details.html">contentHidden <span><i
+                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
+                                    <a class="circle-btn is-hover" href="service-details.html"> <span class="icon__box"><i
+                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,12 +178,16 @@
                         <div class="about__content style-four  wow fadeInRight" data-wow-delay=".3s">
                             <div class="section__title-wrapper mb-25">
                                 <div class="section__title-wrapper">
-                                    <span class="section__subtitle sec-border">Quien soy</span>
-                                    <h2 class="section__title">Desarrollo web que convierte ideas en realidad digital</h2>
+                                    <span class="section__subtitle sec-border">Sobre mi servicio</span>
+                                    <h2 class="section__title">Convierte tu idea en una realidad digital con desarrollo web a medida</h2>
                                     <p class="contentHidden">contentHiddenText</p>
                                 </div>
                             </div>
                             <p>
+                                A nivel profesional, trabajo con un equipo experto en desarrollo web, backend y diseño gráfico. 
+                                Pero ahora estoy enfocándome en construir mi propia marca de forma independiente, llevando adelante proyectos como desarrollador full stack y creando soluciones digitales a medida. 🚀
+                            </p>
+                            <p class="d-none">
                                 Colaboro diariamente con un destacado profesional del sector, un experto en desarrollo de aplicaciones para páginas web, backend y diseño gráfico. 
                                 Después de años de trabajo conjunto, somos el equipo perfecto para hacer realidad tu idea digital.
                             </p>
@@ -177,7 +198,7 @@
                                     </div>
                                     <div class="about__info-content">
                                         <h5>Confiable</h5>
-                                        <p>Un servicio en el que puedes confiar plenamente.</p>
+                                        <p>Un servicio en el que puedes confiar, con transparencia y compromiso en cada proyecto.</p>
                                     </div>
                                 </div>
                                 <div class="about__info-item">
@@ -186,7 +207,7 @@
                                     </div>
                                     <div class="about__info-content">
                                         <h5>Mejora</h5>
-                                        <p>Tu camino hacia el crecimiento y la mejora continua.</p>
+                                        <p>Soluciones diseñadas para impulsar tu negocio y potenciar tu presencia digital.</p>
                                     </div>
                                 </div>
                                 <div class="about__info-item">
@@ -195,12 +216,12 @@
                                     </div>
                                     <div class="about__info-content">
                                         <h5>Estrategia</h5>
-                                        <p>Planificación estratégica para el éxito.</p>
+                                        <p>Desarrollo web con una planificación estratégica enfocada en resultados.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="about__btn">
-                                <a class="bd-btn is-btn-anim bordered-blue" href="">
+                                <a class="bd-btn is-btn-anim bordered-blue" href="{{ route('portfolio') }}">
                                     <span class="bd-btn-inner">
                                         <span class="bd-btn-normal">Saber más</span>
                                         <span class="bd-btn-hover">Saber más</span>

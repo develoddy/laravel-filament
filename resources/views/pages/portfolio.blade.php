@@ -11,7 +11,7 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
                         <div class="breadcrumb__title-wrapperr">
-                            <h1 class="breadcrumb__title mb-25">Portafolio</h1>
+                            <h1 class="breadcrumb__title mb-25">Portfolio</h1>
                             <p class="mb-15">
                                 Soy un apasionado desarrollador web Full Stack. Aquí encontrará una muestra de mis proyectos y habilidades en el desarrollo de aplicaciones web.
                             </p>

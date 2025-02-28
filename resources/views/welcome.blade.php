@@ -17,7 +17,7 @@
                                 <div class="banner__content p-relative">
                                     <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s"
                                         data-wow-duration=".7s">Hola, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
-                                        Soy <span class="bd-text-primary">Eddy</span> Desarrollador Full Stack con sede en Madrid
+                                        Soy <span class="bd-text-primary"><br />Eddy Lujan</span> Desarrollador Full Stack con sede en Madrid
                                     </h1>
                                     <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
                                         Diseño y desarrollo experiencias digitales innovadoras y funcionales. Explora mi portafolio y descubre cómo puedo hacer realidad tus ideas con soluciones a medida.
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="row g-5">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp d-none" data-wow-delay=".3s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="contentHidden"></div>
                         <div class="contentHidden"></div>
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp d-none" data-wow-delay=".6s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
@@ -249,7 +249,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp d-none" data-wow-delay=".8s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
