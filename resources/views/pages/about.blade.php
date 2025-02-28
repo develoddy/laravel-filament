@@ -282,7 +282,21 @@
                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-09.png')}}" alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-06.png')}}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class=" portfolio__item style-six portfolio-details">
+                                        <div class="portfolio__item-thumb">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-07.png')}}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class=" portfolio__item style-six portfolio-details">
+                                        <div class="portfolio__item-thumb">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-08.png')}}" alt="">
                                         </div>
                                     </div>
                                 </div>
