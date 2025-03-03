@@ -5,6 +5,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +51,6 @@ Route::group(['prefix' => 'portafolio'], function () {
 });
 
 Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio.show');
+
+
+Route::post('/contacto', [ContactController::class, 'sendMail'])->name('contact.send');

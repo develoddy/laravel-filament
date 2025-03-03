@@ -1030,39 +1030,43 @@
                         <span class="section__subtitle mb-15">PONERSE EN CONTACTO</span>
                         <h2 class="section__title">No dudes en contactarme</h2>
                     </div>
-                    <div class="floating__form-content">
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="floating__form-input">
-                                    <input type="text" class="inputText" required="">
-                                    <span class="floating-label">Nombre*</span>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="floating__form-input">
-                                    <input type="text" class="inputText" required="">
-                                    <span class="floating-label">Correo electrónico*</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="floating__form-input">
-                                    <input type="text" class="inputText" required="">
-                                    <span class="floating-label">Asunto</span>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <div class="from__input-box">
+                    <form action="{{ route('contact.send') }}" method="POST">
+                        @csrf
+                        <div class="floating__form-content">
+                            <div class="row g-4">
+                                <div class="col-12">
                                     <div class="floating__form-input">
-                                        <textarea class="textareaText" required=""></textarea>
-                                        <span class="floating-label-two">Mensaje*</span>
+                                        <input type="text" name="name" class="inputText" required="">
+                                        <span class="floating-label">Nombre*</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="floating__form-input">
+                                        <input type="email" name="email" class="inputText" required="">
+                                        <span class="floating-label">Correo electrónico*</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="floating__form-input">
+                                        <input type="text" name="subject" class="inputText" required="">
+                                        <span class="floating-label">Asunto</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div class="from__input-box">
+                                        <div class="floating__form-input">
+                                            <textarea name="message" class="textareaText" required=""></textarea>
+                                            <span class="floating-label-two">Mensaje*</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="contact__btn">
+                                {{-- <a class="bd-btn w-100" href="contact.html">Enviar</a> --}}
+                                <button type="submit" class="bd-btn w-100">Enviar</button>
+                            </div>
                         </div>
-                        <div class="contact__btn">
-                            <a class="bd-btn w-100" href="contact.html">Enviar</a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 order-md-1 order-0 wow fadeInRight" data-wow-delay=".3s">
                     <div class="contact__info-wrapper">
