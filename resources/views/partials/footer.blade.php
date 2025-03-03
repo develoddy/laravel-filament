@@ -10,10 +10,10 @@
                 </div>
                 <div class="footer__content">
                     <div class="theme__social">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="icon-twiter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        {{-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> --}}
+                        <a href="https://x.com/lujandev" target="blank"><i class="icon-twiter"></i></a>
+                        <a href="https://www.linkedin.com/in/lujandev/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/lujandev/" target="blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -64,11 +64,11 @@
                     </div>
                     <div class="footer__links">
                         <ul>
-                            <li><a href="">Sobre mí</a></li>
-                            <li><a href="">Servicios</a></li>
-                            <li><a href="">Portfolio</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contacto</a></li>
+                            <li><a href="{{ route('about') }}">Sobre mí</a></li>
+                            <li><a href="{{ route('service') }}">Servicios</a></li>
+                            <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="{{ route('contact') }}">Contacto</a></li>
                         </ul>
                     </div>
                 </div>

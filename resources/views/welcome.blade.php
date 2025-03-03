@@ -44,23 +44,24 @@
                                     <div class="banner__thumb">
                                         <img src="{{ Vite::asset('resources/imgs/banner/banner-01.png') }}" alt="image not found">
                                     </div>
+
                                     <div class="theme__social banner-social">
-                                        <a href="#"><i class="fa-brands fa-facebook-f"></i>
+                                        <a href="#" class="d-none"><i class="fa-brands fa-facebook-f"></i>
                                             <div class="banner__social-tooltip">
                                                 <p>Facebook</p>
                                             </div>
                                         </a>
-                                        <a href="#"><i class="icon-twiter"></i>
+                                        <a href="https://x.com/lujandev" target="blank"><i class="icon-twiter"></i>
                                             <div class="banner__social-tooltip">
                                                 <p>Twitter</p>
                                             </div>
                                         </a>
-                                        <a href="#"><i class="fa-brands fa-linkedin"></i>
+                                        <a href="https://www.linkedin.com/in/lujandev/" target="blank"><i class="fa-brands fa-linkedin"></i>
                                             <div class="banner__social-tooltip">
                                                 <p>Linkedin</p>
                                             </div>
                                         </a>
-                                        <a href="#"><i class="fa-brands fa-behance"></i>
+                                        <a href="https://www.instagram.com/lujandev/" target="blank"><i class="fa-brands fa-instagram"></i>
                                             <div class="banner__social-tooltip">
                                                 <p>Behance</p>
                                             </div>
@@ -409,7 +410,7 @@
                                                             Tras completar mis estudios en Desarrollo de Aplicaciones Web, realicé prácticas en una empresa donde logré obtener una calificación de aprobado. 
                                                             Al concluir las prácticas, fui contratado como desarrollador web, consolidando así mi experiencia y habilidades en el campo laboral.
                                                         </p>
-                                                        <h6 class="qualification__rating">4.30/5</h6>
+                                                        <h6 class="qualification__rating d-none">4.30/5</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -455,18 +456,18 @@
                                         <div class="accordion" id="accordionExampleOne">
                                             <div class="accordion-item">
                                                 <h5 class="accordion-header" id="headingTwo_2">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo_2" aria-expanded="false" aria-controls="collapseTwo_2">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo_2" aria-expanded="false" aria-controls="collapseTwo_2">
                                                         Portafolio de Logros
                                                     </button>
                                                 </h5>
-                                                <div id="collapseTwo_2" class="accordion-collapse collapse" aria-labelledby="headingTwo_2" data-bs-parent="#accordionExampleOne" style="">
+                                                <div id="collapseTwo_2" class="accordion-collapse collapse show" aria-labelledby="headingTwo_2" data-bs-parent="#accordionExampleOne" style="">
                                                     <div class="accordion-body">
                                                         <span class="qualification__meta">Portfolios (2023 - 2024)</span>
                                                         <p>
                                                             Mi portafolio de logros refleja una trayectoria sólida y diversa en el desarrollo web. Desde la creación de sitios web dinámicos hasta la implementación de estrategias de optimización y seguridad, 
                                                             cada proyecto ha sido una oportunidad para demostrar mi habilidad para combinar creatividad con funcionalidad
                                                         </p>
-                                                        <h6 class="qualification__rating">4.30/5</h6>
+                                                        <h6 class="qualification__rating d-none">4.30/5</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -480,7 +481,7 @@
                                                     <div class="accordion-body">
                                                         <span class="qualification__meta">DVI University (1997 - 2001)</span>
                                                         <p>If you participated in a study abroad program or international exchange, mention the location and duration of your overseas experience.</p>
-                                                        <h6 class="qualification__rating">4.30/5</h6>
+                                                        <h6 class="qualification__rating d-none">4.30/5</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -494,7 +495,7 @@
                                                     <div class="accordion-body">
                                                         <span class="qualification__meta">DVI University (1997 - 2001)</span>
                                                         <p>If you participated in a study abroad program or international exchange, mention the location and duration of your overseas experience.</p>
-                                                        <h6 class="qualification__rating">4.30/5</h6>
+                                                        <h6 class="qualification__rating d-none">4.30/5</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -512,7 +513,7 @@
                                                             Con una educación rigurosa y orientada a la excelencia, he adquirido habilidades técnicas y conocimientos fundamentales que 
                                                             han sido fundamentales en mi trayectoria profesional.
                                                         </p>
-                                                        <h6 class="qualification__rating">4.30/5</h6>
+                                                        <h6 class="qualification__rating d-none">4.30/5</h6>
                                                     </div>
                                                 </div>
                                             </div>
