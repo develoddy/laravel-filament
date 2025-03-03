@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactMail;
+//use App\Mail\ContactMail;
+use App\Models\ContactForm;
 
 class ContactController extends Controller
 {
@@ -18,16 +19,18 @@ class ContactController extends Controller
 
     public function sendMail(Request $request)
     {
-        $request->validate([
+        $validatedData = $request->validate([
             'name'    => 'required',
             'email'   => 'required|email',
             'subject' => 'required',
             'message' => 'required',
         ]);
 
-        $data = $request->all();
+        ContactForm::create($validatedData);
 
-        Mail::to('eddylujann@gmail.com')->send(new ContactMail($data));
+        //$data = $request->all();
+
+        //Mail::to(config('mail.from.address'))->send(new ContactMail($data));
 
         return back()->with('success', 'Tu mensaje ha sido enviado correctamente.');
     }
