@@ -19,8 +19,8 @@
                         <div class="breadcrumb__menu">
                             <nav>
                                 <ul>
-                                    <li><span><a href="">Inicio</a></span></li>
-                                    <li><span><a href="blog.html">Portafolio</a></span></li>
+                                    <li><span><a href="{{ route('welcome') }}">Inicio</a></span></li>
+                                    <li><span><a href="{{ route('portfolio') }}">Portafolio</a></span></li>
                                     {{-- <li><span>Portfolio Classic</span></li> --}}
                                 </ul>
                             </nav>

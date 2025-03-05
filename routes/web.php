@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ContactController;
@@ -52,10 +53,11 @@ Route::group(['prefix' => 'portafolio'], function () {
 
 // -- Blog
 Route::group(['prefix' => 'blog'], function () {
-    Route::get('/', [PortfolioController::class, 'index'])->name('blog');
+    Route::get('/', [BlogController::class, 'index'])->name('blog');
 });
 
 Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio.show');
 
+Route::get('/portfolio/{portfolio:slug}', [BlogController::class, 'show'])->name('portfolio.show');
 
 Route::post('/contacto', [ContactController::class, 'sendMail'])->name('contact.send');

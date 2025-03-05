@@ -5,26 +5,24 @@
     <main>
 
         <!-- breadcrumb area  start -->
-        <section class="breadcrumb__area section-space theme-bg-secondary p-relative">
-            <div class="breadcrumb__shape-wrapper">
-                <div class="breadcrumb__shape-two">
-                    
-                    <img src="{{ Vite::asset('resources/imgs/shape/four-line-shape-2.png') }}" alt="image not found">
-                </div>
-            </div>
+        <section class="breadcrumb__area p-relative style-one is-breadcrumb-space">
+            <div class="breadcrumb__thumb-bg include-bg bg__thumb-position" data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-blog.png') }}"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-10">
-                        <div class="breadcrumb__content-wrapper">
-                            <div class="breadcrumb__title-wrapper">
-                                <h1 class="breadcrumb__title mb-25">Improving Digital Agency & Portfolio</h1>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-7 col-xl-7 col-lg-8">
+                        <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
+                            <div class="breadcrumb__title-wrapperr">
+                                <h1 class="breadcrumb__title mb-25">Blog</h1>
+                                <p class="mb-15">
+                                    Este es mi blog. Aquí encontrarás toda la información relacionada con mi trabajo.
+                                </p>
                             </div>
                             <div class="breadcrumb__menu">
                                 <nav>
                                     <ul>
-                                        <li><span><a href="index.html">Home</a></span></li>
-                                        <li><span><a href="blog.html">Blog</a></span></li>
-                                        <li><span>Blog Masonary</span></li>
+                                        <li><span><a href="{{ route('welcome') }}">Inicio</a></span></li>
+                                        <li><span><a href="{{ route('blog') }}">Blog</a></span></li>
+                                        {{-- <li><span>Portfolio Classic</span></li> --}}
                                     </ul>
                                 </nav>
                             </div>
@@ -41,8 +39,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
                         <div class="section__title-wrapper text-center section__title-space">
-                            <span class="section__subtitle bg-field">OUR BLOG</span>
-                            <h2 class="section__title">Read My Latest Article</h2>
+                            <span class="section__subtitle bg-field">NUESTRO BLOG</span>
+                            <h2 class="section__title">Descubre mis últimos artículos</h2>
                             <p class="contentHidden">contentHidden</p>
                         </div>
                     </div>
@@ -73,6 +71,7 @@
                                         Engagement</a></h5>
                                 <div class="blog__btn">
                                     <a class="bd-btn bordered-light is-btn-anim" href="blog-details.html">
+                                    {{-- <a class="bd-btn bordered-light is-btn-anim" href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}"> --}}
                                         <span class="bd-btn-inner">
                                             <span class="bd-btn-normal">Read More</span>
                                             <span class="bd-btn-hover">Read More</span>
@@ -122,7 +121,7 @@
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
-                                    <img src="assets/imgs/blog/masonary/blog-masonary-03.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/blog/masonary/blog-masonary-03.png') }}" alt="image not found">
                                 </a>
                                 <div class="blog__tag">
                                     <a href="#">Agency</a>
@@ -157,7 +156,7 @@
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
-                                    <img src="assets/imgs/blog/masonary/blog-masonary-04.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/blog/masonary/blog-masonary-04.png') }}" alt="image not found">
                                 </a>
                                 <div class="blog__tag">
                                     <a href="#">Agency</a>
@@ -192,7 +191,7 @@
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
-                                    <img src="assets/imgs/blog/masonary/blog-masonary-05.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/blog/masonary/blog-masonary-05.png') }}" alt="image not found">
                                 </a>
                                 <div class="blog__tag">
                                     <a href="#">Agency</a>
@@ -227,7 +226,7 @@
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
-                                    <img src="assets/imgs/blog/masonary/blog-masonary-06.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/blog/masonary/blog-masonary-06.png') }}" alt="image not found">
                                 </a>
                                 <div class="blog__tag">
                                     <a href="#">Agency</a>
@@ -263,7 +262,7 @@
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
-                                    <img src="assets/imgs/blog/masonary/blog-masonary-09.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/blog/masonary/blog-masonary-09.png') }}" alt="image not found">
                                 </a>
                                 <div class="blog__tag">
                                     <a href="#">Agency</a>
@@ -298,7 +297,7 @@
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
-                                    <img src="assets/imgs/blog/masonary/blog-masonary-07.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/blog/masonary/blog-masonary-07.png') }}" alt="image not found">
                                 </a>
                                 <div class="blog__tag">
                                     <a href="#">Agency</a>
@@ -333,7 +332,7 @@
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
-                                    <img src="assets/imgs/blog/masonary/blog-masonary-08.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/blog/masonary/blog-masonary-08.png') }}" alt="image not found">
                                 </a>
                                 <div class="blog__tag">
                                     <a href="#">Agency</a>

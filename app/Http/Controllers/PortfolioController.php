@@ -39,7 +39,6 @@ class PortfolioController extends Controller
                 'categories'
             )
         );
-
     }
 
     /**
@@ -77,8 +76,6 @@ class PortfolioController extends Controller
 
         // Buscar el registro de PortfolioDetail que tenga el mismo portfolio_id
         $detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
-
-        //@dd($detail);
         return view('pages.portfolio-detail', compact('portfolio', 'detail'));
     }
 

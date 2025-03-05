@@ -3,7 +3,6 @@
 @section('content')
 <!-- Body main wrapper start -->
 <main>
-
     <!-- portfolio area start -->
     <section class="bd-portfolio__area section-space">
         <div class="container">
