@@ -45,12 +45,12 @@
                                 <i class="icon-design"></i>
                             </span>
                             <div class="service__content">
-                                <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
+                                <h5 class="service__title"><a href="{{ route('portfolio') }}">Diseño web</a></h5>
                                 <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
                                 <div class="service__more">
-                                    <a class="contentHidden" href="service-details.html">contentHidden <span><i
+                                    <a class="contentHidden" href="{{ route('portfolio') }}">contentHidden <span><i
                                                 class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="service-details.html"> <span class="icon__box"><i
+                                    <a class="circle-btn is-hover" href="{{ route('portfolio') }}"> <span class="icon__box"><i
                                                 class="fa-regular fa-arrow-right-long"> </i></span></a>
                                 </div>
                             </div>
@@ -76,26 +76,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s"
-                        data-wow-duration="1s">
-                        <div class="service__wrapper service__item style-three bordered-style text-center">
-                            <div class="contentHidden"></div>
-                            <div class="contentHidden"></div>
-                            <span class="service__icon-wrap">
-                                <i class="icon-ux-design"></i>
-                            </span>
-                            <div class="service__content">
-                                <h5 class="service__title"><a href="service-details.html">UX/UI Design</a></h5>
-                                <p>Start with a brief introduction about your a yourself.</p>
-                                <div class="service__more">
-                                    <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="service-details.html"> <span class="icon__box"><i
-                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s"
                         data-wow-duration="1s">
                         <div class="service__wrapper service__item style-three bordered-style text-center">
@@ -105,18 +85,37 @@
                                 <i class="icon-project"></i>
                             </span>
                             <div class="service__content">
-                                <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
+                                <h5 class="service__title"><a href="{{ route('service') }}">Diseño de proyecto</a></h5>
                                 <p>Desarrollador web full stack con habilidades en diseño de proyectos, creando soluciones atractivas y funcionales.</p>
                                 <div class="service__more">
-                                    <a class="contentHidden" href="service-details.html">contentHidden <span><i
+                                    <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i
                                                 class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="service-details.html"> <span class="icon__box"><i
+                                    <a class="circle-btn is-hover" href="{{ route('service') }}"> <span class="icon__box"><i
                                                 class="fa-regular fa-arrow-right-long"> </i></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s"
+                        data-wow-duration="1s">
+                        <div class="service__wrapper service__item style-three bordered-style text-center">
+                            <div class="contentHidden"></div>
+                            <div class="contentHidden"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-ux-design"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="{{ route('portfolio') }}">UX/UI Design</a></h5>
+                                <p>Experiencias digitales impactantes.</p>
+                                <div class="service__more">
+                                    <a class="contentHidden" href="{{ route('portfolio') }}">contentHidden <span><i
+                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
+                                    <a class="circle-btn is-hover" href="{{ route('portfolio') }}"> <span class="icon__box"><i
+                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s"
                         data-wow-duration="1s">
                         <div class="service__wrapper service__item style-three bordered-style text-center">
@@ -126,12 +125,12 @@
                                 <i class="icon-application"></i>
                             </span>
                             <div class="service__content">
-                                <h5 class="service__title"><a href="service-details.html">Mobile Application</a></h5>
-                                <p>Whenever possible, incorporate interactive prototypes that allow visitors to experience the app's user.</p>
+                                <h5 class="service__title"><a href="#">Aplicación móvil</a></h5>
+                                <p>Estoy aprendiendo a desarrollar aplicaciones móviles para iOS con Swift y Android con Kotlin, creando soluciones funcionales para ambas plataformas.</p>
                                 <div class="service__more">
-                                    <a class="contentHidden" href="service-details.html">contentHidden <span><i
+                                    <a class="contentHidden" href="#">contentHidden <span><i
                                                 class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="service-details.html"> <span class="icon__box"><i
+                                    <a class="circle-btn is-hover" href="#"> <span class="icon__box"><i
                                                 class="fa-regular fa-arrow-right-long"> </i></span></a>
                                 </div>
                             </div>

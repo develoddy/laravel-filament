@@ -180,7 +180,7 @@
                             <i class="icon-design"></i>
                         </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
+                            <h5 class="service__title"><a href="{{ route('portfolio') }}">Diseño web</a></h5>
                             <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i
@@ -199,7 +199,7 @@
                             <i class="icon-project"></i>
                         </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Proyecto</a></h5>
                             <p>Desarrollador web full stack con habilidades en diseño de proyectos, creando soluciones atractivas y funcionales.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i
@@ -238,9 +238,8 @@
                             <i class="icon-application"></i>
                         </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Mobile Application</a></h5>
-                            <p>Whenever possible, incorporate interactive prototypes that allow visitors to
-                                experience the app's user.</p>
+                            <h5 class="service__title"><a href="{{ route('welcome') }}">Aplicación móvil</a></h5>
+                            <p>Estoy aprendiendo a desarrollar aplicaciones móviles para iOS con Swift y Android con Kotlin, creando soluciones funcionales para ambas plataformas.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i
                                             class="contentHidden"></i></span></a>
@@ -791,8 +790,8 @@
                 <div class="col-xl-7 col-lg-7">
                     <div class="testimonial__item">
                         <div class="section__title-wrapper mb-25">
-                            <span class="section__subtitle mb-15">Client say</span>
-                            <h2 class="section__title">Client Experiences and Testimonials</h2>
+                            <span class="section__subtitle mb-15">Lo que dicen nuestros clientes</span>
+                            <h2 class="section__title">Experiencias y testimonios de nuestros clientes</h2>
                         </div>
                         <div class="swiper testimonial__active p-relative">
                             <div class="swiper-wrapper">
@@ -816,11 +815,7 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable.
-                                                Navigation are
-                                                more intuitive and the layout our visitors through our content
-                                                seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>“La experiencia de usuario mejorada en nuestro sitio web es evidente desde el primer momento. La navegación es más intuitiva y la disposición del contenido guía a los visitantes de forma fluida. Además, el diseño responsivo garantiza una visualización óptima en cualquier dispositivo.”</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
@@ -853,19 +848,15 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable.
-                                                Navigation are
-                                                more intuitive and the layout our visitors through our content
-                                                seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>“El rediseño de nuestro sitio web ha mejorado la experiencia del usuario, con una navegación más ágil e intuitiva. Las secciones están organizadas para facilitar el acceso a la información de manera rápida y sencilla, y su diseño responsivo garantiza una visualización óptima en cualquier dispositivo.”</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/user/user-01.png') }}" alt="img not found">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-06.png') }}" alt="img not found">
                                             </div>
                                             <div class="testimonial__avatar-info">
-                                                <h6 class="testimonial__avatar-title">Alexa</h6>
-                                                <span class="testimonial__avatar-designation">Designer</span>
+                                                <h6 class="testimonial__avatar-title">Alex</h6>
+                                                <span class="testimonial__avatar-designation">Designer </span>
                                             </div>
                                         </div>
                                     </div>
@@ -890,19 +881,15 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable.
-                                                Navigation are
-                                                more intuitive and the layout our visitors through our content
-                                                seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>“Nuestro nuevo diseño mejora la experiencia del usuario con una navegación intuitiva y un diseño adaptable para cualquier dispositivo.”</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/user/user-02.png') }}" alt="img not found">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-05.png') }}" alt="img not found">
                                             </div>
                                             <div class="testimonial__avatar-info">
                                                 <h6 class="testimonial__avatar-title">Morish</h6>
-                                                <span class="testimonial__avatar-designation">Director</span>
+                                                <span class="testimonial__avatar-designation">Manager </span>
                                             </div>
                                         </div>
                                     </div>

@@ -50,6 +50,11 @@ Route::group(['prefix' => 'portafolio'], function () {
     Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
 });
 
+// -- Blog
+Route::group(['prefix' => 'blog'], function () {
+    Route::get('/', [PortfolioController::class, 'index'])->name('blog');
+});
+
 Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio.show');
 
 

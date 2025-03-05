@@ -31,7 +31,8 @@
 
     <!-- about style 02 start -->
     {{-- <section class="bd-about__area section-space-bottom"> --}}
-    <section class="bd-about__area section-space">
+    {{-- <section class="bd-about__area section-space"> --}}
+    <section class="bd-about__area section-space-bottom">
         <div class="container">
             <div class="row align-items-center d-none">
                 <div class="col-12">
@@ -66,6 +67,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-xl-6 col-lg-6">
                     <div class="about__content style-two  wow fadeInRight" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-25">
@@ -75,19 +77,20 @@
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
-                        <p>Quiero compartir con ustedes un poco sobre mi viaje como desarrollador de aplicaciones web, desde mis comienzos en Indra hasta mi actual rol en Evidenze.</p>
+                        <p>Quiero compartir con ustedes un poco sobre mi viaje como desarrollador de aplicaciones web, desde mis comienzos en <strong>Indra</strong> hasta mi actual rol en <strong>Evidenze</strong>.</p>
                         
                         <span class="section__subtitle ">Mis Inicios en Indra</span>
                         <p>
-                            Hace cinco años, tuve la increíble oportunidad de unirme a Indra, en el país. Durante mi tiempo allí, tuve el privilegio de trabajar en una variedad de proyectos desafiantes que me permitieron crecer tanto personal como profesionalmente.
-                            Desde el primer día, me sumergí en el mundo del desarrollo de software, donde aprendí los entresijos de la programación y la ingeniería de sistemas. Mis responsabilidades abarcaban desde el diseño y desarrollo de aplicaciones hasta la implementación de soluciones tecnológicas innovadoras para nuestros clientes.
+                            Hace cinco años, tuve la increíble oportunidad de unirme a <strong>Indra</strong>, en el país. Durante mi tiempo allí, tuve el privilegio de trabajar en una variedad de proyectos desafiantes que me permitieron crecer tanto personal como profesionalmente.
+                            Desde el primer día, me sumergí en el mundo del <strong>desarrollo de software</strong>, donde aprendí los entresijos de la <strong>programación</strong> y la ingeniería de sistemas. Mis responsabilidades abarcaban desde el diseño y <strong>desarrollo de aplicaciones</strong> hasta la implementación de soluciones tecnológicas innovadoras para nuestros clientes.
                         </p>
-                        <span class="section__subtitle ">El Salto a Evidenze</span>
+                        <span class="section__subtitle">El Salto a Evidenze</span>
                         <p>
-                            Después de cinco años en Indra, decidí embarcarme en un nuevo desafío y llevar mis habilidades al siguiente nivel. Es así como llegué a Evidenze, una empresa apasionante que valora la innovación y la creatividad en el desarrollo de software.
-                            En Evidenze, me desempeño como desarrollador full stack, lo que significa que tengo la oportunidad de trabajar en todas las capas de una aplicación, desde el frontend hasta el backend. Este rol me ha permitido ampliar mi conjunto de habilidades y profundizar mi comprensión de cómo funciona realmente una aplicación de principio a fin.
+                            Después de cinco años en <strong>Indra</strong>, decidí embarcarme en un nuevo desafío y llevar mis habilidades al siguiente nivel. Es así como llegué a <strong>Evidenze</strong>, una empresa apasionante que valora la innovación y la creatividad en el <strong>desarrollo de software</strong>.
+                            En <strong>Evidenze</strong>, me desempeño como <strong>desarrollador full stack</strong>, lo que significa que tengo la oportunidad de trabajar en todas las capas de una aplicación, desde el <strong>frontend</strong> hasta el <strong>backend</strong>. Este rol me ha permitido ampliar mi conjunto de habilidades y profundizar mi comprensión de cómo funciona realmente una aplicación de principio a fin.
                         </p>
-                        <div class="counter__wrapper" id="percentage">
+
+                        <div class="counter__wrapper d-none" id="percentage">
                             <div class="counter__item">
                                 <div class="counter__canvas">
                                     <div class="circle__counter" data-count="75">
@@ -330,8 +333,10 @@
                             <div class="section__title-wrapper">
                                 <span class="section__subtitle bg-field">MIS HABILIDADES</span>
                                 <h2 class="section__title mb-20">Frontend and Backend Developer</h2>
-                                <p>Como desarrollador web con experiencia diversa, mi habilidad principal es construir aplicaciones web sólidas y escalables utilizando Laravel en el backend. Complemento esto con JavaScript tanto en el frontend como en el backend, creando interacciones dinámicas y fluidas. Especializado en Angular, tengo experiencia en el desarrollo de interfaces de usuario reactivas y dinámicas para aplicaciones de una sola página. Además, utilizo Node.js para desarrollar backend eficiente y escalable, implementando API RESTful y aplicaciones en tiempo real. En resumen, ofrezco un enfoque integral para el desarrollo web y móvil, centrándome en la creación de soluciones tecnológicas eficientes y de calidad.</p>
-                                {{-- Como desarrollador web con experiencia diversa, mi habilidad principal es construir aplicaciones web sólidas y escalables utilizando Laravel en el backend. Complemento esto con JavaScript tanto en el frontend como en el backend, creando interacciones dinámicas y fluidas. Especializado en Angular, tengo experiencia en el desarrollo de interfaces de usuario reactivas y dinámicas para aplicaciones de una sola página. Además, utilizo Node.js para desarrollar backend eficiente y escalable, implementando API RESTful y aplicaciones en tiempo real. También tengo experiencia en el desarrollo de aplicaciones móviles nativas para iOS utilizando Swift. En resumen, ofrezco un enfoque integral para el desarrollo web y móvil, centrándome en la creación de soluciones tecnológicas eficientes y de calidad. --}}
+                                <p>Como desarrollador web con experiencia diversa, mi habilidad principal es construir aplicaciones web sólidas y escalables utilizando <strong>Laravel en el backend</strong>. Complemento esto con <strong>JavaScript</strong> tanto en el frontend como en el backend, creando interacciones dinámicas y fluidas. </p> <br>
+                                <p>Especializado en <strong>Angular</strong>, tengo experiencia en el desarrollo de interfaces de usuario reactivas y dinámicas para aplicaciones de una sola página. Además, utilizo <strong>Node.js</strong> para desarrollar backend eficiente y escalable, implementando <strong>API RESTful</strong> y aplicaciones en tiempo real.</p> <br>
+                                <em>En resumen, ofrezco un enfoque integral para el desarrollo web y móvil, centrándome en la creación de soluciones tecnológicas eficientes y de calidad.</em>
+                                
                             </div>
                         </div>
                         <div class="bd-progress__wrap">
@@ -375,8 +380,8 @@
                                     </div>
                                     <div class="bd__progress-wrapper">
                                         <div class="bd__progress-head">
-                                            <h6 class="bd__progress-title">Swift</h6>
-                                            <p class="bd__progress-percentage">40%</p>
+                                            <h6 class="bd__progress-title">Database | MySQL</h6>
+                                            <p class="bd__progress-percentage">90%</p>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -431,33 +436,17 @@
     <section class="bd-service__area section-space">
         <div class="container">
             <div class="row g-5">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="service__wrapper service__item style-seven bg-solid text-center is-padding-reduce is-transition wow fadeIn" data-wow-delay=".3s">
-                        <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
-                        <div class="service__content">
-                            <h5 class="service__title"><a href="">UX/UI Design</a></h5>
-                            <p>Experiencias digitales <br> impactantes.</p>
-                            <div class="service__more">
-                                <a class="bd-text-btn style-two" href="">Leer más 
-                                    <span class="icon__box">
-                                        <i class="fa-regular fa-arrow-right-long icon__first"></i>
-                                        <i class="fa-regular fa-arrow-right-long icon__second"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <div class="service__wrapper service__item style-seven bg-solid text-center is-padding-reduce is-transition wow fadeIn" data-wow-delay=".5s">
                         <span class="service__icon-wrap">
                     <i class="icon-design"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="">Web Design</a></h5>
+                            <h5 class="service__title"><a href="">Diseño web</a></h5>
                             <p>Sitios web funcionales <br> y atractivos.</p>
                             <div class="service__more">
-                                <a class="bd-text-btn style-two" href="">Leer más <span
+                                <a class="bd-text-btn style-two" href="{{ route('service') }}">Leer más <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -473,15 +462,32 @@
                     <i class="icon-project"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="">Project</a></h5>
+                            <h5 class="service__title"><a href="">Proyecto</a></h5>
                             <p>Gestión efectiva <br> de proyectos.</p>
                             <div class="service__more">
 
-                                <a class="bd-text-btn style-two" href="">Leer más <span
+                                <a class="bd-text-btn style-two" href="{{ route('portfolio') }}">Leer más <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
                           </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="service__wrapper service__item style-seven bg-solid text-center is-padding-reduce is-transition wow fadeIn" data-wow-delay=".3s">
+                        <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
+                        <div class="service__content">
+                            <h5 class="service__title"><a href="">UX/UI Design</a></h5>
+                            <p>Experiencias digitales <br> impactantes.</p>
+                            <div class="service__more">
+                                <a class="bd-text-btn style-two" href="#">Leer más 
+                                    <span class="icon__box">
+                                        <i class="fa-regular fa-arrow-right-long icon__first"></i>
+                                        <i class="fa-regular fa-arrow-right-long icon__second"></i>
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -493,11 +499,11 @@
                     <i class="icon-animation"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="">Animation</a></h5>
-                            <p>Animaciones que <br> destacan.</p>
+                            <h5 class="service__title"><a href="">Aplicación móvil</a></h5>
+                            <p>Aprendo a crear apps para iOS (Swift) y Android (Kotlin)</p>
                             <div class="service__more">
 
-                                <a class="bd-text-btn style-two" href="">Leer más <span
+                                <a class="bd-text-btn style-two" href="#">Leer más <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -811,20 +817,17 @@
                                     <div class="testimonial__item">
                                         <div class="testimonial__content">
                                             <div class="testimonial__text">
-                                                <p>I've had the pleasure of working with them for the past year, and I can
-                                                    confidently say
-                                                    they have
-                                                    exceeded all of our expectations From the moment </p>
+                                                <p>“La experiencia de usuario mejorada en nuestro sitio web es evidente desde el primer momento. La navegación es más intuitiva y la disposición del contenido guía a los visitantes de forma fluida. Además, el diseño responsivo garantiza una visualización óptima en cualquier dispositivo.”</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="testimonial__thumb-wrap">
                                         <div class="testimonial__thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/user/user-08.png') }}" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/user/user-03.png') }}" alt="image not found">
                                         </div>
                                         <div class="testimonial__avatar-info">
-                                            <h6 class="testimonial__avatar-title">Alex</h6>
-                                            <span class="testimonial__avatar-designation">Manager</span>
+                                            <h6 class="testimonial__avatar-title">Louis</h6>
+                                            <span class="testimonial__avatar-designation">Founder </span>
                                         </div>
                                     </div>
                                 </div>
@@ -856,22 +859,17 @@
                                     <div class="testimonial__item">
                                         <div class="testimonial__content">
                                             <div class="testimonial__text">
-                                                <p>
-                                                    I've had the pleasure of working with them for the past year, and I can
-                                                    confidently say
-                                                    they have
-                                                    exceeded all of our expectations From the moment 
-                                                </p>
+                                                <p>“El rediseño de nuestro sitio web ha mejorado la experiencia del usuario, con una navegación más ágil e intuitiva. Las secciones están organizadas para facilitar el acceso a la información de manera rápida y sencilla, y su diseño responsivo garantiza una visualización óptima en cualquier dispositivo.”</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="testimonial__thumb-wrap">
                                         <div class="testimonial__thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/user/user-09.png') }}" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/user/user-06.png') }}" alt="image not found">
                                         </div>
                                         <div class="testimonial__avatar-info">
-                                            <h6 class="testimonial__avatar-title"> Louis</h6>
-                                            <span class="testimonial__avatar-designation">Web Designer</span>
+                                            <h6 class="testimonial__avatar-title">Alex</h6>
+                                            <span class="testimonial__avatar-designation">Designer </span>
                                         </div>
                                     </div>
                                 </div>
@@ -903,20 +901,17 @@
                                     <div class="testimonial__item">
                                         <div class="testimonial__content">
                                             <div class="testimonial__text">
-                                                <p>I've had the pleasure of working with them for the past year, and I can
-                                                    confidently say
-                                                    they have
-                                                    exceeded all of our expectations From the moment </p>
+                                                <p>“Nuestro nuevo diseño mejora la experiencia del usuario con una navegación intuitiva y un diseño adaptable para cualquier dispositivo.”</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="testimonial__thumb-wrap">
                                         <div class="testimonial__thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/user/user-10.png') }}" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/user/user-05.png') }}" alt="image not found">
                                         </div>
                                         <div class="testimonial__avatar-info">
-                                            <h6 class="testimonial__avatar-title">Alex</h6>
-                                            <span class="testimonial__avatar-designation">Manager</span>
+                                            <h6 class="testimonial__avatar-title">Morish</h6>
+                                            <span class="testimonial__avatar-designation">Manager </span>
                                         </div>
                                     </div>
                                 </div>
