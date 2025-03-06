@@ -46,7 +46,50 @@
                     </div>
                 </div>
                 <div class="row g-5 grid wow fadeInUp" data-wow-delay=".3s">
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+
+                    @if(isset($blogs) && !empty($blogs))
+                        @foreach ($blogs as $blog)
+                        <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                            <div class="blog__wrap blog__item style-five">
+                                <div class="blog__thumb is-hover">
+                                    <a href="{{ route('blog.show', ['blog' => $blog->slug]) }}">
+                                        <img src="{{ asset('storage/' . $blog->image) }}" alt="image not found">
+                                    </a>
+                                    <div class="blog__tag">
+                                        <a href="#">Development</a>
+                                    </div>
+                                </div>
+                                <div class="blog__content bg-solid">
+                                    <div class="blog__meta">
+                                        <span>
+                                            <i class="fa-light fa-calendar"></i>
+                                            Nov 12, 2023
+                                        </span>
+                                        <span>
+                                            <i class="fa-light fa-comment"></i>
+                                            10 Comments
+                                        </span>
+                                    </div>
+                                    <h5 class="blog__title">
+                                        <a href="{{ route('blog.show', ['blog' => $blog->slug]) }}">{{ $blog->title }}</a>
+                                        </h5>
+                                    <div class="blog__btn">
+                                        <a class="bd-btn bordered-light is-btn-anim" href="{{ route('blog.show', ['blog' => $blog->slug]) }}">
+                                            <span class="bd-btn-inner">
+                                                <span class="bd-btn-normal">Leer más</span>
+                                                <span class="bd-btn-hover">Leer más</span>
+                                                <i class="contentHidden"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    @endif
+
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -82,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -117,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -152,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -187,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -222,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -257,8 +300,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -293,7 +335,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">
@@ -328,7 +370,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item">
+                    <div class="col-xl-4 col-lg-6 col-md-6 grid-item d-none">
                         <div class="blog__wrap blog__item style-five">
                             <div class="blog__thumb is-hover">
                                 <a href="blog-details.html">

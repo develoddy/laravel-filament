@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Blog;
+use App\Models\BlogDetail;
 class BlogController extends Controller
 {
     /**
@@ -11,7 +12,10 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('pages.blog');
+        $blogs = Blog::all();
+        return view('pages.blog', 
+            compact('blogs'), 
+        );
     }
 
     /**
@@ -33,11 +37,11 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Blog $blog)
     {
-        //$detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
-        //return view('pages.blog-detail', compact('portfolio', 'detail'));
-        return view('pages.blog-detail');
+        $detail = BlogDetail::where('blog_id', $blog->id)->first();
+        //@dd($detail);
+        return view('pages.blog-detail', compact('blog', 'detail'));
     
     }
 

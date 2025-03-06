@@ -62,18 +62,6 @@ class PortfolioController extends Controller
      */
     public function show(Portfolio $portfolio)
     {
-        /*
-            #attributes: array:7 [▼
-                "id" => 5
-                "titulo" => "Portfolio 3"
-                "slug" => "portfolio-3"
-                "descripcion" => "<p>Des 3</p>"
-                "imagen" => "portfolios/01JMFK7F06QN236F6DZ7HSGB0X.png"
-                "created_at" => "2025-02-19 17:13:59"
-                "updated_at" => "2025-02-19 17:13:59"
-            ]
-        */
-
         // Buscar el registro de PortfolioDetail que tenga el mismo portfolio_id
         $detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
         return view('pages.portfolio-detail', compact('portfolio', 'detail'));

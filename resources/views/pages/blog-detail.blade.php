@@ -20,7 +20,7 @@
                                 <div class="col-lg-8">
                                     <div class="postbox__top">
                                         <div class="postbox__thumb">
-                                            <img src="assets/imgs/blog/post/blog-post-03.png" alt="image not found">
+                                            <img src="{{ asset('storage/' . $detail->image) }}" alt="image not found">
                                         </div>
                                     </div>
                                     <div class="postbox__main-wrapper">
