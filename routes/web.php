@@ -58,6 +58,6 @@ Route::group(['prefix' => 'blog'], function () {
 
 Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio.show');
 
-Route::get('/portfolio/{portfolio:slug}', [BlogController::class, 'show'])->name('portfolio.show');
+Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('blog.show');
 
 Route::post('/contacto', [ContactController::class, 'sendMail'])->name('contact.send');
