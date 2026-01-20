@@ -5,7 +5,7 @@
             <div class="footer__top">
                 <div class="footer__logo">
                     <a href="index.html">
-                        <img src="{{ Vite::asset('resources/imgs/logo/logo-white.png') }}" alt="lujandev" class="img-fluid w-25">
+                        <img src="{{ Vite::asset('resources/imgs/logo/logo-white.png') }}" alt="lujandev" class="img-fluid w-50">
                     </a>
                 </div>
                 <div class="footer__content">

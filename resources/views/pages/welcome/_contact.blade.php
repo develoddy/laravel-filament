@@ -63,7 +63,7 @@
                                 </span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <h6><a target="_blank" href="https://www.google.com/maps"> Paseo de la chopera 76, Madrid Spain</a></h6>
+                                            <h6><a target="_blank" href="https://www.google.com/maps">Madrid, Spain</a></h6>
                                         </div>
                                     </div>
                                 </li>
@@ -75,7 +75,7 @@
                                 </span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <h6><a href="tel:+13322078097">+34 605 974 436</a></h6>
+                                            <h6><a href="tel:+34605974436">+34 605 974 436</a></h6>
                                         </div>
                                     </div>
                                 </li>
