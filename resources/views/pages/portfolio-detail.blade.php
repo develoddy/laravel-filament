@@ -11,18 +11,16 @@
                     <div class="portfolio__details-sec-wrapper">
                         <div class="section__title-wrapper">
                             <div class="section__title-wrapper mb-15">
-                                <span class="section__subtitle bg-field">BRANDING IDES</span>
-                                <h2 class="portfolio__details-title">Digital Agency</h2>
+                                <span class="section__subtitle bg-field">MICRO-SAAS PRODUCT 🚀</span>
+                                <h2 class="portfolio__details-title">{{ $detail->titulo ?? 'Product Name' }}</h2>
                             </div>
-                            <p>We provide digital experience services to startups and small businesses. We help our
-                                clients succeed by creating brand identities, digital experiences, and print
-                                materials. Install any demo, plugin or template in a matter of seconds.</p>
+                            <p>{{ $detail->descripcion ?? 'Building and shipping fast. This micro-SaaS product helps solve real problems for users. Learn about the journey, challenges, and wins from idea to launch.' }}</p>
                         </div>
                         <div class="portfolio__details-btn">
-                            <a class="bd-btn is-btn-anim" href="portfolio.html">
+                            <a class="bd-btn is-btn-anim" href="{{ $detail->url ?? '#' }}" target="_blank">
                                 <span class="bd-btn-inner">
-                                    <span class="bd-btn-normal">View website</span>
-                                    <span class="bd-btn-hover">View website</span>
+                                    <span class="bd-btn-normal">Launch Product</span>
+                                    <span class="bd-btn-hover">Launch Product</span>
                                     <i class="contentHidden"></i>
                                 </span>
                             </a>
@@ -38,8 +36,8 @@
                                 </span>
                             </div>
                             <div class="portfolio__details-meta-content">
-                                <h5>Client:</h5>
-                                <span>Creative Work</span>
+                                <h5>Builder:</h5>
+                                <span>@lujandev</span>
                             </div>
                         </div>
                         <div class="portfolio__details-meta-item">
@@ -49,8 +47,8 @@
                                 </span>
                             </div>
                             <div class="portfolio__details-meta-content">
-                                <h5>Awards:</h5>
-                                <span>First Place</span>
+                                <h5>Status:</h5>
+                                <span>Live 🚀</span>
                             </div>
                         </div>
 
@@ -61,8 +59,8 @@
                                 </span>
                             </div>
                             <div class="portfolio__details-meta-content">
-                                <h5>Category:</h5>
-                                <span>Portfolio</span>
+                                <h5>Stack:</h5>
+                                <span>Laravel + Vue</span>
                             </div>
                         </div>
                         <div class="portfolio__details-meta-item">
@@ -72,8 +70,8 @@
                                 </span>
                             </div>
                             <div class="portfolio__details-meta-content">
-                                <h5>Date:</h5>
-                                <span>May 4, 2023</span>
+                                <h5>Launched:</h5>
+                                <span>{{ $detail->fecha ?? 'Coming Soon' }}</span>
                             </div>
                         </div>
                     </div>
@@ -164,7 +162,7 @@
             <div class="row">
                 <div class="col-xxl-12">
                     <div class="counter__info-title text-center mb-30">
-                        <p>We completed <span>1000+</span> projects yearly successfully & counting</p>
+                        <p>Building in public, one MVP at a time 🚀 <span>12+</span> products shipped & counting</p>
                     </div>
                 </div>
             </div>
@@ -177,8 +175,8 @@
                                 <i class="icon-member"></i>
                             </div>
                             <div class="counter__content">
-                                <h2 class="counter__title"><span class="counter">92</span>k</h2>
-                                <p>Stratified Clients</p>
+                                <h2 class="counter__title"><span class="counter">500</span>+</h2>
+                                <p>Active Users</p>
                             </div>
                         </div>
                     </div>
@@ -189,8 +187,8 @@
                                 <i class="icon-support"></i>
                             </div>
                             <div class="counter__content">
-                                <h2 class="counter__title"><span class="counter">40</span>+</h2>
-                                <p>Years of Operate</p>
+                                <h2 class="counter__title"><span class="counter">5</span>+</h2>
+                                <p>Years Building</p>
                             </div>
                         </div>
                     </div>
@@ -201,8 +199,8 @@
                                 <i class="icon-rocket"></i>
                             </div>
                             <div class="counter__content">
-                                <h2 class="counter__title"><span class="counter">250</span>+</h2>
-                                <p>Projects Delivered</p>
+                                <h2 class="counter__title"><span class="counter">12</span>+</h2>
+                                <p>MVPs Shipped</p>
                             </div>
                         </div>
                     </div>
@@ -213,8 +211,8 @@
                                 <i class="icon-employe"></i>
                             </div>
                             <div class="counter__content">
-                                <h2 class="counter__title"><span class="counter">150</span>%</h2>
-                                <p>Experts Employer</p>
+                                <h2 class="counter__title"><span class="counter">3</span></h2>
+                                <p>Products Profitable</p>
                             </div>
                         </div>
                     </div>
@@ -270,9 +268,9 @@
                                 </a>
                             </div>
                             <div class="postbox__more-content">
-                                <p>Previous Article</p>
+                                <p>Previous Product</p>
                                 <h6>
-                                    <a href="blog-details.html">Agency With Creative Idea</a>
+                                    <a href="blog-details.html">Check Out Another MVP</a>
                                 </h6>
                             </div>
                         </div>
@@ -299,9 +297,9 @@
                         </div>
                         <div class="postbox__more-right">
                             <div class="postbox__more-content">
-                                <p>Next Article</p>
+                                <p>Next Product</p>
                                 <h6>
-                                    <a href="blog-details.html">Digital Agency With Creative</a>
+                                    <a href="blog-details.html">See What Else I Built</a>
                                 </h6>
                             </div>
                             <div class="postbox__more-icon">
@@ -323,43 +321,42 @@
             <div class="row">
                 <div class="col-12">
                     <div class="postbox__comment-form">
-                        <h4 class="postbox__comment-form-title">Leave A Reply</h4>
-                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <h4 class="postbox__comment-form-title">Share Your Feedback 💡</h4>
+                        <p>I'd love to hear your thoughts! What do you think about this product? Any suggestions?</p>
                         <form action="#">
                             <div class="row">
                                 <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
                                     <div class="postbox__comment-input">
-                                        <input type="text" placeholder="Name*">
+                                        <input type="text" placeholder="Your Name*">
                                     </div>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
                                     <div class="postbox__comment-input">
-                                        <input type="email" placeholder="Email">
+                                        <input type="email" placeholder="Your Email*">
                                     </div>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-12">
                                     <div class="postbox__comment-input">
-                                        <input type="text" placeholder="Website">
+                                        <input type="text" placeholder="Product URL (optional)">
                                     </div>
                                 </div>
                                 <div class="col-xxl-12">
                                     <div class="postbox__comment-input">
-                                        <textarea placeholder="Your Comment Here..."></textarea>
+                                        <textarea placeholder="Your feedback, questions, or ideas..."></textarea>
                                     </div>
                                 </div>
                                 <div class="col-xxl-12">
                                     <div class="postbox__comment-agree d-flex align-items-start mb-25">
                                         <input class="e-check-input" type="checkbox" id="e-agree">
-                                        <label class="e-check-label" for="e-agree">Save my name, email, and website
-                                            in this browser for the next time I comment.</label>
+                                        <label class="e-check-label" for="e-agree">Keep me updated on new products and features</label>
                                     </div>
                                 </div>
                                 <div class="col-xxl-12">
                                     <div class="postbox__comment-form-btn">
                                         <a class="bd-btn is-btn-anim" href="contact.html">
                                             <span class="bd-btn-inner">
-                                                <span class="bd-btn-normal">Submit now</span>
-                                                <span class="bd-btn-hover">Submit now</span>
+                                                <span class="bd-btn-normal">Send Feedback</span>
+                                                <span class="bd-btn-hover">Send Feedback</span>
                                                 <i class="contentHidden"></i>
                                             </span>
                                         </a>
