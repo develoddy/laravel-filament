@@ -16,18 +16,18 @@
                             <div class="col-xl-6 col-lg-6">
                                 <div class="banner__content p-relative">
                                     <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s"
-                                        data-wow-duration=".7s">Hola, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
-                                        Soy <span class="bd-text-primary"><br />Eddy Lujan</span> Desarrollador Full Stack con sede en Madrid
-                                    </h1>
+                                        data-wow-duration=".7s">Hi, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
+                                        I'm <span class="bd-text-primary">Eddy Lujan 🧪</span></h1>
                                     <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
-                                        Diseño y desarrollo experiencias digitales innovadoras y funcionales. Explora mi portafolio y descubre cómo puedo hacer realidad tus ideas con soluciones a medida.
+                                        <strong>Indie Hacker | Building & shipping micro-SaaS 🚀</strong><br><br>
+                                        I build tiny SaaS products, test ideas fast, and share my journey in public. Currently shipping MVPs and learning in the open.
                                     </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
                                     <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
                                         <span class="bd-btn-inner">
-                                            <span class="bd-btn-normal">Descubre mis proyectos</span>
-                                            <span class="bd-btn-hover">Descubre mis proyectos</span>
+                                            <span class="bd-btn-normal">See My Products</span>
+                                            <span class="bd-btn-hover">See My Products</span>
                                             <i class="contentHidden"></i>
                                         </span>
                                     </a>
@@ -92,36 +92,36 @@
                     <div class="about__content wow fadeInRight" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-25">
                             <div class="section__title-wrapper">
-                                <span class="section__subtitle">ACERCA DE MÍ</span>
-                                <h2 class="section__title">Especialista en Desarrollo de Aplicaciones Web</h2>
+                                <span class="section__subtitle">ABOUT ME</span>
+                                <h2 class="section__title">Full-Stack Developer & Indie Hacker</h2>
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
                         <p class="about__text">
-                            Con más de <strong>cinco años de experiencia</strong> en el desarrollo de aplicaciones web, he tenido la oportunidad de trabajar en proyectos innovadores que han fortalecido mis habilidades técnicas y creativas. Mi enfoque está en construir soluciones digitales eficientes, escalables y con una experiencia de usuario impecable.
+                            👋 Hi, I'm Eddy Lujan, a full-stack developer based in Madrid. I build and ship micro-SaaS products using my own <strong>Mean Stack system</strong>: a multi-module architecture with API, Admin Panel & E-commerce components that lets me iterate and launch MVPs fast.
                         </p>
                         <p class="about__text-two">
-                            Mi pasión por la tecnología y la innovación me impulsa a superar desafíos constantemente. Siempre busco mejorar mis conocimientos y aplicar las mejores prácticas en cada proyecto. Estoy comprometido con la excelencia y listo para desarrollar soluciones que generen un impacto real en el mundo digital. 
+                            🚀 I'm passionate about testing ideas, learning in public, and building products that solve real problems for founders and entrepreneurs. Currently working on <strong>MailFlow</strong> and other experiments. Let's connect and share feedback!
                         </p>
                         <div class="about__counter-wrapper">
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
                                     <h3><span class="counter">5</span>+</h3>
                                 </div>
-                                <p>Años de experiencia</p>
+                                <p>Years Building</p>
                             </div>
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
                                     <h3><span class="counter">10</span>+</h3>
                                 </div>
-                                <p>Proyectos completados</p>
+                                <p>MVPs Shipped</p>
                             </div>
                         </div>
                         <div class="about__btn">
-                            <a class="bd-btn is-btn-anim" href="{{ route('about') }}">
+                            <a class="bd-btn is-btn-anim" href="https://x.com/lujandev" target="_blank">
                                 <span class="bd-btn-inner">
-                                    <span class="bd-btn-normal">Descubrir más</span>
-                                    <span class="bd-btn-hover">Descubrir más</span>
+                                    <span class="bd-btn-normal">Follow my journey</span>
+                                    <span class="bd-btn-hover">Follow my journey</span>
                                     <i class="contentHidden"></i>
                                 </span>
                             </a>
@@ -137,7 +137,7 @@
     <!-- About area end -->
 
     <!-- Service area start -->
-    <section id="homeservices" class="bd-service__area section-space p-relative fix">
+    <section id="homeservices" class="bd-service__area section-space p-relative fix d-none">
         <div class="service__shape-wrapper">
             <img class="service__shape" src="{{ Vite::asset('resources/imgs/service/shape/service-shape-01.png') }}" alt="image not found">
         </div>
@@ -285,8 +285,8 @@
             <div class="row g-5 align-items-end section__title-space">
                 <div class="col-lg-5 col-md-7">
                     <div class="section__title-wrapper">
-                        <span class="section__subtitle">PORTAFOLIO RECIENTE</span>
-                        <h2 class="section__title">Explora Mis Últimos Trabajos</h2>
+                        <span class="section__subtitle">MICRO-SAAS PRODUCTS</span>
+                        <h2 class="section__title">What I'm Building</h2>
                         <p class="contentHidden">contentHiddenText</p>
                     </div>
                 </div>
@@ -294,8 +294,8 @@
                     <div class="portfolio__more text-md-end">
                         <a class="bd-btn is-btn-anim"  href="{{ route("portfolio") }}">
                             <span class="bd-btn-inner">
-                                <span class="bd-btn-normal">Ver todos los proyectos</span>
-                                <span class="bd-btn-hover">Ver todos los proyectos</span>
+                                <span class="bd-btn-normal">View All Products</span>
+                                <span class="bd-btn-hover">View All Products</span>
                                 <i class="contentHidden"></i>
                             </span>
                         </a>
@@ -344,7 +344,7 @@
     </div>
 
     <!-- qualification start -->
-    <section class="bd-qulafication__area section-space">
+    <section class="bd-qulafication__area section-space d-none">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 col-md-6">
@@ -676,7 +676,7 @@
     <!-- qualification end -->
 
     <!-- counter area start -->
-    <section class="bd-counter__area section-space">
+    <section class="bd-counter__area section-space d-none">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -771,7 +771,7 @@
     <!-- counter area end -->
 
     <!-- testimonial area start -->
-    <section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1">
+    <section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1 d-none">
         <div class="container">
             <div class="row align-items-center g-5 wow fadeInUp" data-wow-delay=".3s">
                 <div class="col-xl-5 col-lg-5">
@@ -917,8 +917,8 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
                     <div class="section__title-wrapper text-center section__title-space">
-                        <span class="section__subtitle">BLOG</span>
-                        <h2 class="section__title mb-20">Lea mi último blog</h2>
+                        <span class="section__subtitle">BUILD IN PUBLIC 🚀</span>
+                        <h2 class="section__title mb-20">My Indie Hacker Journey</h2>
                         <p class="contentHidden">contentHiddenText</p>
                     </div>
                 </div>
@@ -993,8 +993,8 @@
                     <div class="portfolio__more text-md-center text-center">
                         <a class="bd-btn is-btn-anim" href="">
                             <span class="bd-btn-inner">
-                                <span class="bd-btn-normal">Ver todos los blogs</span>
-                                <span class="bd-btn-hover">Ver todos los blogs</span>
+                                <span class="bd-btn-normal">Read All Posts</span>
+                                <span class="bd-btn-hover">Read All Posts</span>
                                 <i class="contentHidden"></i>
                             </span>
                         </a>
@@ -1015,8 +1015,8 @@
             <div class="row g-5 align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 order-md-0 order-1 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="section__title-wrapper section__title-space">
-                        <span class="section__subtitle mb-15">PONERSE EN CONTACTO</span>
-                        <h2 class="section__title">No dudes en contactarme</h2>
+                        <span class="section__subtitle mb-15">GET IN TOUCH 📬</span>
+                        <h2 class="section__title">Let's Connect & Share Feedback</h2>
                     </div>
                     <form action="{{ route('contact.send') }}" method="POST">
                         @csrf
@@ -1025,33 +1025,33 @@
                                 <div class="col-12">
                                     <div class="floating__form-input">
                                         <input type="text" name="name" class="inputText" required="">
-                                        <span class="floating-label">Nombre*</span>
+                                        <span class="floating-label">Name*</span>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="floating__form-input">
                                         <input type="email" name="email" class="inputText" required="">
-                                        <span class="floating-label">Correo electrónico*</span>
+                                        <span class="floating-label">Email*</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="floating__form-input">
                                         <input type="text" name="subject" class="inputText" required="">
-                                        <span class="floating-label">Asunto</span>
+                                        <span class="floating-label">Subject</span>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
                                     <div class="from__input-box">
                                         <div class="floating__form-input">
                                             <textarea name="message" class="textareaText" required=""></textarea>
-                                            <span class="floating-label-two">Mensaje*</span>
+                                            <span class="floating-label-two">Message*</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="contact__btn">
-                                {{-- <a class="bd-btn w-100" href="contact.html">Enviar</a> --}}
-                                <button type="submit" class="bd-btn w-100">Enviar</button>
+                                {{-- <a class="bd-btn w-100" href="contact.html">Send</a> --}}
+                                <button type="submit" class="bd-btn w-100">Send Message</button>
                             </div>
                         </div>
                     </form>

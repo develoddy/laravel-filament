@@ -1,0 +1,484 @@
+/*
+ * Lujandev Minimalist Theme - Laravel Filament Project
+ * White background, black text, elegant clean design
+ * Optimized for Indie Hacker Portfolio
+ */
+
+/* ==========================================
+   GLOBAL STYLES
+   ========================================== */
+
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  line-height: 1.7 !important;
+}
+
+section {
+  background-color: #ffffff !important;
+  padding: 80px 0 !important;
+}
+
+.theme-bg-primary,
+.theme-bg-secondary,
+.theme-bg-quaternary {
+  background-color: #ffffff !important;
+}
+
+.section-space {
+  padding: 100px 0 !important;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0 !important;
+  }
+  .section-space {
+    padding: 80px 0 !important;
+  }
+}
+
+/* ==========================================
+   TYPOGRAPHY
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.2 !important;
+}
+
+p {
+  color: #000000 !important;
+  line-height: 1.7 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.section__title {
+  color: #000000 !important;
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+}
+
+.section__subtitle {
+  color: #666666 !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* ==========================================
+   BANNER/HERO
+   ========================================== */
+
+.banner__area {
+  background-color: #ffffff !important;
+  min-height: 80vh !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 100px 0 !important;
+}
+
+.banner__title {
+  color: #000000 !important;
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.banner__title.large {
+  font-size: 4rem !important;
+}
+
+@media (max-width: 992px) {
+  .banner__title {
+    font-size: 2.5rem !important;
+  }
+  .banner__title.large {
+    font-size: 3rem !important;
+  }
+}
+
+.banner__content p {
+  color: #000000 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.7 !important;
+  margin-bottom: 2rem !important;
+  max-width: 600px !important;
+}
+
+.banner__shape-one,
+.banner__shape-two {
+  opacity: 0.03 !important;
+}
+
+.banner__bg {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* ==========================================
+   ABOUT SECTION
+   ========================================== */
+
+.bd-about__area {
+  background-color: #ffffff !important;
+  padding: 100px 0 !important;
+}
+
+.about__text,
+.about__text-two {
+  color: #000000 !important;
+  font-size: 1.0625rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 1.75rem !important;
+}
+
+.about__counter-wrapper {
+  display: flex !important;
+  gap: 3rem !important;
+  margin: 2.5rem 0 !important;
+  padding: 2rem 0 !important;
+  border-top: 1px solid #e0e0e0 !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.about__counter-count h3 {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.about__counter-info p {
+  font-size: 0.875rem !important;
+  color: #666666 !important;
+  margin: 0 !important;
+}
+
+/* ==========================================
+   PORTFOLIO/PRODUCTS CARDS
+   ========================================== */
+
+.bd-portfolio__area {
+  background-color: #ffffff !important;
+}
+
+.portfolio__item {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+  height: 100% !important;
+}
+
+.portfolio__item:hover {
+  transform: translateY(-6px) !important;
+  border-color: #000000 !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+.portfolio__thumb {
+  position: relative !important;
+  overflow: hidden !important;
+  aspect-ratio: 16/10 !important;
+}
+
+.portfolio__thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.4s ease !important;
+}
+
+.portfolio__item:hover .portfolio__thumb img {
+  transform: scale(1.05) !important;
+}
+
+.portfolio__content {
+  padding: 1.75rem !important;
+}
+
+.portfolio__title {
+  color: #000000 !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.portfolio__title a {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.portfolio__tag a {
+  color: #666666 !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* ==========================================
+   BLOG SECTION
+   ========================================== */
+
+.bd-blog__area {
+  background-color: #ffffff !important;
+}
+
+.blog__item {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+}
+
+.blog__item:hover {
+  transform: translateY(-4px) !important;
+  border-color: #000000 !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05) !important;
+}
+
+.blog__title {
+  color: #000000 !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+}
+
+.blog__title a {
+  color: #000000 !important;
+}
+
+.blog__content p {
+  color: #666666 !important;
+  font-size: 0.9375rem !important;
+}
+
+/* ==========================================
+   CONTACT SECTION
+   ========================================== */
+
+.bd-contact__area {
+  background-color: #ffffff !important;
+}
+
+.floating-label,
+.floating-label-two {
+  color: #999999 !important;
+}
+
+.inputText,
+.textareaText {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.inputText:focus,
+.textareaText:focus {
+  border-bottom-color: #000000 !important;
+  outline: none !important;
+}
+
+.contact__info-icon i {
+  color: #000000 !important;
+}
+
+.contact__info-content h6 a {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.bd-btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #000000 !important;
+  padding: 1rem 2rem !important;
+  font-size: 0.9375rem !important;
+  font-weight: 600 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.bd-btn:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.bd-footer__area {
+  background-color: #f8f8f8 !important;
+  color: #000000 !important;
+  border-top: 1px solid #e0e0e0 !important;
+  padding: 60px 0 30px !important;
+}
+
+.footer__widget-title {
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+.footer__link a {
+  color: #666666 !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+}
+
+.footer__link a:hover {
+  color: #000000 !important;
+}
+
+.bd-copyright__area {
+  background-color: #f8f8f8 !important;
+  color: #666666 !important;
+}
+
+/* ==========================================
+   SOCIAL ICONS
+   ========================================== */
+
+.theme__social a {
+  width: 44px !important;
+  height: 44px !important;
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.theme__social a:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* ==========================================
+   HEADER/NAVIGATION
+   ========================================== */
+
+.bd-header__area {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.bd-menu ul li a {
+  color: #000000 !important;
+  font-weight: 500 !important;
+}
+
+.bd-menu ul li a:hover {
+  color: #666666 !important;
+}
+
+/* ==========================================
+   UTILITIES
+   ========================================== */
+
+.bd-text-primary {
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+a {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #666666;
+}
+
+.section__divider hr {
+  border: none !important;
+  border-top: 1px solid #e0e0e0 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+
+[class*="theme-bg"],
+[class*="bg-"] {
+  background-color: #ffffff !important;
+}
+
+.bg-solid {
+  background-color: #ffffff !important;
+}
+
+.contact__shape img,
+.service__shape-wrapper img {
+  opacity: 0.02 !important;
+}
+
+/* ==========================================
+   HIDE SECTIONS (Freelance/CV style)
+   ========================================== */
+
+.bd-service__area,
+.bd-counter__area,
+.bd-testimonial__area,
+.bd-qulafication__area {
+  display: none !important;
+}
+
+/* ==========================================
+   ANIMATIONS
+   ========================================== */
+
+* {
+  transition-duration: 0.3s !important;
+  transition-timing-function: ease !important;
+}
+
+.wow {
+  animation-duration: 0.6s !important;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 2rem !important;
+  }
+  
+  .section__title {
+    font-size: 1.75rem !important;
+  }
+  
+  .about__counter-wrapper {
+    gap: 1.5rem !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .portfolio__content,
+  .blog__content {
+    padding: 1.25rem !important;
+  }
+}
