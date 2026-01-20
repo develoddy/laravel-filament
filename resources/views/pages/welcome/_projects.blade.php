@@ -42,7 +42,7 @@
                                         </a>
                                     </div>
                                     <div class="portfolio__btn">
-                                        <a href="portfolio-details.html" class="circle-btn">
+                                        <a href="{{ $portfolio->mvp_url }}" class="circle-btn">
                                             <span class="icon__box">
                                                 <i class="fa-regular fa-arrow-right-long"></i>
                                             </span>

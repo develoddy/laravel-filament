@@ -41,6 +41,12 @@ class PortfolioResource extends Resource
                 Tables\Columns\TextColumn::make('titulo'),
                 Tables\Columns\TextColumn::make('descripcion')->limit(250),
                 Tables\Columns\ImageColumn::make('imagen'),
+                Tables\Columns\TextColumn::make('mvp_url')
+                    ->label('MVP')
+                    ->limit(30)
+                    ->url(fn ($record) => $record->mvp_url)
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-o-arrow-top-right-on-square'),
                 Tables\Columns\TextColumn::make('created_at')->dateTime(),
             ])
             ->filters([

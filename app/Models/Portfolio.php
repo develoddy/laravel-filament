@@ -25,6 +25,7 @@ class Portfolio extends Model
         'titulo',
         'descripcion',
         'imagen',
+        'mvp_url', 
         'slug',
         'category_id'
     ];
@@ -71,7 +72,12 @@ class Portfolio extends Model
                         ->label('Imagen')
                         ->image()
                         ->imageEditor()
-                        ->directory('portfolios')
+                        ->directory('portfolios'),
+                    TextInput::make('mvp_url')
+                    ->label('MVP URL')
+                    ->url()
+                    ->placeholder('https://your-mvp.com')
+                    ->columnSpanFull(),
                 ]),
 
                 Section::make('Asocia con la categoría principal')
