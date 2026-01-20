@@ -913,7 +913,7 @@
     <!-- testimonial area end -->
 
     <!-- blog area start -->
-    <div id="homeblog" class="bd-blog__area section-space">
+    <div id="homeblog" class="bd-blog__area section-space d-none">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
