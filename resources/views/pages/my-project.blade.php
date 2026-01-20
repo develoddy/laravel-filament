@@ -11,16 +11,16 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
                         <div class="breadcrumb__title-wrapperr">
-                            <h1 class="breadcrumb__title mb-25">My Project</h1>
+                            <h1 class="breadcrumb__title mb-25">Micro-SaaS Products 🚀</h1>
                             <p class="mb-15">
-                                I am a passionate Full Stack web developer. Here you will find a showcase of my projects and skills in web application development.
+                                I build and ship micro-SaaS products fast. These are my experiments, MVPs, and ideas I'm testing in public. Some succeed, some fail, all teach me something valuable.
                             </p>
                         </div>
                         <div class="breadcrumb__menu">
                             <nav>
                                 <ul>
-                                    <li><span><a href="{{ route('welcome') }}">Inicio</a></span></li>
-                                    <li><span><a href="{{ route('my-project') }}">My Project</a></span></li>
+                                    <li><span><a href="{{ route('welcome') }}">Home</a></span></li>
+                                    <li><span><a href="{{ route('my-project') }}">Products</a></span></li>
                                     {{-- <li><span>Portfolio Classic</span></li> --}}
                                 </ul>
                             </nav>
@@ -40,13 +40,13 @@
                     <div class="bd__menu-tab">
                         <ul class="bd__menu nav" id="myTab" role="tablist">
                             <li class="bd__btn-item" role="presentation">
-                                <button class="active" id="view-tab" data-bs-toggle="tab" data-bs-target="#view" type="button" role="tab" aria-controls="view" aria-selected="true">Ver todo</button>
+                                <button class="active" id="view-tab" data-bs-toggle="tab" data-bs-target="#view" type="button" role="tab" aria-controls="view" aria-selected="true">All Products</button>
                             </li>
                             <li class="bd__btn-item" role="presentation">
-                                <button id="brand-tab" data-bs-toggle="tab" data-bs-target="#brand" type="button" role="tab" aria-controls="brand" aria-selected="false">Marca</button>
+                                <button id="brand-tab" data-bs-toggle="tab" data-bs-target="#brand" type="button" role="tab" aria-controls="brand" aria-selected="false">Branding</button>
                             </li>
                             <li class="bd__btn-item" role="presentation">
-                                <button id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button" role="tab" aria-controls="project" aria-selected="false">Proyectos</button>
+                                <button id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button" role="tab" aria-controls="project" aria-selected="false">MVPs</button>
                             </li>
                             <li class="bd__btn-item d-none" role="presentation">
                                 <button id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab" aria-controls="digital" aria-selected="false">Digital Art</button>
@@ -421,8 +421,8 @@
                     <div class="portfolio__more text-center mt-50">
                         <a class="bd-btn is-btn-anim" href="">
                             <span class="bd-btn-inner">
-                                <span class="bd-btn-normal">Ver todo el proyecto</span>
-                                <span class="bd-btn-hover">Ver todo el proyecto</span>
+                                <span class="bd-btn-normal">View All Products</span>
+                                <span class="bd-btn-hover">View All Products</span>
                                 <i class="contentHidden"></i>
                             </span>
                         </a>

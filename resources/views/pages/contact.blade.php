@@ -12,16 +12,16 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
                         <div class="breadcrumb__title-wrapperr">
-                            <h1 class="breadcrumb__title mb-25">Contacto</h1>
+                            <h1 class="breadcrumb__title mb-25">Let's Connect 📬</h1>
                             <p class="mb-15">
-                                ¡Hablemos de su visión y de cómo podemos hacerla realidad a través de un desarrollo web completo y personalizado!
+                                I love hearing from fellow builders, potential users, and anyone interested in micro-SaaS. Share your feedback, ideas, or just say hi!
                             </p>
                         </div>
                         <div class="breadcrumb__menu">
                             <nav>
                                 <ul>
-                                    <li><span><a href="">Inicio</a></span></li>
-                                    <li><span>Contacto</span></li>
+                                    <li><span><a href="">Home</a></span></li>
+                                    <li><span>Contact</span></li>
                                 </ul>
                             </nav>
                         </div>
@@ -44,8 +44,8 @@
                     </span>
                         </div>
                         <div class="contact__item-content">
-                            <span class="contact-item-subtitle">Ubicación</span>
-                            <h5><a target="_blank" href="https://www.google.com/maps">Paseo de la chopera 76, Alcobendas, Madrid</a></h5>
+                            <span class="contact-item-subtitle">Location</span>
+                            <h5><a target="_blank" href="https://www.google.com/maps">Madrid, Spain</a></h5>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     </span>
                         </div>
                         <div class="contact__item-content">
-                            <span class="contact-item-subtitle">Dirección de correo electrónico</span>
+                            <span class="contact-item-subtitle">Email Address</span>
                             <h5><a href="mailto:lujandev@lujandev.com">lujandev@lujandev.com</a></h5>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                     </span>
                         </div>
                         <div class="contact__item-content">
-                            <span class="contact-item-subtitle">Número de contacto</span>
+                            <span class="contact-item-subtitle">Contact Number</span>
                             <h5><a href="tel:+034605974436">+34 605 97 44 36</a></h5>
                         </div>
                     </div>
@@ -122,8 +122,8 @@
                             <div class="cta__content">
                                 <div class="section__title-wrapper text-center ">
                                     <div class="section__title-wrapper text-center">
-                                        <span class="section__subtitle bg-field">SUSCRIBIR</span>
-                                        <h2 class="section__title mb-30">Manténgase informado con las últimas noticias</h2>
+                                        <span class="section__subtitle bg-field">STAY UPDATED 🚀</span>
+                                        <h2 class="section__title mb-30">Join My Indie Hacker Journey</h2>
                                         <p class="contentHidden">contentHidden</p>
                                     </div>
                                 </div>
@@ -131,8 +131,8 @@
                             <div class="cta__form">
                                 <form action="#">
                                     <div class="cta__input">
-                                        <input type="text" placeholder="Ingrese su correo electrónico">
-                                        <a href="{{ route('contact') }}" class="bd-btn is-bg-gradient">Aplique ahora</a>
+                                        <input type="text" placeholder="Enter your email">
+                                        <a href="{{ route('contact') }}" class="bd-btn is-bg-gradient">Subscribe Now</a>
                                     </div>
                                 </form>
                             </div>

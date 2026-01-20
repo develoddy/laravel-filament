@@ -12,13 +12,13 @@
                 <div class="col-xl-8 col-lg-8 col-md-10">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1">
                         <div class="breadcrumb__title-wrapper text-center">
-                            <h1 class="breadcrumb__title mb-25">Full Stack Software Developer</h1>
+                            <h1 class="breadcrumb__title mb-25">Indie Hacker & Builder 🚀</h1>
                         </div>
                         <div class="breadcrumb__menu text-center">
                             <nav>
                                 <ul>
-                                    <li><span><a href="">Inicio</a></span></li>
-                                    <li><span>Sobre mí</span></li>
+                                    <li><span><a href="{{ route('welcome') }}">Home</a></span></li>
+                                    <li><span>About me</span></li>
                                 </ul>
                             </nav>
                         </div>
@@ -60,8 +60,8 @@
                             <div class="about__experience-bg"></div>
                             <div class="about__experience-content">
                                 <div class="about__experience-content-inner">
-                                    <h2 class="about__experience-title"><span class="counter">5</span>+</h2>
-                                    <p>Años de experiencia</p>
+                                    <h2 class="about__experience-title"><span class="counter">12</span>+</h2>
+                                    <p>MVPs Shipped</p>
                                 </div>
                             </div>
                         </div>
@@ -72,22 +72,22 @@
                     <div class="about__content style-two  wow fadeInRight" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-25">
                             <div class="section__title-wrapper">
-                                <span class="section__subtitle bg-field">Quien soy</span>
-                                <h2 class="section__title">Mi historia</h2>
+                                <span class="section__subtitle bg-field">My Journey</span>
+                                <h2 class="section__title">My Journey as an Indie Hacker</h2>
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
-                        <p>Quiero compartir con ustedes un poco sobre mi viaje como desarrollador de aplicaciones web, desde mis comienzos en <strong>Indra</strong> hasta mi actual rol en <strong>Evidenze</strong>.</p>
+                        <p>I build <strong>micro-SaaS products</strong>, test ideas fast, and <strong>learn in public</strong>. My focus is on shipping MVPs quickly, getting feedback, and iterating based on real user needs.</p>
                         
-                        <span class="section__subtitle ">Mis Inicios en Indra</span>
+                        <span class="section__subtitle ">From Corporate to Indie</span>
                         <p>
-                            Hace cinco años, tuve la increíble oportunidad de unirme a <strong>Indra</strong>, en el país. Durante mi tiempo allí, tuve el privilegio de trabajar en una variedad de proyectos desafiantes que me permitieron crecer tanto personal como profesionalmente.
-                            Desde el primer día, me sumergí en el mundo del <strong>desarrollo de software</strong>, donde aprendí los entresijos de la <strong>programación</strong> y la ingeniería de sistemas. Mis responsabilidades abarcaban desde el diseño y <strong>desarrollo de aplicaciones</strong> hasta la implementación de soluciones tecnológicas innovadoras para nuestros clientes.
+                            Previously worked at <strong>Indra</strong> and <strong>Evidenze</strong>, gaining solid full-stack experience building enterprise applications. That corporate background taught me how to ship reliable software, but I wanted more <strong>creative freedom</strong> and direct impact.
+                            Now I experiment with product ideas, validate them quickly, and build in the open. I share my progress, failures, and wins along the way.
                         </p>
-                        <span class="section__subtitle">El Salto a Evidenze</span>
+                        <span class="section__subtitle">Projects & Experiments</span>
                         <p>
-                            Después de cinco años en <strong>Indra</strong>, decidí embarcarme en un nuevo desafío y llevar mis habilidades al siguiente nivel. Es así como llegué a <strong>Evidenze</strong>, una empresa apasionante que valora la innovación y la creatividad en el <strong>desarrollo de software</strong>.
-                            En <strong>Evidenze</strong>, me desempeño como <strong>desarrollador full stack</strong>, lo que significa que tengo la oportunidad de trabajar en todas las capas de una aplicación, desde el <strong>frontend</strong> hasta el <strong>backend</strong>. Este rol me ha permitido ampliar mi conjunto de habilidades y profundizar mi comprensión de cómo funciona realmente una aplicación de principio a fin.
+                            I ship MVPs with the <strong>Mean Stack</strong> (MySQL, Express, Angular, Node.js) and <strong>Laravel</strong> for backend-heavy projects. Every project is a learning opportunity—some succeed, some fail, but all teach me something valuable.
+                            I believe in <strong>building, launching, and learning</strong> rather than endless planning. My goal: create products that solve real problems and generate revenue while maintaining full control over my time and projects.
                         </p>
 
                         <div class="counter__wrapper d-none" id="percentage">
@@ -331,11 +331,11 @@
                     <div class="skill__content-wrapper  wow fadeInLeft" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-40">
                             <div class="section__title-wrapper">
-                                <span class="section__subtitle bg-field">MIS HABILIDADES</span>
-                                <h2 class="section__title mb-20">Frontend and Backend Developer</h2>
-                                <p>Como desarrollador web con experiencia diversa, mi habilidad principal es construir aplicaciones web sólidas y escalables utilizando <strong>Laravel en el backend</strong>. Complemento esto con <strong>JavaScript</strong> tanto en el frontend como en el backend, creando interacciones dinámicas y fluidas. </p> <br>
-                                <p>Especializado en <strong>Angular</strong>, tengo experiencia en el desarrollo de interfaces de usuario reactivas y dinámicas para aplicaciones de una sola página. Además, utilizo <strong>Node.js</strong> para desarrollar backend eficiente y escalable, implementando <strong>API RESTful</strong> y aplicaciones en tiempo real.</p> <br>
-                                <em>En resumen, ofrezco un enfoque integral para el desarrollo web y móvil, centrándome en la creación de soluciones tecnológicas eficientes y de calidad.</em>
+                                <span class="section__subtitle bg-field">MY TECH STACK</span>
+                                <h2 class="section__title mb-20">Full-Stack Indie Builder</h2>
+                                <p>I ship products fast using battle-tested tech: <strong>Laravel</strong> for robust backends, <strong>Node.js</strong> for scalable APIs, and <strong>Angular</strong> for dynamic frontends. My stack choice depends on the project—I optimize for speed and reliability.</p> <br>
+                                <p>Specialized in the <strong>Mean Stack</strong> (MongoDB, Express, Angular, Node.js) for rapid prototyping and <strong>Laravel</strong> when I need proven stability. I build <strong>RESTful APIs</strong>, real-time features, and full-stack applications from idea to production.</p> <br>
+                                <em>My approach: ship MVPs in weeks, not months. Validate fast, iterate based on feedback, and scale what works.</em>
                                 
                             </div>
                         </div>
@@ -433,20 +433,20 @@
     <!-- skill area end -->
 
     <!-- service area start -->
-    <section class="bd-service__area section-space">
+    <section class="bd-service__area section-space d-none">
         <div class="container">
             <div class="row g-5">
                 
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 d-none">
                     <div class="service__wrapper service__item style-seven bg-solid text-center is-padding-reduce is-transition wow fadeIn" data-wow-delay=".5s">
                         <span class="service__icon-wrap">
                     <i class="icon-design"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="">Diseño web</a></h5>
-                            <p>Sitios web funcionales <br> y atractivos.</p>
+                            <h5 class="service__title"><a href="">Web Design</a></h5>
+                            <p>Functional & attractive <br> web applications.</p>
                             <div class="service__more">
-                                <a class="bd-text-btn style-two" href="{{ route('service') }}">Leer más <span
+                                <a class="bd-text-btn style-two" href="{{ route('service') }}">Read more <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -462,11 +462,11 @@
                     <i class="icon-project"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="">Proyecto</a></h5>
-                            <p>Gestión efectiva <br> de proyectos.</p>
+                            <h5 class="service__title"><a href="">Projects</a></h5>
+                            <p>Ship MVPs <br> fast & iterate.</p>
                             <div class="service__more">
 
-                                <a class="bd-text-btn style-two" href="{{ route('my-project') }}">Leer más <span
+                                <a class="bd-text-btn style-two" href="{{ route('my-project') }}">Read more <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -481,9 +481,9 @@
                         <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="">UX/UI Design</a></h5>
-                            <p>Experiencias digitales <br> impactantes.</p>
+                            <p>User-focused <br> experiences.</p>
                             <div class="service__more">
-                                <a class="bd-text-btn style-two" href="#">Leer más 
+                                <a class="bd-text-btn style-two" href="#">Read more 
                                     <span class="icon__box">
                                         <i class="fa-regular fa-arrow-right-long icon__first"></i>
                                         <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -493,17 +493,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 d-none">
                     <div class="service__wrapper service__item style-seven bg-solid text-center is-padding-reduce is-transition wow fadeIn" data-wow-delay=".9s">
                         <span class="service__icon-wrap">
                     <i class="icon-animation"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="">Aplicación móvil</a></h5>
-                            <p>Aprendo a crear apps para iOS (Swift) y Android (Kotlin)</p>
+                            <h5 class="service__title"><a href="">Mobile Apps</a></h5>
+                            <p>Learning iOS (Swift) <br> & Android (Kotlin)</p>
                             <div class="service__more">
 
-                                <a class="bd-text-btn style-two" href="#">Leer más <span
+                                <a class="bd-text-btn style-two" href="#">Read more <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -685,14 +685,14 @@
     <!-- team area end -->
 
     <!-- award area start -->
-    <section class="bd-award__area section-space">
+    <section class="bd-award__area section-space d-none">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6">
                     <div class="section__title-wrapper section__title-space">
                         <div class="section__title-wrapper">
-                            <span class="section__subtitle bg-field">Logro</span>
-                            <h2 class="section__title">Mis premios</h2>
+                            <span class="section__subtitle bg-field">ACHIEVEMENTS</span>
+                            <h2 class="section__title">Milestones & Learning</h2>
                             <p class="contentHidden">contentHiddenText</p>
                         </div>
                     </div>
@@ -773,15 +773,15 @@
     <!-- award area end -->
 
     <!-- testimonial area start -->
-    <section class="bd-testimonial__area section-space p-relative style-seven">
+    <section class="bd-testimonial__area section-space p-relative style-seven d-none">
         <div class="bg__thumb-position include-bg is-overlay" data-background="{{ Vite::asset('resources/imgs/bg/testimonial-bg-01.png') }}">
         </div>
         <div class="container">
             <div class="row g-5 justify-content-center">
                 <div class="col-xl-6 col-lg-8 col-md-10">
                     <div class="section__title-wrapper section__title-space text-center">
-                        <span class="section__subtitle bg-field">TESTIMONIOS </span>
-                        <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+                        <span class="section__subtitle bg-field">FEEDBACK</span>
+                        <h2 class="section__title">What People Say</h2>
                         <p class="contentHidden">contentHidden</p>
                     </div>
                 </div>
@@ -932,7 +932,7 @@
     <!-- testimonial area end -->
 
     <!-- brand area start -->
-    <div class="brand__area section-space theme-bg-secondary">
+    <div class="brand__area section-space theme-bg-secondary d-none">
         <div class="brand__wrapper style-two wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
             <div class="container">
                 <div class="swiper brand__active">
