@@ -31,7 +31,7 @@ class PortfolioController extends Controller
             return $portfolio->category && $portfolio->category->title === 'Projects';
         });
 
-        return view('pages.portfolio', 
+        return view('pages.my-project', 
             compact(
                 'portfolios', 
                 'brandPortfolios', 

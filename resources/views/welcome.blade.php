@@ -5,7 +5,7 @@
     <!-- Banner area start -->
     <section class="banner__area banner-height d-flex align-items-center p-relative">
         <div class="banner-shape d-none d-lg-block">
-            <img class="banner__shape-two" src="{{ Vite::asset('resources/imgs/shape/tower-shape-small.png') }}" alt="image not found">
+            <img class="banner__shape-two" src="{{ Vite::asset('resources/imgs/shape/tower-shape-small.png') }}" alt="LujanDev">
         </div>
         <!-- when slide active remove this class -->
         <div class="swiper banner__active overflow-visible">
@@ -16,7 +16,7 @@
                             <div class="col-xl-6 col-lg-6">
                                 <div class="banner__content p-relative">
                                     <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s"
-                                        data-wow-duration=".7s">Hi, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
+                                        data-wow-duration=".7s">Hi, <span class="banner__shape-hand"><img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="LujanDev"></span>
                                         I'm <span class="bd-text-primary">Eddy Lujan 🧪</span></h1>
                                     <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
                                         <strong>Indie Hacker | Building & shipping micro-SaaS 🚀</strong><br><br>
@@ -24,7 +24,7 @@
                                     </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
+                                    <a class="bd-btn is-btn-anim" href="{{ route('my-project') }}">
                                         <span class="bd-btn-inner">
                                             <span class="bd-btn-normal">See My Products</span>
                                             <span class="bd-btn-hover">See My Products</span>
@@ -38,11 +38,11 @@
                                     data-wow-duration="1.2s">
                                     <div class="banner__shape">
                                         <img class="banner__shape-one" src="{{ Vite::asset('resources/imgs/shape/tower-shape.png') }}"
-                                            alt="image not found">
+                                            alt="LujanDev">
                                     </div>
                                     <div class="banner__bg"></div>
                                     <div class="banner__thumb">
-                                        <img src="{{ Vite::asset('resources/imgs/banner/banner-01.png') }}" alt="image not found">
+                                        <img src="{{ Vite::asset('resources/imgs/banner/profile.jpg') }}" alt="LujanDev">
                                     </div>
 
                                     <div class="theme__social banner-social">
@@ -84,7 +84,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="about__thumb-wrapper wow fadeInLeft tilt" data-wow-delay=".3s">
                         <div class="about__thumb">
-                            <img src="{{ Vite::asset('resources/imgs/about/about-01.png') }}" alt="image not found">
+                            <img src="{{ Vite::asset('resources/imgs/about/about-01.png') }}" alt="LujanDev">
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
     <!-- Service area start -->
     <section id="homeservices" class="bd-service__area section-space p-relative fix d-none">
         <div class="service__shape-wrapper">
-            <img class="service__shape" src="{{ Vite::asset('resources/imgs/service/shape/service-shape-01.png') }}" alt="image not found">
+            <img class="service__shape" src="{{ Vite::asset('resources/imgs/service/shape/service-shape-01.png') }}" alt="LujanDev">
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-center">
@@ -180,7 +180,7 @@
                             <i class="icon-design"></i>
                         </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="{{ route('portfolio') }}">Diseño web</a></h5>
+                            <h5 class="service__title"><a href="{{ route('my-project') }}">Diseño web</a></h5>
                             <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i
@@ -292,7 +292,7 @@
                 </div>
                 <div class="col-lg-7 col-md-5">
                     <div class="portfolio__more text-md-end">
-                        <a class="bd-btn is-btn-anim"  href="{{ route("portfolio") }}">
+                        <a class="bd-btn is-btn-anim"  href="{{ route("my-project") }}">
                             <span class="bd-btn-inner">
                                 <span class="bd-btn-normal">View All Products</span>
                                 <span class="bd-btn-hover">View All Products</span>
@@ -317,7 +317,8 @@
                                         <div class="portfolio__tag">
                                             <a href="portfolio-details.html">Design</a>
                                         </div>
-                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">
+                                        {{-- <a href="{{ route('my-project.show', ['my-project' => $portfolio->slug]) }}"> --}}
+                                        <a href="{{ route('my-project.show', $portfolio->slug) }}">
                                             <h5 class="portfolio__title">{{ $portfolio->titulo }}</h5>
                                         </a>
                                     </div>
@@ -928,7 +929,7 @@
                     <section class="blog__wrap blog__item bg-solid">
                         <div class="blog__thumb is-hover">
                             <a href="blog-details.html">
-                                <img src="{{ Vite::asset('resources/imgs/blog/blog-01.png') }}" alt="image not found">
+                                <img src="{{ Vite::asset('resources/imgs/blog/blog-01.png') }}" alt="LujanDev">
                             </a>
                             <div class="blog__meta style-one">
                                 <h2 class="date">26 <span class="month">FEB</span></h2>
@@ -949,7 +950,7 @@
                     <section class="blog__wrap blog__item bg-solid">
                         <div class="blog__thumb is-hover">
                             <a href="blog-details.html">
-                                <img src="{{ Vite::asset('resources/imgs/blog/blog-02.png') }}" alt="image not found">
+                                <img src="{{ Vite::asset('resources/imgs/blog/blog-02.png') }}" alt="LujanDev">
                             </a>
                             <div class="blog__meta style-one">
                                 <h2 class="date">20 <span class="month">FEB</span></h2>
@@ -970,7 +971,7 @@
                     <section class="blog__wrap blog__item bg-solid">
                         <div class="blog__thumb is-hover">
                             <a href="blog-details.html">
-                                <img src="{{ Vite::asset('resources/imgs/blog/blog-03.png') }}" alt="image not found">
+                                <img src="{{ Vite::asset('resources/imgs/blog/blog-03.png') }}" alt="LujanDev">
                             </a>
                             <div class="blog__meta style-one">
                                 <h2 class="date">20 <span class="month">DIC</span></h2>
@@ -1008,8 +1009,8 @@
     <!-- Contact area start -->
     <div id="homecontact" class="bd-contact__area theme-bg-secondary section-space p-relative fix">
         <div class="contact__shape">
-            <img class="contact__shape-one" src="{{ Vite::asset('resources/imgs/shape/contact-shape-01.png') }}" alt="image not found">
-            <img class="contact__shape-two" src="{{ Vite::asset('resources/imgs/shape/contact-shape-02.png') }}" alt="image not found">
+            <img class="contact__shape-one" src="{{ Vite::asset('resources/imgs/shape/contact-shape-01.png') }}" alt="LujanDev">
+            <img class="contact__shape-two" src="{{ Vite::asset('resources/imgs/shape/contact-shape-02.png') }}" alt="LujanDev">
         </div>
         <div class="container">
             <div class="row g-5 align-items-center">

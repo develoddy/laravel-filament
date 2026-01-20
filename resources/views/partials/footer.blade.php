@@ -66,7 +66,7 @@
                         <ul>
                             <li><a href="{{ route('about') }}">Sobre mí</a></li>
                             <li><a href="{{ route('service') }}">Servicios</a></li>
-                            <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                            <li><a href="{{ route('my-project') }}">Portfolio</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="{{ route('contact') }}">Contacto</a></li>
                         </ul>

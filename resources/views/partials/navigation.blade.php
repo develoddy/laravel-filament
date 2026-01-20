@@ -17,11 +17,15 @@
                                 <nav id="mobile-menu">
                                     <ul class="onepage-menu">
                                         <li><a href="{{ route('welcome') }}">Inicio</a></li>
-                                        <li><a href="{{ route('about') }}">Sobre mí</a></li>
-                                        <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                                        <li><a href="{{ route('blog') }}">Blog</a>
-                                        <li><a href="{{ route('service') }}">Servicios</a></li>
-                                        <li><a href="{{ route('contact') }}">Contacto</a></li>
+                                        <!-- Mostrar tu SaaS -->
+                                        <li><a href="{{ route('my-project') }}">My Project</a></li>
+                                        <!-- Breve, humano -->
+                                        <li><a href="{{ route('about') }}">About Me</a></li>
+                                        <!-- CTA principal -->
+                                        <li><a href="{{ route('contact') }}">Try / Contact</a></li>
+
+                                        {{-- <li><a href="{{ route('blog') }}">Blog</a> --}}
+                                        {{-- <li><a href="{{ route('service') }}">Servicios</a></li> --}}
                                         <li class="nav-item dropdown">
                                             @auth
                                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -54,8 +58,8 @@
                         <div class="header__action d-flex align-items-center">
                             <div class="header__btn-wrap d-none d-sm-inline-flex d-inline-flex align-items-center gap-5">
                                 <a class="bd-btn is-btn-anim bordered-blue" href="{{ route('contact') }}">
-                                    <span class="bd-btn-inner"><span class="bd-btn-normal">Contáctame</span>
-                                    <span class="bd-btn-hover">Contáctame</span>
+                                    <span class="bd-btn-inner"><span class="bd-btn-normal">Contact Me</span>
+                                    <span class="bd-btn-hover">Contact Me</span>
                                     <i class="contentHidden"></i>
                                     </span>
                                 </a>

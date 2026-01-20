@@ -46,9 +46,9 @@ Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
 
-// -- Portfolio
-Route::group(['prefix' => 'portafolio'], function () {
-    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
+// -- My Project / Portfolio
+Route::group(['prefix' => 'my-project'], function () {
+    Route::get('/', [PortfolioController::class, 'index'])->name('my-project');
 });
 
 // -- Blog
@@ -56,7 +56,7 @@ Route::group(['prefix' => 'blog'], function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
 });
 
-Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio.show');
+Route::get('/my-project/{portfolio:slug}', [PortfolioController::class, 'show'])->name('my-project.show');
 
 Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('blog.show');
 

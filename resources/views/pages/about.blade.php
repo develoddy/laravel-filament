@@ -466,7 +466,7 @@
                             <p>Gestión efectiva <br> de proyectos.</p>
                             <div class="service__more">
 
-                                <a class="bd-text-btn style-two" href="{{ route('portfolio') }}">Leer más <span
+                                <a class="bd-text-btn style-two" href="{{ route('my-project') }}">Leer más <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>

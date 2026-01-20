@@ -11,16 +11,16 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
                         <div class="breadcrumb__title-wrapperr">
-                            <h1 class="breadcrumb__title mb-25">Portfolio</h1>
+                            <h1 class="breadcrumb__title mb-25">My Project</h1>
                             <p class="mb-15">
-                                Soy un apasionado desarrollador web Full Stack. Aquí encontrará una muestra de mis proyectos y habilidades en el desarrollo de aplicaciones web.
+                                I am a passionate Full Stack web developer. Here you will find a showcase of my projects and skills in web application development.
                             </p>
                         </div>
                         <div class="breadcrumb__menu">
                             <nav>
                                 <ul>
                                     <li><span><a href="{{ route('welcome') }}">Inicio</a></span></li>
-                                    <li><span><a href="{{ route('portfolio') }}">Portafolio</a></span></li>
+                                    <li><span><a href="{{ route('my-project') }}">My Project</a></span></li>
                                     {{-- <li><span>Portfolio Classic</span></li> --}}
                                 </ul>
                             </nav>
@@ -84,10 +84,10 @@
                                                 <div class="portfolio__item-content">
                                                     <div class="portfolio__item-info">
                                                         <div class="portfolio__tag">
-                                                            <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                            <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
                                                         </div>
                                                         <h5 class="portfolio__item-title underline">
-                                                            <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                            <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
                                                         </h5>
                                                     </div>
                                                 </div>
@@ -117,10 +117,10 @@
                                             <div class="portfolio__item-content">
                                                 <div class="portfolio__item-info">
                                                     <div class="portfolio__tag">
-                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                        <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
                                                     </div>
                                                     <h5 class="portfolio__item-title underline">
-                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                        <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
                                                     </h5>
                                                 </div>
                                             </div>
@@ -149,10 +149,10 @@
                                             <div class="portfolio__item-content">
                                                 <div class="portfolio__item-info">
                                                     <div class="portfolio__tag">
-                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                        <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
                                                     </div>
                                                     <h5 class="portfolio__item-title underline">
-                                                        <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                        <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
                                                     </h5>
                                                 </div>
                                             </div>
