@@ -5,7 +5,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="about__thumb-wrapper wow fadeInLeft tilt" data-wow-delay=".3s">
                         <div class="about__thumb">
-                            <img src="{{ Vite::asset('resources/imgs/about/about-01.png') }}" alt="LujanDev">
+                            <img src="{{ Vite::asset('resources/imgs/about/about-01.jpg') }}" alt="LujanDev">
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                             </div>
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
-                                    <h3><span class="counter">10</span>+</h3>
+                                    <h3><span class="counter">1</span>+</h3>
                                 </div>
                                 <p>MVPs Shipped</p>
                             </div>
