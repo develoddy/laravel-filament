@@ -157,7 +157,7 @@
     <!-- portfolio slider area end -->
 
     <!-- counter area start -->
-    <section class="bd-counter__area section-space theme-bg-secondary">
+    <section class="bd-counter__area section-space theme-bg-secondary d-none">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12">
@@ -223,10 +223,11 @@
     <!-- counter area end -->
 
     <!-- image box area start -->
+    @if($detail && count($detail->related_images) > 0 && is_array($detail->related_images))
     <div class="portfolio__details-img-area section-space">
         <div class="container">
             <div class="row g-5">
-                @if($detail && is_array($detail->related_images))
+                
                     @foreach($detail->related_images as $relatedImage)
                     <div class="col-md-6">
                         <div class="portfolio__details-image-item">
@@ -244,10 +245,11 @@
                             <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-20.png') }}" alt="image not found">
                         </div>
                     </div> --}}
-                @endif
+                
             </div>
         </div>
     </div>
+    @endif
     <!-- image box area end -->
 
     <!-- Section divider -->
@@ -256,7 +258,7 @@
     </div>
 
     <!-- portfolio navigation area start -->
-    <section class="portfolio-navigation__area">
+    <section class="portfolio-navigation__area d-none">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -319,30 +321,32 @@
     <section class="portfolio-comment-form__area section-space theme-bg-secondary">
         <div class="container">
             <div class="row">
+                
                 <div class="col-12">
                     <div class="postbox__comment-form">
                         <h4 class="postbox__comment-form-title">Share Your Feedback 💡</h4>
                         <p>I'd love to hear your thoughts! What do you think about this product? Any suggestions?</p>
-                        <form action="#">
+                        <form action="{{ route('contact.send') }}" method="POST" id="contact-form">
+                            @csrf
                             <div class="row">
                                 <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
                                     <div class="postbox__comment-input">
-                                        <input type="text" placeholder="Your Name*">
+                                        <input type="text" name="name" placeholder="Your Name*" required>
                                     </div>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
                                     <div class="postbox__comment-input">
-                                        <input type="email" placeholder="Your Email*">
+                                        <input type="email" name="email" placeholder="Your Email*" required>
                                     </div>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-12">
                                     <div class="postbox__comment-input">
-                                        <input type="text" placeholder="Product URL (optional)">
+                                        <input type="text" name="subject" placeholder="Product URL (optional)">
                                     </div>
                                 </div>
                                 <div class="col-xxl-12">
                                     <div class="postbox__comment-input">
-                                        <textarea placeholder="Your feedback, questions, or ideas..."></textarea>
+                                        <textarea name="message" placeholder="Your feedback, questions, or ideas..." required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-xxl-12">
@@ -353,18 +357,29 @@
                                 </div>
                                 <div class="col-xxl-12">
                                     <div class="postbox__comment-form-btn">
-                                        <a class="bd-btn is-btn-anim" href="contact.html">
-                                            <span class="bd-btn-inner">
-                                                <span class="bd-btn-normal">Send Feedback</span>
-                                                <span class="bd-btn-hover">Send Feedback</span>
-                                                <i class="contentHidden"></i>
-                                            </span>
-                                        </a>
+                                        <button type="submit" class="bd-btn">Send Feedback</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
+                </div>
+                <div id="contact-form-feedback" class="mt-3">
+                    @if(session('success'))
+                        <div class="alert alert-success mb-4">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger mb-4">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

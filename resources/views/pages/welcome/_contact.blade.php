@@ -87,7 +87,7 @@
                                 </span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <h6><a href="mailto:me@portlu.com">lujandev@lujandev.com</a></h6>
+                                            <h6><a href="mailto:lujandev@lujandev.com">lujandev@lujandev.com</a></h6>
                                         </div>
                                     </div>
                                 </li>

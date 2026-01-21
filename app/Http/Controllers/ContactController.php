@@ -32,7 +32,8 @@ class ContactController extends Controller
 
         //Mail::to(config('mail.from.address'))->send(new ContactMail($data));
 
-        return back()->with('success', 'Tu mensaje ha sido enviado correctamente.');
+        // return back()->with('success', 'Tu mensaje ha sido enviado correctamente.');
+        return redirect()->back()->with('success', '✅ Tu mensaje ha sido enviado correctamente.')->withFragment('contact-form-feedback');
     }
 
     /**
