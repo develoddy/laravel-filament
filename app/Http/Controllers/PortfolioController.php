@@ -63,7 +63,21 @@ class PortfolioController extends Controller
     public function show(Portfolio $portfolio)
     {
         // Buscar el registro de PortfolioDetail que tenga el mismo portfolio_id
+        //$detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
+        //return view('pages.portfolio-detail', compact('portfolio', 'detail'));
+
         $detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
+
+        // 👉 Fallback: si NO hay detalle, redirige al MVP
+        if (!$detail && $portfolio->mvp_url) {
+            return redirect()->away($portfolio->mvp_url);
+        }
+
+        // 👉 Si no hay detalle ni MVP, 404 real
+        if (!$detail) {
+            abort(404);
+        }
+
         return view('pages.portfolio-detail', compact('portfolio', 'detail'));
     }
 

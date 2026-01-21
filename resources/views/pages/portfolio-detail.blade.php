@@ -12,12 +12,12 @@
                         <div class="section__title-wrapper">
                             <div class="section__title-wrapper mb-15">
                                 <span class="section__subtitle bg-field">MICRO-SAAS PRODUCT 🚀</span>
-                                <h2 class="portfolio__details-title">{{ $detail->titulo ?? 'Product Name' }}</h2>
+                                <h2 class="portfolio__details-title">{{ $detail->title ?? 'Product Name' }}</h2>
                             </div>
-                            <p>{{ $detail->descripcion ?? 'Building and shipping fast. This micro-SaaS product helps solve real problems for users. Learn about the journey, challenges, and wins from idea to launch.' }}</p>
+                            <p>{!! $detail->description ?? 'Building and shipping fast. This micro-SaaS product helps solve real problems for users. Learn about the journey, challenges, and wins from idea to launch.' !!}</p>
                         </div>
                         <div class="portfolio__details-btn">
-                            <a class="bd-btn is-btn-anim" href="{{ $detail->url ?? '#' }}" target="_blank">
+                            <a class="bd-btn is-btn-anim" href="{{ $detail->mvp_url ?? '#' }}" target="_blank">
                                 <span class="bd-btn-inner">
                                     <span class="bd-btn-normal">Launch Product</span>
                                     <span class="bd-btn-hover">Launch Product</span>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="portfolio__details-meta-content">
                                 <h5>Status:</h5>
-                                <span>Live 🚀</span>
+                                <span>{{ $detail->status ?? 'Coming Soon' }}</span>
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@
                             </div>
                             <div class="portfolio__details-meta-content">
                                 <h5>Stack:</h5>
-                                <span>Laravel + Vue</span>
+                                <span>{{ $detail->stack ?? 'NodeJS + Angular + MySQL' }}</span>
                             </div>
                         </div>
                         <div class="portfolio__details-meta-item">
@@ -71,7 +71,7 @@
                             </div>
                             <div class="portfolio__details-meta-content">
                                 <h5>Launched:</h5>
-                                <span>{{ $detail->fecha ?? 'Coming Soon' }}</span>
+                                <span>{{ $detail->launched_at ? \Carbon\Carbon::parse($detail->launched_at)->format('M d, Y') : 'Coming Soon' }}</span>
                             </div>
                         </div>
                     </div>

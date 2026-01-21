@@ -22,18 +22,23 @@ class PortfolioDetail extends Model
         'title',
         'description',
         'images',
+        'mvp_url',
         'client',
         'awards',
         'category',
         'related_images',
         'created_at',
         'updated_at',
+        'status',
+        'stack',
+        'launched_at',
         'portfolio_id',
     ];
 
     protected $casts = [
         'images'         => 'array',
         'related_images' => 'array',
+        'launched_at'    => 'date',
     ];
 
     // Relación inversa (muchos a uno)
@@ -59,6 +64,11 @@ class PortfolioDetail extends Model
                         ->columnSpanFull()
                         ->image()
                         ->multiple(),
+                    TextInput::make('mvp_url')
+                        ->label('MVP URL')
+                        ->url()
+                        ->placeholder('https://your-mvp.com')
+                        ->columnSpanFull(),
                     TextInput::make('client')
                         ->label('Cliente')
                         ->columnSpanFull(),
@@ -73,6 +83,23 @@ class PortfolioDetail extends Model
                         ->columnSpanFull()
                         ->image()
                         ->multiple(),
+                    Select::make('status')
+                        ->label('Status')
+                        ->options([
+                            'Live' => 'Live 🚀',
+                            'Testing' => 'Testing 🧪',
+                        ])
+                        ->default('Testing')
+                        ->columnSpanFull(),
+
+                    TextInput::make('stack')
+                        ->label('Stack')
+                        ->placeholder('NodeJS + Angular + MySQL')
+                        ->columnSpanFull(),
+
+                    DateTimePicker::make('launched_at')
+                        ->label('Launched')
+                        ->columnSpanFull(),
                 ]),
 
             Section::make('Asocia con el portafolio principal')

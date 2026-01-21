@@ -27,14 +27,14 @@
                         <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                             <div class=" portfolio__item">
                                 <div class="portfolio__thumb">
-                                    <a href="portfolio-details.html"><img
+                                    <a href="{{ route('my-project.show', $portfolio->slug) }}"><img
                                             src="{{ asset('storage/' . $portfolio->imagen) }}"
                                             alt="img not found"></a>
                                 </div>
                                 <div class="portfolio__content">
                                     <div class="portfolio__info">
-                                        <div class="portfolio__tag">
-                                            <a href="portfolio-details.html">Design</a>
+                                        <div class="portfolio__tag d-m">
+                                            <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->category->title ?? '' }}</a>
                                         </div>
                                         {{-- <a href="{{ route('my-project.show', ['my-project' => $portfolio->slug]) }}"> --}}
                                         <a href="{{ route('my-project.show', $portfolio->slug) }}">

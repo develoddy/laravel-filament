@@ -14,6 +14,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\Select;
 
 
 class PortfolioDetailResource extends Resource
@@ -35,9 +36,18 @@ class PortfolioDetailResource extends Resource
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\TextColumn::make('description')->limit(250),
                 Tables\Columns\ImageColumn::make('images'),
+                Tables\Columns\TextColumn::make('mvp_url')
+                    ->label('MVP')
+                    ->limit(30)
+                    ->url(fn ($record) => $record->mvp_url)
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-o-arrow-top-right-on-square'),
                 Tables\Columns\ImageColumn::make('client'),
                 Tables\Columns\TextColumn::make('awards'),
                 Tables\Columns\TextColumn::make('category'),
+                Tables\Columns\TextColumn::make('status'),
+                Tables\Columns\TextColumn::make('stack'),
+                Tables\Columns\TextColumn::make('fecha')->label('Launched'),
                 Tables\Columns\ImageColumn::make('related_images'),
                 Tables\Columns\TextColumn::make('created_at')->dateTime(),
             ])
