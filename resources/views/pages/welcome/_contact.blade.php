@@ -29,7 +29,7 @@
                                 <div class="col-lg-12">
                                     <div class="floating__form-input">
                                         <input type="text" name="subject" class="inputText" required="">
-                                        <span class="floating-label">Subject</span>
+                                        <span class="floating-label">Subject*</span>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
@@ -47,6 +47,23 @@
                             </div>
                         </div>
                     </form>
+                    <div id="contact-form-feedback" class="mt-3">
+                        @if(session('success'))
+                            <div class="alert alert-success mb-4">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger mb-4">
+                                <ul class="mb-0">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                    </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 order-md-1 order-0 wow fadeInRight" data-wow-delay=".3s">
                     <div class="contact__info-wrapper">

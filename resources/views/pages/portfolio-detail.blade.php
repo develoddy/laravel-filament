@@ -341,7 +341,7 @@
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-12">
                                     <div class="postbox__comment-input">
-                                        <input type="text" name="subject" placeholder="Product URL (optional)">
+                                        <input type="text" name="subject" placeholder="Product URL*" required>
                                     </div>
                                 </div>
                                 <div class="col-xxl-12">
