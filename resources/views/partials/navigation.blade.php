@@ -16,14 +16,11 @@
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul class="onepage-menu">
-                                        <li><a href="{{ route('welcome') }}">Inicio</a></li>
-                                        <!-- Mostrar tu SaaS -->
-                                        <li><a href="{{ route('my-project') }}">My Project</a></li>
-                                        <!-- Breve, humano -->
-                                        <li><a href="{{ route('about') }}">About Me</a></li>
-                                        <!-- CTA principal -->
-                                        <li><a href="{{ route('contact') }}">Try / Contact</a></li>
-
+                        <li><a href="{{ route('welcome') }}">Home</a></li>
+                        <li><a href="{{ route('about') }}">About</a></li>
+                        <li><a href="{{ route('my-project') }}">Builds</a></li>
+                        <li><a href="{{ route('welcome') }}#homejourney">Journey</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
                                         {{-- <li><a href="{{ route('blog') }}">Blog</a> --}}
                                         {{-- <li><a href="{{ route('service') }}">Servicios</a></li> --}}
                                         <li class="nav-item dropdown">

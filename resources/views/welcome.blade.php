@@ -9,6 +9,7 @@
     <!-- About area start -->
     @include("pages.welcome._about")
     <!-- About area end -->
+    
     <!-- Section divider -->
     <div class="section__divider">
         <hr>
@@ -23,21 +24,18 @@
         <hr>
     </div>
 
-    <!-- qualification start -->
-    @include("pages.welcome._qualification")
-    <!-- qualification end -->
+    <!-- Journey area start -->
+    @include("pages.welcome._journey")
+    <!-- Journey area end -->
 
-    <!-- counter area start -->
-    @include("pages.welcome._counter")
-    <!-- counter area end -->
+    <!-- Section divider -->
+    <div class="section__divider">
+        <hr>
+    </div>
 
-    <!-- testimonial area start -->
-    @include("pages.welcome._testimonial")
-    <!-- testimonial area end -->
-
-    <!-- blog area start -->
-    @include("pages.welcome._blog")
-    <!-- blog area end -->
+    <!-- Founder area start -->
+    @include("pages.welcome._founder")
+    <!-- Founder area end -->
 
     <!-- Contact area start -->
     @include("pages.welcome._contact")

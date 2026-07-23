@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'LujanDev') }}</title>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="{{ Vite::asset('resources/imgs/favicon.png') }}" />
@@ -46,8 +46,8 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
-                                    <img src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="logo not found">
+                                <a href="{{ route('welcome') }}">
+                                    <img src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="LujanDev logo">
                                 </a>
                             </div>
                             <div class="offcanvas__close">

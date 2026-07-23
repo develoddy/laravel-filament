@@ -1,14 +1,15 @@
 <div id="homecontact" class="bd-contact__area theme-bg-secondary section-space p-relative fix">
         <div class="contact__shape">
-            <img class="contact__shape-one" src="{{ Vite::asset('resources/imgs/shape/contact-shape-01.png') }}" alt="LujanDev">
-            <img class="contact__shape-two" src="{{ Vite::asset('resources/imgs/shape/contact-shape-02.png') }}" alt="LujanDev">
+            <img class="contact__shape-one" src="{{ Vite::asset('resources/imgs/shape/contact-shape-01.png') }}" alt="Decorative contact shape element">
+            <img class="contact__shape-two" src="{{ Vite::asset('resources/imgs/shape/contact-shape-02.png') }}" alt="Decorative contact shape element">
         </div>
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 order-md-0 order-1 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="section__title-wrapper section__title-space">
-                        <span class="section__subtitle mb-15">GET IN TOUCH 📬</span>
-                        <h2 class="section__title">Let's Connect & Share Feedback</h2>
+                        <span class="section__subtitle mb-15">LET'S CONNECT</span>
+                        <h2 class="section__title">Questions, feedback or ideas?</h2>
+                        <p class="mt-3">Building something too, or curious about one of my products? Send me a message.</p>
                     </div>
                     <form action="{{ route('contact.send') }}" method="POST">
                         @csrf
@@ -67,8 +68,11 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 order-md-1 order-0 wow fadeInRight" data-wow-delay=".3s">
                     <div class="contact__info-wrapper">
-                        <div class="contact__thumb">
-                            <img src="{{ Vite::asset('resources/imgs/contact/contact-01.png') }}" alt="img not found">
+                        <div class="contact__brand text-center mb-5">
+                            <div class="contact__logo mb-4">
+                                <h2 class="display-1 fw-bold text-white mb-0">LD</h2>
+                            </div>
+                            <p class="text-white-50 mb-4 fs-5">Let's build, learn and share.</p>
                         </div>
                         <div class="contact__info-item">
                             <ul>
@@ -80,19 +84,7 @@
                                 </span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <h6><a target="_blank" href="https://www.google.com/maps">Madrid, Spain</a></h6>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="contact__info">
-                                        <div class="contact__info-icon">
-                                            <span>
-                                <i class="icon-phone"></i>
-                                </span>
-                                        </div>
-                                        <div class="contact__info-content">
-                                            <h6><a href="tel:+34605974436">+34 605 974 436</a></h6>
+                                            <h6><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps">Madrid, Spain</a></h6>
                                         </div>
                                     </div>
                                 </li>
@@ -109,6 +101,13 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="contact__social text-center mt-4">
+                            <div class="theme__social d-flex justify-content-center gap-3">
+                                <a href="https://x.com/lujandev" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="Follow on X"><i class="icon-twiter" style="font-size: 1.5rem;"></i></a>
+                                <a href="https://www.linkedin.com/in/lujandev/" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="Follow on LinkedIn"><i class="fa-brands fa-linkedin" style="font-size: 1.5rem;"></i></a>
+                                <a href="https://www.instagram.com/lujandev/" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="Follow on Instagram"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
