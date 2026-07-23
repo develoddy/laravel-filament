@@ -11,17 +11,16 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
                         <div class="breadcrumb__title-wrapperr">
-                            <h1 class="breadcrumb__title mb-25">Micro-SaaS Products 🚀</h1>
+                            <h1 class="breadcrumb__title mb-25">Products & Experiments</h1>
                             <p class="mb-15">
-                                I build and ship micro-SaaS products fast. These are my experiments, MVPs, and ideas I'm testing in public. Some succeed, some fail, all teach me something valuable.
+                                Real products, tools and experiments built from idea to launch.
                             </p>
                         </div>
                         <div class="breadcrumb__menu">
                             <nav>
                                 <ul>
                                     <li><span><a href="{{ route('welcome') }}">Home</a></span></li>
-                                    <li><span><a href="{{ route('my-project') }}">Products</a></span></li>
-                                    {{-- <li><span>Portfolio Classic</span></li> --}}
+                                    <li><span>Builds</span></li>
                                 </ul>
                             </nav>
                         </div>
@@ -40,13 +39,13 @@
                     <div class="bd__menu-tab">
                         <ul class="bd__menu nav" id="myTab" role="tablist">
                             <li class="bd__btn-item" role="presentation">
-                                <button class="active" id="view-tab" data-bs-toggle="tab" data-bs-target="#view" type="button" role="tab" aria-controls="view" aria-selected="true">All Products</button>
+                                <button class="active" id="view-tab" data-bs-toggle="tab" data-bs-target="#view" type="button" role="tab" aria-controls="view" aria-selected="true">All Builds</button>
                             </li>
                             <li class="bd__btn-item" role="presentation">
-                                <button id="brand-tab" data-bs-toggle="tab" data-bs-target="#brand" type="button" role="tab" aria-controls="brand" aria-selected="false">Branding</button>
+                                <button id="brand-tab" data-bs-toggle="tab" data-bs-target="#brand" type="button" role="tab" aria-controls="brand" aria-selected="false">Brand</button>
                             </li>
                             <li class="bd__btn-item" role="presentation">
-                                <button id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button" role="tab" aria-controls="project" aria-selected="false">MVPs</button>
+                                <button id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button" role="tab" aria-controls="project" aria-selected="false">Projects</button>
                             </li>
                             <li class="bd__btn-item d-none" role="presentation">
                                 <button id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab" aria-controls="digital" aria-selected="false">Digital Art</button>
@@ -72,7 +71,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class=" portfolio__item style-seven">
                                                 <div class="portfolio__item-thumb">
-                                                    <img src="{{ asset('storage/' . $portfolio->imagen) }}" alt="image not found">
+                                                    <img src="{{ asset('storage/' . $portfolio->imagen) }}" alt="{{ $portfolio->titulo }} product preview">
                                                     <div class="portfolio__item-btn">
                                                         <span class="icon__box">
                                                             <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' .  $portfolio->imagen) }}">
@@ -84,7 +83,7 @@
                                                 <div class="portfolio__item-content">
                                                     <div class="portfolio__item-info">
                                                         <div class="portfolio__tag">
-                                                            <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
+                                                            <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->category->title ?? 'Build' }}</a>
                                                         </div>
                                                         <h5 class="portfolio__item-title underline">
                                                             <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>

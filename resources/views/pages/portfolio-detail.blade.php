@@ -11,13 +11,14 @@
                     <div class="portfolio__details-sec-wrapper">
                         <div class="section__title-wrapper">
                             <div class="section__title-wrapper mb-15">
-                                <span class="section__subtitle bg-field">MICRO-SAAS PRODUCT 🚀</span>
-                                <h2 class="portfolio__details-title">{{ $detail->title ?? 'Product Name' }}</h2>
+                                <span class="section__subtitle bg-field">{{ strtoupper($detail->category ?? 'BUILD') }}</span>
+                                <h2 class="portfolio__details-title">{{ $detail->title ?? 'Project Name' }}</h2>
                             </div>
-                            <p>{!! $detail->description ?? 'Building and shipping fast. This micro-SaaS product helps solve real problems for users. Learn about the journey, challenges, and wins from idea to launch.' !!}</p>
+                            <p>{!! $detail->description ?? '' !!}</p>
                         </div>
+                        @if(!empty($detail->mvp_url))
                         <div class="portfolio__details-btn">
-                            <a class="bd-btn is-btn-anim" href="{{ $detail->mvp_url ?? '#' }}" target="_blank">
+                            <a class="bd-btn is-btn-anim" href="{{ $detail->mvp_url }}" target="_blank" rel="noopener noreferrer">
                                 <span class="bd-btn-inner">
                                     <span class="bd-btn-normal">Launch Product</span>
                                     <span class="bd-btn-hover">Launch Product</span>
@@ -25,6 +26,7 @@
                                 </span>
                             </a>
                         </div>
+                        @endif
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -60,7 +62,7 @@
                             </div>
                             <div class="portfolio__details-meta-content">
                                 <h5>Stack:</h5>
-                                <span>{{ $detail->stack ?? 'NodeJS + Angular + MySQL' }}</span>
+                                <span>{{ $detail->stack ?? 'N/A' }}</span>
                             </div>
                         </div>
                         <div class="portfolio__details-meta-item">
@@ -95,7 +97,7 @@
                                         <div class="swiper-slide">
                                             <div class=" portfolio__item style-six portfolio-details">
                                                 <div class="portfolio__item-thumb">
-                                                    <img src="{{ asset('storage/' . $img) }}" alt="Imagen del portfolio" title="{{ $img }}" alt="{{ $img }}" >
+                                                    <img src="{{ asset('storage/' . $img) }}" alt="{{ $detail->title ?? 'Project' }} screenshot">
                                                 </div>
                                             </div>
                                         </div>
@@ -147,7 +149,7 @@
                             </div>
                         </div>
                     @else
-                        <div class="item col-item col-lg-12 text-center"><p class="text-darkblue">No hay imágenes disponibles.</p></div>
+                        <div class="item col-item col-lg-12 text-center"><p class="text-muted">No images available.</p></div>
                     @endif
                     
                 </div>

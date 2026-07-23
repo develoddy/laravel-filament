@@ -39,8 +39,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
                         <div class="section__title-wrapper text-center section__title-space">
-                            <span class="section__subtitle bg-field">NUESTRO BLOG</span>
-                            <h2 class="section__title">Descubre mis últimos artículos</h2>
+                            <span class="section__subtitle bg-field">THE JOURNEY</span>
+                            <h2 class="section__title">What I'm learning while building.</h2>
                             <p class="contentHidden">contentHidden</p>
                         </div>
                     </div>
@@ -53,21 +53,21 @@
                             <div class="blog__wrap blog__item style-five">
                                 <div class="blog__thumb is-hover">
                                     <a href="{{ route('blog.show', ['blog' => $blog->slug]) }}">
-                                        <img src="{{ asset('storage/' . $blog->image) }}" alt="image not found">
+                                        <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }} blog post">
                                     </a>
-                                    <div class="blog__tag">
+                                    <div class="blog__tag d-none">
                                         <a href="#">Development</a>
                                     </div>
                                 </div>
                                 <div class="blog__content bg-solid">
-                                    <div class="blog__meta">
+                                    <div class="blog__meta d-none">
                                         <span>
                                             <i class="fa-light fa-calendar"></i>
-                                            Nov 12, 2023
+                                            {{ \Carbon\Carbon::parse($blog->created_at)->format('M d, Y') }}
                                         </span>
                                         <span>
                                             <i class="fa-light fa-comment"></i>
-                                            10 Comments
+                                            {{ $blog->countComment ?? 0 }} Comments
                                         </span>
                                     </div>
                                     <h5 class="blog__title">
@@ -76,8 +76,8 @@
                                     <div class="blog__btn">
                                         <a class="bd-btn bordered-light is-btn-anim" href="{{ route('blog.show', ['blog' => $blog->slug]) }}">
                                             <span class="bd-btn-inner">
-                                                <span class="bd-btn-normal">Leer más</span>
-                                                <span class="bd-btn-hover">Leer más</span>
+                                                <span class="bd-btn-normal">Read More</span>
+                                                <span class="bd-btn-hover">Read More</span>
                                                 <i class="contentHidden"></i>
                                             </span>
                                         </a>

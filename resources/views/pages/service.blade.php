@@ -11,17 +11,16 @@
                     <div class="col-xl-6 col-lg-8 col-md-9">
                         <div class="breadcrumb__content-wrapper p-relative z-index-1">
                             <div class="breadcrumb__title-wrapper text-center">
-                                <h1 class="breadcrumb__title mb-25">Servicios</h1>
+                                <h1 class="breadcrumb__title mb-25">How I Build</h1>
                                 <p class="mb-15">
-                                    ¡Hablemos de su visión y de cómo podemos hacerla realidad a través de un desarrollo web completo y personalizado!
+                                    From first idea to real-world launch. My process for turning concepts into working products.
                                 </p>
                             </div>
                             <div class="breadcrumb__menu text-center">
                                 <nav>
                                     <ul>
-                                        <li><span><a href="">Inicio</a></span></li>
-                                        {{-- <li><span><a href="services.html">Servicio</a></span></li> --}}
-                                        <li><span>Servicio</span></li>
+                                        <li><span><a href="{{ route('welcome') }}">Home</a></span></li>
+                                        <li><span>Process</span></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -32,198 +31,118 @@
         </section>
         <!-- breadcrumb area  end -->
 
-        <!-- service area start -->
+        <!-- process area start -->
         <section class="bd-service__area section-space">
             <div class="container">
+                <div class="row g-5 section__title-space justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section__title-wrapper text-center">
+                            <span class="section__subtitle bg-field">THE PROCESS</span>
+                            <h2 class="section__title">IDEA → BUILD → LAUNCH → LEARN</h2>
+                            <p>This isn't about selling services. It's about showing you how I turn ideas into products and what I learn along the way.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row g-5">
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s"
+                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s"
                         data-wow-duration="1s">
                         <div class="service__wrapper service__item style-three bordered-style text-center">
                             <div class="contentHidden"></div>
                             <div class="contentHidden"></div>
                             <span class="service__icon-wrap">
-                                <i class="icon-design"></i>
+                                <i class="fa-light fa-lightbulb"></i>
                             </span>
                             <div class="service__content">
-                                <h5 class="service__title"><a href="{{ route('portfolio') }}">Diseño web</a></h5>
-                                <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
-                                <div class="service__more">
-                                    <a class="contentHidden" href="{{ route('portfolio') }}">contentHidden <span><i
-                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="{{ route('portfolio') }}"> <span class="icon__box"><i
-                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
-                                </div>
+                                <h5 class="service__title">IDEA</h5>
+                                <p>Identify a problem or opportunity. Research real user needs. Define what the MVP must do and nothing more.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp d-none" data-wow-delay=".5s"
+                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s"
                         data-wow-duration="1s">
                         <div class="service__wrapper service__item style-three bordered-style text-center">
                             <div class="contentHidden"></div>
                             <div class="contentHidden"></div>
                             <span class="service__icon-wrap">
-                                <i class="icon-game"></i>
+                                <i class="fa-light fa-code"></i>
                             </span>
                             <div class="service__content">
-                                <h5 class="service__title"><a href="service-details.html">Game Development</a></h5>
-                                <p>Share design documents, a storyboards, or game.</p>
-                                <div class="service__more">
-                                    <a class="contentHidden" href="service-details.html">contentHidden <span><i
-                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="service-details.html"> <span class="icon__box"><i
-                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
-                                </div>
+                                <h5 class="service__title">BUILD</h5>
+                                <p>Ship fast. Build the core functionality first. Make technical decisions based on speed and reliability, not trends.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s"
+                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s"
                         data-wow-duration="1s">
                         <div class="service__wrapper service__item style-three bordered-style text-center">
                             <div class="contentHidden"></div>
                             <div class="contentHidden"></div>
                             <span class="service__icon-wrap">
-                                <i class="icon-project"></i>
+                                <i class="fa-light fa-rocket"></i>
                             </span>
                             <div class="service__content">
-                                <h5 class="service__title"><a href="{{ route('service') }}">Diseño de proyecto</a></h5>
-                                <p>Desarrollador web full stack con habilidades en diseño de proyectos, creando soluciones atractivas y funcionales.</p>
-                                <div class="service__more">
-                                    <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i
-                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="{{ route('service') }}"> <span class="icon__box"><i
-                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
-                                </div>
+                                <h5 class="service__title">LAUNCH</h5>
+                                <p>Put it in front of real users. Set up hosting, payments, communication and automation. Get the product live.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s"
+                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s"
                         data-wow-duration="1s">
                         <div class="service__wrapper service__item style-three bordered-style text-center">
                             <div class="contentHidden"></div>
                             <div class="contentHidden"></div>
                             <span class="service__icon-wrap">
-                                <i class="icon-ux-design"></i>
+                                <i class="fa-light fa-chart-line"></i>
                             </span>
                             <div class="service__content">
-                                <h5 class="service__title"><a href="{{ route('portfolio') }}">UX/UI Design</a></h5>
-                                <p>Experiencias digitales impactantes.</p>
-                                <div class="service__more">
-                                    <a class="contentHidden" href="{{ route('portfolio') }}">contentHidden <span><i
-                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="{{ route('portfolio') }}"> <span class="icon__box"><i
-                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s"
-                        data-wow-duration="1s">
-                        <div class="service__wrapper service__item style-three bordered-style text-center">
-                            <div class="contentHidden"></div>
-                            <div class="contentHidden"></div>
-                            <span class="service__icon-wrap">
-                                <i class="icon-application"></i>
-                            </span>
-                            <div class="service__content">
-                                <h5 class="service__title"><a href="#">Aplicación móvil</a></h5>
-                                <p>Estoy aprendiendo a desarrollar aplicaciones móviles para iOS con Swift y Android con Kotlin, creando soluciones funcionales para ambas plataformas.</p>
-                                <div class="service__more">
-                                    <a class="contentHidden" href="#">contentHidden <span><i
-                                                class="fa-sharp fa-light fa-arrow-right"></i></span></a>
-                                    <a class="circle-btn is-hover" href="#"> <span class="icon__box"><i
-                                                class="fa-regular fa-arrow-right-long"> </i></span></a>
-                                </div>
+                                <h5 class="service__title">LEARN</h5>
+                                <p>Collect feedback. Monitor real usage. Iterate based on evidence, not assumptions. Document what works and what doesn't.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- service area end -->
+        <!-- process area end -->
 
         <!-- about area start -->
         <section class="bd-about__area section-space theme-bg-secondary p-relative">
             <div class="about__shape">
-                <img class="about__shape-two" src="{{ Vite::asset('resources/imgs/shape/lamp-shape.png') }}" alt="image not found">
+                <img class="about__shape-two" src="{{ Vite::asset('resources/imgs/shape/lamp-shape.png') }}" alt="Decorative shape">
             </div>
             <div class="container">
-                <div class="row g-5">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="row g-5 align-items-lg-center">
+                    <div class="col-xl-6 col-lg-6">
                         <div class="about__thumb-wrapper style-four wow fadeInLeft" data-wow-delay=".3s">
                             <div class="about__thumb">
-                                <img src="{{ Vite::asset('resources/imgs/about/about-04.png') }}" alt="image not found">
+                                <img src="{{ Vite::asset('resources/imgs/about/about-04.png') }}" alt="Developer workspace setup">
                                 <div class="about__shape">
                                     <img class="about__shape-one" src="{{ Vite::asset('resources/imgs/shape/dot-small.png') }}"
-                                        alt="image not found">
-                                </div>
-                                <div class="about__counter-wrapper">
-                                    <div class="about__counter-info">
-                                        <div class="about__counter-count">
-                                            <h2><span class="counter">5</span>+</h2>
-                                        </div>
-                                        <p>Años de experiencia</p>
-                                    </div>
-                                    <div class="about__counter-info d-none">
-                                        <div class="about__counter-count">
-                                            <h2><span class="counter">500</span>+</h2>
-                                        </div>
-                                        <p>Clientes estratificadas</p>
-                                    </div>
+                                        alt="Decorative shape">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="col-xl-6 col-lg-6">
                         <div class="about__content style-four  wow fadeInRight" data-wow-delay=".3s">
                             <div class="section__title-wrapper mb-25">
                                 <div class="section__title-wrapper">
-                                    <span class="section__subtitle sec-border">Sobre mi servicio</span>
-                                    <h2 class="section__title">Convierte tu idea en una realidad digital con desarrollo web a medida</h2>
+                                    <span class="section__subtitle sec-border">THE STACK</span>
+                                    <h2 class="section__title">Tools I use to build products.</h2>
                                     <p class="contentHidden">contentHiddenText</p>
                                 </div>
                             </div>
                             <p>
-                                A nivel profesional, trabajo con un equipo experto en desarrollo web, backend y diseño gráfico. 
-                                Pero ahora estoy enfocándome en construir mi propia marca de forma independiente, llevando adelante proyectos como desarrollador full stack y creando soluciones digitales a medida. 🚀
+                                I choose tools based on what gets products shipped and working, not what's trending. My stack: <strong>Laravel</strong> for backends, <strong>Node.js + Express</strong> for APIs, <strong>Angular</strong> for frontends, and <strong>MySQL</strong> for databases.
                             </p>
-                            <p class="d-none">
-                                Colaboro diariamente con un destacado profesional del sector, un experto en desarrollo de aplicaciones para páginas web, backend y diseño gráfico. 
-                                Después de años de trabajo conjunto, somos el equipo perfecto para hacer realidad tu idea digital.
+                            <p>
+                                When I need speed, I reach for tools I know well. When I need to learn something new, I document the process and share what I discover.
                             </p>
-                            <div class="about__info-list">
-                                <div class="about__info-item">
-                                    <div class="about__info-icon">
-                                        <span><i class="icon-partner"></i></span>
-                                    </div>
-                                    <div class="about__info-content">
-                                        <h5>Confiable</h5>
-                                        <p>Un servicio en el que puedes confiar, con transparencia y compromiso en cada proyecto.</p>
-                                    </div>
-                                </div>
-                                <div class="about__info-item">
-                                    <div class="about__info-icon">
-                                        <span><i class="icon-grow"></i></span>
-                                    </div>
-                                    <div class="about__info-content">
-                                        <h5>Mejora</h5>
-                                        <p>Soluciones diseñadas para impulsar tu negocio y potenciar tu presencia digital.</p>
-                                    </div>
-                                </div>
-                                <div class="about__info-item">
-                                    <div class="about__info-icon">
-                                        <span><i class="icon-strategy"></i></span>
-                                    </div>
-                                    <div class="about__info-content">
-                                        <h5>Estrategia</h5>
-                                        <p>Desarrollo web con una planificación estratégica enfocada en resultados.</p>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="about__btn">
-                                <a class="bd-btn is-btn-anim bordered-blue" href="{{ route('portfolio') }}">
+                                <a class="bd-btn is-btn-anim bordered-blue" href="{{ route('my-project') }}">
                                     <span class="bd-btn-inner">
-                                        <span class="bd-btn-normal">Saber más</span>
-                                        <span class="bd-btn-hover">Saber más</span>
+                                        <span class="bd-btn-normal">See What I've Built</span>
+                                        <span class="bd-btn-hover">See What I've Built</span>
                                         <i class="contentHidden"></i>
                                     </span>
                                 </a>
@@ -267,7 +186,7 @@
                                     <div class=" portfolio__item style-six">
                                         <div class="portfolio__item-thumb" data-background="{{ asset('storage/' . $portfolio->imagen) }}">
                                             <div class="portfolio__item-btn">
-                                                <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}" class="circle-btn is-bg-white is-btn-large">
+                                                <a href="{{ route('my-project.show', $portfolio->slug) }}" class="circle-btn is-bg-white is-btn-large">
                                                     <span class="icon__box">
                                                         <i class="fa-regular fa-arrow-right-long"></i>
                                                     </span>
@@ -277,10 +196,10 @@
                                         <div class="portfolio__item-content">
                                             <div class="portfolio__item-info">
                                                 <div class="portfolio__tag">
-                                                    <a href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a>
+                                                    <a href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a>
                                                 </div>
                                                 <h5 class="portfolio__item-title underline"><a
-                                                    href="{{ route('portfolio.show', ['portfolio' => $portfolio->slug]) }}">{{ $portfolio->titulo }}</a></h5>
+                                                    href="{{ route('my-project.show', $portfolio->slug) }}">{{ $portfolio->titulo }}</a></h5>
                                             </div>
                                         </div>
                                     </div>
