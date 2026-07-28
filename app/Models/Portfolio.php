@@ -27,7 +27,9 @@ class Portfolio extends Model
         'imagen',
         'mvp_url', 
         'slug',
-        'category_id'
+        'category_id',
+        'show_on_home',
+        'featured',
     ];
 
     protected static function booted()
@@ -91,6 +93,23 @@ class Portfolio extends Model
                     ->createOptionForm(Category::getForm())
                     ->editOptionForm(Category::getForm())
                     ->required(),
+                ]),
+
+                Section::make('Visibility Settings')
+                ->description('Control where this portfolio appears on the public website')
+                ->columns(2)
+                ->schema([
+                    Toggle::make('show_on_home')
+                        ->label('Show on Homepage')
+                        ->helperText('Display in Products & Experiments section')
+                        ->default(false)
+                        ->inline(false),
+                        
+                    Toggle::make('featured')
+                        ->label('Featured Product')
+                        ->helperText('Highlight in Product Spotlight (only one product should be featured)')
+                        ->default(false)
+                        ->inline(false),
                 ]),
         ];
     }

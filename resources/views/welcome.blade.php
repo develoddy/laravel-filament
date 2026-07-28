@@ -2,9 +2,13 @@
 
 @section('content')
 <main>
-    <!-- Banner area start -->
+    <!-- Hero area start -->
     @include("pages.welcome._banner")
-    <!-- Banner area end -->
+    <!-- Hero area end -->
+
+    <!-- Product Spotlight area start -->
+    @include("pages.welcome._product-spotlight")
+    <!-- Product Spotlight area end -->
 
     <!-- About area start -->
     @include("pages.welcome._about")

@@ -11,8 +11,18 @@ class WelcomeController extends Controller
      */
     public function index()
     {   
-        $portfolios = Portfolio::latest()->get();
-        return view('welcome', compact('portfolios'));
+        // Get featured product with relationships
+        $featuredProduct = Portfolio::with(['category', 'details'])
+            ->where('featured', true)
+            ->first();
+        
+        // Get portfolios marked for home display with relationships
+        $homePortfolios = Portfolio::with(['category', 'details'])
+            ->where('show_on_home', true)
+            ->latest()
+            ->get();
+        
+        return view('welcome', compact('featuredProduct', 'homePortfolios'));
     }
 
     /**

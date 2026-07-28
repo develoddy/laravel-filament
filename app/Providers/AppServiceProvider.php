@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\Models\Portfolio;
+use App\Observers\PortfolioObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,5 +24,8 @@ class AppServiceProvider extends ServiceProvider
     {
         // Set Default String Length
         Schema::defaultStringLength(191);
+        
+        // Register Portfolio Observer for featured uniqueness
+        Portfolio::observe(PortfolioObserver::class);
     }
 }

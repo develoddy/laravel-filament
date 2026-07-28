@@ -88,8 +88,10 @@ class PortfolioDetail extends Model
                         ->options([
                             'Live' => 'Live 🚀',
                             'Testing' => 'Testing 🧪',
+                            'Paused' => 'Paused ⏸️',
+                            'In Progress' => 'In Progress 🚧',
                         ])
-                        ->default('Testing')
+                        ->default('In Progress')
                         ->columnSpanFull(),
 
                     TextInput::make('stack')

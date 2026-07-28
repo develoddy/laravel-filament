@@ -41,6 +41,14 @@ class PortfolioResource extends Resource
                 Tables\Columns\TextColumn::make('titulo'),
                 Tables\Columns\TextColumn::make('descripcion')->limit(250),
                 Tables\Columns\ImageColumn::make('imagen'),
+                Tables\Columns\IconColumn::make('show_on_home')
+                    ->label('On Home')
+                    ->boolean()
+                    ->sortable(),
+                Tables\Columns\IconColumn::make('featured')
+                    ->label('Featured')
+                    ->boolean()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('mvp_url')
                     ->label('MVP')
                     ->limit(30)
