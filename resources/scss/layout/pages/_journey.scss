@@ -1,0 +1,206 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  Journey / Building in Public Section
+/*----------------------------------------*/
+
+.bd-journey__area {
+  position: relative;
+  overflow: hidden;
+}
+
+// Lead text styling
+.journey__lead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--bd-text-body);
+  margin-bottom: 1rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media #{$xs, $sm} {
+    font-size: 1rem;
+  }
+}
+
+.journey__sublead {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--bd-text-secondary);
+  font-style: italic;
+  margin-top: 0.75rem;
+
+  @media #{$xs, $sm} {
+    font-size: 0.9375rem;
+  }
+}
+
+// Process container
+.journey__process {
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  @media #{$xs, $sm} {
+    margin-top: 40px;
+  }
+}
+
+// Process grid
+.journey__grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+
+  @media #{$md} {
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    gap: 1.25rem;
+  }
+
+  @media #{$sm} {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    
+    // Hide middle arrows on mobile
+    .journey__arrow:nth-of-type(2),
+    .journey__arrow:nth-of-type(4) {
+      display: none;
+    }
+    
+    // Reorder for 2x2 grid
+    .journey__step:nth-of-type(1) { order: 1; } // IDEA
+    .journey__arrow:nth-of-type(1) { order: 2; }
+    .journey__step:nth-of-type(2) { order: 3; } // BUILD
+    .journey__step:nth-of-type(3) { order: 4; grid-column: 1; } // LAUNCH
+    .journey__arrow:nth-of-type(3) { order: 5; }
+    .journey__step:nth-of-type(4) { order: 6; } // LEARN
+  }
+
+  @media #{$xs} {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    
+    // Show all arrows vertically
+    .journey__arrow {
+      display: flex !important;
+      justify-content: center;
+      order: initial !important;
+      
+      i {
+        transform: rotate(90deg);
+      }
+    }
+    
+    // Reset order for vertical layout
+    .journey__step,
+    .journey__arrow {
+      order: initial !important;
+      grid-column: 1 !important;
+    }
+  }
+}
+
+// Step styling
+.journey__step {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(var(--bd-theme-primary-rgb), 0.3);
+    transform: translateY(-4px);
+  }
+
+  @media #{$md} {
+    padding: 1.5rem 1rem;
+    min-height: 120px;
+  }
+
+  @media #{$xs, $sm} {
+    padding: 1.5rem 1rem;
+    min-height: 100px;
+  }
+}
+
+.bd-theme-light .journey__step {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.06);
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+}
+
+.journey__step-content {
+  width: 100%;
+}
+
+.journey__step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bd-text-primary);
+  margin-bottom: 0.5rem;
+
+  @media #{$xs, $sm} {
+    font-size: 1.125rem;
+  }
+}
+
+.journey__step-desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--bd-text-secondary);
+  margin: 0;
+  font-weight: 400;
+
+  @media #{$xs, $sm} {
+    font-size: 0.8125rem;
+  }
+}
+
+// Arrow styling
+.journey__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bd-theme-primary);
+  font-size: 1.25rem;
+  opacity: 0.6;
+
+  @media #{$xs, $sm} {
+    font-size: 1.125rem;
+  }
+}
+
+// Social CTAs
+.journey__social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  @media #{$xs} {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+// Spacing utilities
+.mt-60 {
+  margin-top: 60px;
+
+  @media #{$xs, $sm} {
+    margin-top: 40px;
+  }
+}
