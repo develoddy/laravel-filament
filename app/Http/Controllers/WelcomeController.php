@@ -22,7 +22,7 @@ class WelcomeController extends Controller
             ->latest()
             ->get();
         
-        return view('welcome', compact('featuredProduct', 'homePortfolios'));
+        return view('welcome-v2', compact('featuredProduct', 'homePortfolios'));
     }
 
     /**
