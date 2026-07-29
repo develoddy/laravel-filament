@@ -13,6 +13,8 @@
     @include('pages.welcome-v2._products')
 
     @include('pages.welcome-v2._why-lujandev')
+    
+    @include('pages.welcome-v2._designSkills')
 
     @include('pages.welcome-v2._founder')
 
