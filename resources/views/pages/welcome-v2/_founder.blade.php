@@ -20,7 +20,7 @@
                     <div class="section__title-wrapper mb-25">
                         <span class="section__subtitle mb-15">FOUNDER</span>
                         <h2 class="section__title">Hola, soy Eddy Luján.</h2>
-                        <p><strong>Software Engineer. Founder de LujanDev.</strong></p>
+                        <p><strong>Software Developer · Founder de LujanDev.</strong></p>
                     </div>
                     <div class="swiper testimonial__active p-relative">
                         <div class="swiper-wrapper">
@@ -44,9 +44,17 @@
                                         </a>
                                     </div>
                                     <div class="testimonial__text">
-                                        <p>Trabajo creando software y, cuando termina mi jornada, sigo construyendo.
-                                            LujanDev nació para convertir ideas en productos reales y compartir todo el proceso públicamente: arquitectura, bugs, decisiones técnicas y aprendizajes.
-                                            No se trata de vender cursos ni promesas. Se trata de construir.</p>
+                                        <p>Trabajo como Software Engineer y, cuando termina mi jornada, sigo construyendo.</p>
+
+                                        <p>LujanDev nació con una idea muy clara: crear una plataforma desde la que desarrollar y lanzar productos reales, aprendiendo y mejorando con cada uno de ellos.</p>
+
+                                        <p>Cada nuevo producto reutiliza la base del anterior. Cada decisión técnica fortalece la plataforma. Cada error se convierte en un aprendizaje para el siguiente proyecto.</p>
+
+                                        <p>Por eso comparto el proceso públicamente: la arquitectura, los lanzamientos, los retos, los errores y todo lo que ocurre mientras construyo.</p>
+
+                                        <p>Porque LujanDev no trata solo de escribir código. Trata de crear productos con propósito, compartir el camino y construir una plataforma que evoluciona con cada nueva idea.</p>
+                                    
+                                        <small>One platform. <br>Multiple products.</small>
                                     </div>
                                     <div class="testimonial__avatar-item d-none">
                                         <div class="testimonial__avatar-thumb">

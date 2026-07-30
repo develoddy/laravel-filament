@@ -11,18 +11,21 @@
                                  <span class="section__subtitle bg-field wow fadeInUp" data-wow-delay=".3s"
                                      data-wow-duration=".7s">BUILDING IN PUBLIC</span>
                                  <h1 class="banner__title xlarge wow fadeInUp" data-wow-delay=".5s"
-                                     data-wow-duration=".9s">Construyo productos reales <span class="gradient-text-2">bajo LujanDev.</span>
+                                     data-wow-duration=".9s">Una plataforma. <span class="gradient-text-2">Múltiples productos.</span>
                                  </h1>
                                  <p class="wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                     Soy Eddy Luján. Desarrollo productos desde cero, documento el proceso y comparto tanto los aciertos como los errores que encuentro por el camino. </p>
+                                    LujanDev es el ecosistema desde el que construyo,
+                                    lanzo y evoluciono productos reales, reutilizando
+                                    una misma base tecnológica y compartiendo públicamente
+                                    todo el proceso. </p>
                                  <div class="banner__btn-wrap wow fadeInUp" data-wow-delay=".8s"
                                      data-wow-duration="1.3s">
                                      <div class="banner__btn">
-                                         <a class="bd-btn is-bg-gradient" href="portfolio.html"><span class="">Ver qué estoy construyendo<i class="contentHidden"></i></span></a>
+                                         <a class="bd-btn is-bg-gradient" href="portfolio.html"><span class="">Explorar los productos<i class="contentHidden"></i></span></a>
                                      </div>
                                      <div class="banner__btn">
                                          <a class="bd-btn is-border-gradient is-bg-none" href="about.html"><span
-                                                 class="">Conocer mi historia<i class="contentHidden"></i></span></a>
+                                                 class="">Ver cómo lo construyo<i class="contentHidden"></i></span></a>
                                      </div>
                                  </div>
                              </div>
