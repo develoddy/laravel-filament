@@ -1,5 +1,5 @@
 <!-- testimonial area start -->
-<section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1">
+<section class="bd-testimonial__area section-space p-relative z-index-1">
     <div class="container">
         <div class="row align-items-center g-5 wow fadeInUp" data-wow-delay=".3s">
             <div class="col-xl-5 col-lg-5">

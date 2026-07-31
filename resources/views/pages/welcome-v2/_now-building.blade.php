@@ -5,12 +5,12 @@
              <div class="col-xl-6 col-lg-6">
                  <div class="about__thumb-wrapper style-six wow fadeInLeft" data-wow-delay=".3s">
                      <div class="about__thumb">
-                         <img src="{{ Vite::asset('resources/imgs/about/about-06.png') }}" alt="image not found">
+                         <img src="{{ Vite::asset('resources/imgs/about/platform_lujandev.png') }}" alt="One platform. Multiple products.">
                      </div>
-                     <div class="counter__wrap">
-                         <h2 class="counter__title"><small class="">LIVE</small></h2>
+                     <div class="counter__wrap d-none">
+                         <h2 class="counter__title"><small class="">BUILDING</small></h2>
                          <div class="counter__details">
-                             <p>En producción</p>
+                             <p>Platform Core</p>
                          </div>
                      </div>
                  </div>
@@ -19,37 +19,36 @@
                  <div class="about__content style-six  wow fadeInRight" data-wow-delay=".3s">
                      <div class="section__title-wrapper mb-25">
                          <div class="section__title-wrapper">
-                             <span class="section__subtitle bg-field">AHORA CONSTRUYENDO · PRODUCTO #001</span>
-                             <h2 class="section__title">LujanDev Store</h2>
+                             <span class="section__subtitle bg-field">AHORA CONSTRUYENDO · PLATFORM CORE</span>
+                             <h2 class="section__title">La base que conecta todos los productos.</h2>
                              <p class="contentHidden">contentHiddenText</p>
                          </div>
                      </div>
-                     <p>El primer producto construido bajo LujanDev: una plataforma de
-                        ecommerce desarrollada desde cero e integrada con pagos,
-                        producción y gestión automática de pedidos.</p>
+                     <p>Estoy construyendo el Platform Core de LujanDev: una base tecnológica compartida diseñada para lanzar y hacer evolucionar múltiples productos sin empezar desde cero cada vez.</p>
                     <p>
-                        La tienda ya está en producción y completó su primera
-                        compra real. Ahora el objetivo es mejorar el producto,
-                        documentar el proceso y validarlo con clientes reales.
+                        El ecommerce continúa funcionando en producción como
+                        Producto #001. Ahora estoy separando y fortaleciendo
+                        capacidades compartidas como usuarios, tenants, módulos,
+                        permisos, archivos y notificaciones.
                     </p>
                      <div class="about__info-list">
                          <div class="info__list">
                              <ul>
                                  <li>
                                      <i class="icon-grow"></i>
-                                     <h6>Pagos con Stripe</h6>
+                                     <h6>Arquitectura escalable</h6>
                                  </li>
                                  <li>
                                      <i class="icon-partner"></i>
-                                     <h6>Producción con Printful</h6>
+                                     <h6>Base compartida</h6>
                                  </li>
                                  <li>
                                      <i class="icon-time"></i>
-                                     <h6>Pedidos automatizados</h6>
+                                     <h6>Productos independientes</h6>
                                  </li>
                                  <li>
                                      <i class="icon-support"></i>
-                                     <h6>Seguimiento en tiempo real</h6>
+                                     <h6>Evolución documentada en público</h6>
                                  </li>
                              </ul>
                          </div>
@@ -62,7 +61,7 @@
                             rel="noopener noreferrer"
                         >
                             <span>
-                                Ver LujanDev Store
+                                Explorar Producto #001
                                 <i class="contentHidden"></i>
                             </span>
                         </a>

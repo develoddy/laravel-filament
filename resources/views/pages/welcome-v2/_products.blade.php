@@ -5,7 +5,7 @@
 @if($homePortfolios->isNotEmpty())
 
 <!-- Products area start -->
-<section id="homeworks" class="bd-portfolio__area section-space">
+<section id="homeworks" class="bd-portfolio__area section-space theme-bg-secondary">
     <div class="container">
 
         <div class="row g-5 align-items-end section__title-space">
@@ -14,16 +14,15 @@
                 <div class="section__title-wrapper">
 
                     <span class="section__subtitle">
-                        PRODUCTOS
+                        PRODUCTOS DEL ECOSISTEMA
                     </span>
 
                     <h2 class="section__title">
-                        Lo que estoy construyendo
+                        Productos que nacen de una misma base.
                     </h2>
 
                     <p>
-                        Productos reales desarrollados bajo LujanDev,
-                        desde la idea hasta producción.
+                        Cada producto resuelve un problema diferente, pero todos comparten la plataforma, las capacidades y los aprendizajes construidos bajo LujanDev.
                     </p>
 
                 </div>

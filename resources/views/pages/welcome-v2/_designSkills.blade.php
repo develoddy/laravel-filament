@@ -16,7 +16,7 @@
                     <div class="skill__icon-thumb white-bg">
                         <img src="{{ Vite::asset('resources/imgs/skill/01.png') }}" alt="img not found">
                     </div>
-                    <div class="skill__content">
+                    <div class="skill__content d-none">
                         <h3><span class="counter">88</span>%</h3>
                         <span class="skill__name">Figma</span>
                     </div>
@@ -27,7 +27,7 @@
                     <div class="skill__icon-thumb pink-bg">
                         <img src="{{ Vite::asset('resources/imgs/skill/02.png') }}" alt="img not found">
                     </div>
-                    <div class="skill__content">
+                    <div class="skill__content d-none">
                         <h3><span class="counter">98</span>%</h3>
                         <span class="skill__name">Vision</span>
                     </div>
@@ -38,7 +38,7 @@
                     <div class="skill__icon-thumb white-bg">
                         <img src="{{ Vite::asset('resources/imgs/skill/03.png') }}" alt="img not found">
                     </div>
-                    <div class="skill__content">
+                    <div class="skill__content d-none">
                         <h3><span class="counter">78</span>%</h3>
                         <span class="skill__name">Sketch</span>
                     </div>
@@ -49,7 +49,7 @@
                     <div class="skill__icon-thumb red-bg">
                         <img src="{{ Vite::asset('resources/imgs/skill/04.png') }}" alt="img not found">
                     </div>
-                    <div class="skill__content">
+                    <div class="skill__content d-none">
                         <h3><span class="counter">68</span>%</h3>
                         <span class="skill__name">Cloud</span>
                     </div>

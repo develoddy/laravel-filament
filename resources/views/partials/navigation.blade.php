@@ -7,7 +7,7 @@
                     <div class="header__left">
                         <div class="header__logo">
                             <a href="{{ route('welcome') }}">
-                                <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo-white.png') }}" alt="Lujandev" title="Lujandev"> 
+                                <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo-white.png') }}" alt="LujanDev | One platform. Multiple products." title="LujanDev | One platform. Multiple products."> 
                             </a>
                         </div>
                     </div>

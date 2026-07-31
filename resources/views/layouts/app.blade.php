@@ -47,7 +47,7 @@
                         <div class="offcanvas__top d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
                                 <a href="{{ route('welcome') }}">
-                                    <img src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="LujanDev logo">
+                                    <img src="{{ Vite::asset('resources/imgs/logo/logo-white-v2.png') }}" alt="LujanDev | One platform. Multiple products." title="LujanDev | One platform. Multiple products.">
                                 </a>
                             </div>
                             <div class="offcanvas__close">
@@ -62,13 +62,13 @@
                         <div class="offcanvas__social">
                             <h4 class="offcanvas__title mb-20">Subscribe & Follow</h4>
                             <div class="theme__social">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="icon-twiter"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="#"><i class="fa-brands fa-behance"></i></a>
+                                {{-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> --}}
+                                <a href="https://x.com/lujandev/"><i class="icon-twiter"></i></a>
+                                <a href="https://www.instagram.com/lujandev/"><i class="fa-brands fa-linkedin"></i></a>
+                                {{-- <a href="#"><i class="fa-brands fa-behance"></i></a> --}}
                             </div>
                         </div>
-                        <div class="offcanvas__btn">
+                        <div class="offcanvas__btn d-none">
                             <div class="header__btn-wrap">
                                 <a class="bd-btn is-btn-anim" href="#">
                                     <span class="bd-btn-inner"><span class="bd-btn-normal">Purchase now</span>
@@ -76,9 +76,6 @@
                                     <i class="contentHidden"></i>
                                     </span>
                                 </a>
-
-
-
                             </div>
                         </div>
                     </div>
