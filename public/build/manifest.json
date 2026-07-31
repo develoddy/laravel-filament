@@ -143,6 +143,18 @@
     "file": "assets/about_why-lujandev-2be6973c.png",
     "src": "resources/imgs/about/about_why-lujandev.png"
   },
+  "resources/imgs/about/platform_lujandev-v1.png": {
+    "file": "assets/platform_lujandev-v1-78bb009c.png",
+    "src": "resources/imgs/about/platform_lujandev-v1.png"
+  },
+  "resources/imgs/about/platform_lujandev-v2.png": {
+    "file": "assets/platform_lujandev-v2-1f648642.png",
+    "src": "resources/imgs/about/platform_lujandev-v2.png"
+  },
+  "resources/imgs/about/platform_lujandev.png": {
+    "file": "assets/platform_lujandev-dd18b70d.png",
+    "src": "resources/imgs/about/platform_lujandev.png"
+  },
   "resources/imgs/award/award-1.jpg": {
     "file": "assets/award-1-86d94fcf.jpg",
     "src": "resources/imgs/award/award-1.jpg"
@@ -453,31 +465,31 @@
   },
   "resources/imgs/blog/post/blog-post-01.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-04.png"
+    "src": "resources/imgs/blog/post/blog-post-03.png"
   },
   "resources/imgs/blog/post/blog-post-02.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-04.png"
+    "src": "resources/imgs/blog/post/blog-post-03.png"
   },
   "resources/imgs/blog/post/blog-post-03.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-04.png"
+    "src": "resources/imgs/blog/post/blog-post-03.png"
   },
   "resources/imgs/blog/post/blog-post-04.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-04.png"
+    "src": "resources/imgs/blog/post/blog-post-03.png"
   },
   "resources/imgs/blog/post/sidebar/sidebar-post-blog-01.png": {
     "file": "assets/sidebar-post-blog-01-5f5c05a8.png",
-    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png"
+    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png"
   },
   "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png": {
     "file": "assets/sidebar-post-blog-01-5f5c05a8.png",
-    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png"
+    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png"
   },
   "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png": {
     "file": "assets/sidebar-post-blog-01-5f5c05a8.png",
-    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png"
+    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png"
   },
   "resources/imgs/blog/post/slider/postblog-slider-01.png": {
     "file": "assets/postblog-slider-01-6ffb233c.png",
@@ -671,13 +683,9 @@
     "file": "assets/error-1b834962.png",
     "src": "resources/imgs/user/user-12.png"
   },
-  "resources/imgs/favicon-cold.ico": {
-    "file": "assets/favicon-cold-df736769.ico",
-    "src": "resources/imgs/favicon-cold.ico"
-  },
-  "resources/imgs/favicon-off.ico": {
-    "file": "assets/favicon-off-36db46cb.ico",
-    "src": "resources/imgs/favicon-off.ico"
+  "resources/imgs/favicon-old.png": {
+    "file": "assets/favicon-old-2acd9562.png",
+    "src": "resources/imgs/favicon-old.png"
   },
   "resources/imgs/favicon-old.svg": {
     "file": "assets/favicon-old-1350d665.svg",
@@ -692,7 +700,7 @@
     "src": "resources/imgs/favicon.ico"
   },
   "resources/imgs/favicon.png": {
-    "file": "assets/favicon-2acd9562.png",
+    "file": "assets/favicon-b49de423.png",
     "src": "resources/imgs/favicon.png"
   },
   "resources/imgs/footer/small/footer-small-01.png": {
@@ -849,27 +857,27 @@
   },
   "resources/imgs/landing/inner/landing-inner-07.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-10.png"
+    "src": "resources/imgs/landing/inner/landing-inner-12.png"
   },
   "resources/imgs/landing/inner/landing-inner-08.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-10.png"
+    "src": "resources/imgs/landing/inner/landing-inner-12.png"
   },
   "resources/imgs/landing/inner/landing-inner-09.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-10.png"
+    "src": "resources/imgs/landing/inner/landing-inner-12.png"
   },
   "resources/imgs/landing/inner/landing-inner-10.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-10.png"
+    "src": "resources/imgs/landing/inner/landing-inner-12.png"
   },
   "resources/imgs/landing/inner/landing-inner-11.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-10.png"
+    "src": "resources/imgs/landing/inner/landing-inner-12.png"
   },
   "resources/imgs/landing/inner/landing-inner-12.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-10.png"
+    "src": "resources/imgs/landing/inner/landing-inner-12.png"
   },
   "resources/imgs/landing/services/landing-doc.png": {
     "file": "assets/landing-doc-e3abf8ae.png",
@@ -895,12 +903,20 @@
     "file": "assets/logo-white-black-d4067e00.png",
     "src": "resources/imgs/logo/logo-white-black.png"
   },
-  "resources/imgs/logo/logo-white-old.png": {
-    "file": "assets/logo-white-old-3885d084.png",
-    "src": "resources/imgs/logo/logo-white-old.png"
+  "resources/imgs/logo/logo-white-v1.png": {
+    "file": "assets/logo-white-v1-69225eda.png",
+    "src": "resources/imgs/logo/logo-white-v1.png"
+  },
+  "resources/imgs/logo/logo-white-v2.png": {
+    "file": "assets/logo-white-v2-11a03ad0.png",
+    "src": "resources/imgs/logo/logo-white-v2.png"
+  },
+  "resources/imgs/logo/logo-white-v3.png": {
+    "file": "assets/logo-white-v3-49654717.png",
+    "src": "resources/imgs/logo/logo-white-v3.png"
   },
   "resources/imgs/logo/logo-white.png": {
-    "file": "assets/logo-white-69225eda.png",
+    "file": "assets/logo-white-96d71c90.png",
     "src": "resources/imgs/logo/logo-white.png"
   },
   "resources/imgs/logo/logo.png": {
@@ -1105,11 +1121,11 @@
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-19.png": {
     "file": "assets/portfolio-masonary-19-8f4c24d7.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-19.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-20.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-20.png": {
     "file": "assets/portfolio-masonary-19-8f4c24d7.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-19.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-20.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-21.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
@@ -1601,11 +1617,11 @@
   },
   "resources/imgs/team/team-03.png": {
     "file": "assets/team-03-d9a7a807.png",
-    "src": "resources/imgs/team/team-04.png"
+    "src": "resources/imgs/team/team-03.png"
   },
   "resources/imgs/team/team-04.png": {
     "file": "assets/team-03-d9a7a807.png",
-    "src": "resources/imgs/team/team-04.png"
+    "src": "resources/imgs/team/team-03.png"
   },
   "resources/imgs/team/team-05.png": {
     "file": "assets/team-05-1b5925f1.png",
