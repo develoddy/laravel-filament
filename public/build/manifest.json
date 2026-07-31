@@ -151,8 +151,12 @@
     "file": "assets/platform_lujandev-v2-1f648642.png",
     "src": "resources/imgs/about/platform_lujandev-v2.png"
   },
+  "resources/imgs/about/platform_lujandev-v3.png": {
+    "file": "assets/platform_lujandev-v3-dd18b70d.png",
+    "src": "resources/imgs/about/platform_lujandev-v3.png"
+  },
   "resources/imgs/about/platform_lujandev.png": {
-    "file": "assets/platform_lujandev-dd18b70d.png",
+    "file": "assets/platform_lujandev-9d574803.png",
     "src": "resources/imgs/about/platform_lujandev.png"
   },
   "resources/imgs/award/award-1.jpg": {
@@ -161,15 +165,15 @@
   },
   "resources/imgs/award/award-2.jpg": {
     "file": "assets/award-2-8aa78151.jpg",
-    "src": "resources/imgs/award/award-4.jpg"
+    "src": "resources/imgs/award/award-3.jpg"
   },
   "resources/imgs/award/award-3.jpg": {
     "file": "assets/award-2-8aa78151.jpg",
-    "src": "resources/imgs/award/award-4.jpg"
+    "src": "resources/imgs/award/award-3.jpg"
   },
   "resources/imgs/award/award-4.jpg": {
     "file": "assets/award-2-8aa78151.jpg",
-    "src": "resources/imgs/award/award-4.jpg"
+    "src": "resources/imgs/award/award-3.jpg"
   },
   "resources/imgs/banner/banner-01-OLLD.png": {
     "file": "assets/banner-01-OLLD-50638ea0.png",
@@ -441,15 +445,15 @@
   },
   "resources/imgs/blog/masonary/blog-masonary-04.png": {
     "file": "assets/blog-masonary-04-16942d48.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-06.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-05.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-05.png": {
     "file": "assets/blog-masonary-04-16942d48.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-06.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-05.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-06.png": {
     "file": "assets/blog-masonary-04-16942d48.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-06.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-05.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-07.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
@@ -465,19 +469,19 @@
   },
   "resources/imgs/blog/post/blog-post-01.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-03.png"
+    "src": "resources/imgs/blog/post/blog-post-04.png"
   },
   "resources/imgs/blog/post/blog-post-02.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-03.png"
+    "src": "resources/imgs/blog/post/blog-post-04.png"
   },
   "resources/imgs/blog/post/blog-post-03.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-03.png"
+    "src": "resources/imgs/blog/post/blog-post-04.png"
   },
   "resources/imgs/blog/post/blog-post-04.png": {
     "file": "assets/blog-post-01-baeecab3.png",
-    "src": "resources/imgs/blog/post/blog-post-03.png"
+    "src": "resources/imgs/blog/post/blog-post-04.png"
   },
   "resources/imgs/blog/post/sidebar/sidebar-post-blog-01.png": {
     "file": "assets/sidebar-post-blog-01-5f5c05a8.png",
@@ -857,27 +861,27 @@
   },
   "resources/imgs/landing/inner/landing-inner-07.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-12.png"
+    "src": "resources/imgs/landing/inner/landing-inner-11.png"
   },
   "resources/imgs/landing/inner/landing-inner-08.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-12.png"
+    "src": "resources/imgs/landing/inner/landing-inner-11.png"
   },
   "resources/imgs/landing/inner/landing-inner-09.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-12.png"
+    "src": "resources/imgs/landing/inner/landing-inner-11.png"
   },
   "resources/imgs/landing/inner/landing-inner-10.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-12.png"
+    "src": "resources/imgs/landing/inner/landing-inner-11.png"
   },
   "resources/imgs/landing/inner/landing-inner-11.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-12.png"
+    "src": "resources/imgs/landing/inner/landing-inner-11.png"
   },
   "resources/imgs/landing/inner/landing-inner-12.png": {
     "file": "assets/landing-inner-07-73f740f8.png",
-    "src": "resources/imgs/landing/inner/landing-inner-12.png"
+    "src": "resources/imgs/landing/inner/landing-inner-11.png"
   },
   "resources/imgs/landing/services/landing-doc.png": {
     "file": "assets/landing-doc-e3abf8ae.png",
@@ -1617,11 +1621,11 @@
   },
   "resources/imgs/team/team-03.png": {
     "file": "assets/team-03-d9a7a807.png",
-    "src": "resources/imgs/team/team-03.png"
+    "src": "resources/imgs/team/team-04.png"
   },
   "resources/imgs/team/team-04.png": {
     "file": "assets/team-03-d9a7a807.png",
-    "src": "resources/imgs/team/team-03.png"
+    "src": "resources/imgs/team/team-04.png"
   },
   "resources/imgs/team/team-05.png": {
     "file": "assets/team-05-1b5925f1.png",
@@ -1713,11 +1717,11 @@
   },
   "resources/imgs/video/Diseño sin título (1).mp4": {
     "file": "assets/about-lujandev-79a26e02.mp4",
-    "src": "resources/imgs/video/Diseño sin título (1).mp4"
+    "src": "resources/imgs/video/about-lujandev.mp4"
   },
   "resources/imgs/video/about-lujandev.mp4": {
     "file": "assets/about-lujandev-79a26e02.mp4",
-    "src": "resources/imgs/video/Diseño sin título (1).mp4"
+    "src": "resources/imgs/video/about-lujandev.mp4"
   },
   "resources/imgs/video/video-bg-01.png": {
     "file": "assets/video-bg-01-025d1d45.png",
@@ -1757,7 +1761,7 @@
     "css": [
       "assets/app-1eae5539.css"
     ],
-    "file": "assets/app-e2ff6e11.js",
+    "file": "assets/app-dfa8a1d7.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
