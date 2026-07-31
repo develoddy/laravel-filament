@@ -11,10 +11,10 @@
                                  <span class="section__subtitle bg-field wow fadeInUp" data-wow-delay=".3s"
                                      data-wow-duration=".7s">BUILDING IN PUBLIC</span>
                                  <h1 class="banner__title xlarge wow fadeInUp" data-wow-delay=".5s"
-                                     data-wow-duration=".9s">Construyo productos digitales. <br> <span class="gradient-text-2">Y comparto el proceso.</span>
+                                     data-wow-duration=".9s">Ideas que se convierten<br> <span class="gradient-text-2">en software.</span>
                                  </h1>
                                  <p class="wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    LujanDev es la marca desde la que diseño, desarrollo y lanzo productos digitales, compartiendo el código, las decisiones, los errores y los resultados.</p>
+                                    Comparto cómo una idea evoluciona hasta convertirse en un producto: código, decisiones, errores y aprendizajes.</p>
                                  <div class="banner__btn-wrap wow fadeInUp" data-wow-delay=".8s"
                                      data-wow-duration="1.3s">
                                      <div class="banner__btn">
