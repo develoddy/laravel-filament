@@ -14,15 +14,17 @@
                 <div class="section__title-wrapper">
 
                     <span class="section__subtitle">
-                        PRODUCTOS DEL ECOSISTEMA
+                        LO QUE ESTOY CONSTRUYENDO
                     </span>
 
                     <h2 class="section__title">
-                        Productos que nacen de una misma base.
+                        Productos digitales, del código a producción.
                     </h2>
 
                     <p>
-                        Cada producto resuelve un problema diferente, pero todos comparten la plataforma, las capacidades y los aprendizajes construidos bajo LujanDev.
+                        Aquí documento los productos y proyectos que construyo:
+                        el problema que intentan resolver, las decisiones técnicas,
+                        los errores y todo lo que aprendo al llevarlos a la práctica.
                     </p>
 
                 </div>
@@ -38,11 +40,11 @@
                         <span class="bd-btn-inner">
 
                             <span class="bd-btn-normal">
-                                Ver todos los productos
+                                Ver todos los proyectos
                             </span>
 
                             <span class="bd-btn-hover">
-                                Ver todos los productos
+                                Ver todos los proyectos
                             </span>
 
                             <i class="contentHidden"></i>

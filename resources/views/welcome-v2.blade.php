@@ -31,6 +31,9 @@
     {{-- 8. CTA final --}}
     @include('pages.welcome-v2._follow')
 
+    {{-- 9. Contacto --}}
+    @include('pages.welcome-v2._contact')
+
 </main>
 
 @endsection

@@ -1,159 +1,96 @@
-<!-- testimonial area start -->
+<!-- founder area start -->
 <section class="bd-testimonial__area section-space p-relative z-index-1">
     <div class="container">
+
         <div class="row align-items-center g-5 wow fadeInUp" data-wow-delay=".3s">
+
             <div class="col-xl-5 col-lg-5">
                 <div class="testimonial__thumb-wrap">
+
                     <div class="testimonial__thumb">
+
                         <div class="testimonial__bg"></div>
-                        <img src="{{ Vite::asset('resources/imgs/testimonial/testimonial-01.png') }}" alt="img not found">
-                        <div class="testimonial__thumb-smalld d-none">
-                            <img class="img-one" src="{{ Vite::asset('resources/imgs/user/user-04.png') }}" alt="img not found">
-                            <img class="img-two" src="{{ Vite::asset('resources/imgs/user/user-05.png') }}" alt="img not found">
-                            <img class="img-three" src="{{ Vite::asset('resources/imgs/user/user-06.png') }}" alt="img not found">
-                        </div>
+
+                        <img src="{{ Vite::asset('resources/imgs/testimonial/testimonial-01.png') }}"
+                            alt="Eddy Luján, desarrollador y creador de LujanDev">
+
                     </div>
+
                 </div>
             </div>
+
             <div class="col-xl-7 col-lg-7">
                 <div class="testimonial__item">
+
                     <div class="section__title-wrapper mb-25">
-                        <span class="section__subtitle mb-15">FOUNDER</span>
-                        <h2 class="section__title">Hola, soy Eddy Luján.</h2>
-                        <p><strong>Software Developer · Founder de LujanDev.</strong></p>
+
+                        <span class="section__subtitle mb-15">
+                            FOUNDER
+                        </span>
+
+                        <h2 class="section__title">
+                            Hola, soy Eddy Luján.
+                        </h2>
+
+                        <p>
+                            <strong>
+                                Software Developer · Product Builder.
+                            </strong>
+                        </p>
+
                     </div>
+
                     <div class="swiper testimonial__active p-relative">
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
                                 <div class="testimonial__content">
-                                    <div class="testimonial__rating d-none">
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                    </div>
+
                                     <div class="testimonial__text">
-                                        <p>Trabajo como Software Engineer y, cuando termina mi jornada, sigo construyendo.</p>
 
-                                        <p>LujanDev nació con una idea muy clara: crear una plataforma desde la que desarrollar y lanzar productos reales, aprendiendo y mejorando con cada uno de ellos.</p>
+                                        <p>
+                                            Trabajo como Software Engineer y,
+                                            cuando termina mi jornada, sigo
+                                            construyendo productos propios.
+                                        </p>
 
-                                        <p>Cada nuevo producto reutiliza la base del anterior. Cada decisión técnica fortalece la plataforma. Cada error se convierte en un aprendizaje para el siguiente proyecto.</p>
+                                        <p>
+                                            LujanDev es la marca desde la que diseño, desarrollo y lanzo
+                                            productos digitales reales, ocupándome del código, las
+                                            integraciones y las decisiones necesarias para llevarlos
+                                            a producción.
+                                        </p>
 
-                                        <p>Por eso comparto el proceso públicamente: la arquitectura, los lanzamientos, los retos, los errores y todo lo que ocurre mientras construyo.</p>
+                                        <p>
+                                            Ya he completado el recorrido de un primer producto y ahora
+                                            continúo mejorando lo construido, aprendiendo qué merece la
+                                            pena mantener, simplificar o cambiar.
+                                        </p>
 
-                                        <p>Porque LujanDev no trata solo de escribir código. Trata de crear productos con propósito, compartir el camino y construir una plataforma que evoluciona con cada nueva idea.</p>
-                                    
-                                        <small>One platform. <br>Multiple products.</small>
+                                        <p>
+                                            Comparto públicamente el proceso porque los errores, las
+                                            decisiones y los aprendizajes también forman parte de
+                                            construir un producto real.
+                                        </p>
+
+
+                                        <small>
+                                            Building real products in public.
+                                        </small>
+
                                     </div>
-                                    <div class="testimonial__avatar-item d-none">
-                                        <div class="testimonial__avatar-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/user/user-03.png') }}" alt="img not found">
-                                        </div>
-                                        <div class="testimonial__avatar-info">
-                                            <h6 class="testimonial__avatar-title">Louis</h6>
-                                            <span class="testimonial__avatar-designation">Founder </span>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
-                            <div class="swiper-slide d-none">
-                                <div class="testimonial__content">
-                                    <div class="testimonial__rating">
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                    </div>
-                                    <div class="testimonial__text">
-                                        <p>“The improved user experience our website immediately noticeable.
-                                            Navigation are
-                                            more intuitive and the layout our visitors through our content
-                                            seamlessly.
-                                            The responsive design ensures.”</p>
-                                    </div>
-                                    <div class="testimonial__avatar-item">
-                                        <div class="testimonial__avatar-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/user/user-01.png') }}" alt="img not found">
-                                        </div>
-                                        <div class="testimonial__avatar-info">
-                                            <h6 class="testimonial__avatar-title">Alexa</h6>
-                                            <span class="testimonial__avatar-designation">Designer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide d-none">
-                                <div class="testimonial__content">
-                                    <div class="testimonial__rating">
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="icon-star"></i>
-                                        </a>
-                                    </div>
-                                    <div class="testimonial__text">
-                                        <p>“The improved user experience our website immediately noticeable.
-                                            Navigation are
-                                            more intuitive and the layout our visitors through our content
-                                            seamlessly.
-                                            The responsive design ensures.”</p>
-                                    </div>
-                                    <div class="testimonial__avatar-item">
-                                        <div class="testimonial__avatar-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/user/user-02.png') }}" alt="img not found">
-                                        </div>
-                                        <div class="testimonial__avatar-info">
-                                            <h6 class="testimonial__avatar-title">Morish</h6>
-                                            <span class="testimonial__avatar-designation">Director</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                        <!-- If we need navigation buttons -->
-                        {{-- <div class="testimonial__navigation d-none d-sm-block">
-                            <button class="testimonial__button-prev circle-btn slider__nav-btn"><i
-                                    class="fa-regular fa-arrow-left-long"></i></button>
-                            <button class="testimonial__button-next circle-btn ml-5 slider__nav-btn"><i
-                                    class="fa-regular fa-arrow-right-long"></i></button>
-                        </div> --}}
                     </div>
+
                 </div>
             </div>
 
         </div>
+
     </div>
 </section>
-<!-- testimonial area end -->
+<!-- founder area end -->

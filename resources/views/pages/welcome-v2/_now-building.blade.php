@@ -19,36 +19,36 @@
                  <div class="about__content style-six  wow fadeInRight" data-wow-delay=".3s">
                      <div class="section__title-wrapper mb-25">
                          <div class="section__title-wrapper">
-                             <span class="section__subtitle bg-field">AHORA CONSTRUYENDO · PLATFORM CORE</span>
-                             <h2 class="section__title">La base que conecta todos los productos.</h2>
+                             <span class="section__subtitle bg-field">AHORA CONSTRUYENDO · BACKEND REFACTOR</span>
+                             <h2 class="section__title">Preparando LujanDev para construir mejor.</h2>
                              <p class="contentHidden">contentHiddenText</p>
                          </div>
                      </div>
-                     <p>Estoy construyendo el Platform Core de LujanDev: una base tecnológica compartida diseñada para lanzar y hacer evolucionar múltiples productos sin empezar desde cero cada vez.</p>
+                     <p>Estoy reorganizando código que ya existe y funciona, reduciendo complejidad y separando responsabilidades.</p>
                     <p>
-                        El ecommerce continúa funcionando en producción como
-                        Producto #001. Ahora estoy separando y fortaleciendo
-                        capacidades compartidas como usuarios, tenants, módulos,
-                        permisos, archivos y notificaciones.
+                        El objetivo es reducir el acoplamiento, simplificar los
+                        servicios y conseguir una arquitectura más clara y fácil
+                        de mantener. Cada cambio parte de necesidades reales del
+                        código que ya está funcionando.
                     </p>
                      <div class="about__info-list">
                          <div class="info__list">
                              <ul>
                                  <li>
                                      <i class="icon-grow"></i>
-                                     <h6>Arquitectura escalable</h6>
+                                     <h6>Dominios más claros</h6>
                                  </li>
                                  <li>
                                      <i class="icon-partner"></i>
-                                     <h6>Base compartida</h6>
+                                     <h6>Menos acoplamiento</h6>
                                  </li>
                                  <li>
                                      <i class="icon-time"></i>
-                                     <h6>Productos independientes</h6>
+                                     <h6>Servicios más pequeños</h6>
                                  </li>
                                  <li>
                                      <i class="icon-support"></i>
-                                     <h6>Evolución documentada en público</h6>
+                                     <h6>Proceso documentado en público</h6>
                                  </li>
                              </ul>
                          </div>
@@ -61,7 +61,7 @@
                             rel="noopener noreferrer"
                         >
                             <span>
-                                Explorar Producto #001
+                                Ver los Build Logs
                                 <i class="contentHidden"></i>
                             </span>
                         </a>
