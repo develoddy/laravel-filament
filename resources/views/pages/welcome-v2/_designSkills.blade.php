@@ -4,9 +4,9 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="section__title-wrapper section__title-space">
-                    <span class="section__subtitle">Design experience</span>
-                    <h2 class="section__title">Design Skills</h2>
-                    <p class="contentHidden">contentHiddenText</p>
+                    <span class="section__subtitle">TOOLS I BUILD WITH</span>
+                    <h2 class="section__title">The stack behind LujanDev.</h2>
+                    <p class="">The main tools I use to build, test and ship my products.</p>
                 </div>
             </div>
         </div>

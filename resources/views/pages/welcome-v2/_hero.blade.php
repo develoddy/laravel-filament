@@ -11,18 +11,18 @@
                                  <span class="section__subtitle bg-field wow fadeInUp" data-wow-delay=".3s"
                                      data-wow-duration=".7s">BUILDING IN PUBLIC</span>
                                  <h1 class="banner__title xlarge wow fadeInUp" data-wow-delay=".5s"
-                                     data-wow-duration=".9s">Ideas que se convierten<br> <span class="gradient-text-2">en software.</span>
+                                     data-wow-duration=".9s">Finding problems.<br> <span class="gradient-text-2">Building solutions.</span>
                                  </h1>
                                  <p class="wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    Comparto cómo una idea evoluciona hasta convertirse en un producto: código, decisiones, errores y aprendizajes.</p>
+                                    I’m learning to find real problems, validate ideas and build digital products — sharing the decisions, bugs and lessons along the way.</p>
                                  <div class="banner__btn-wrap wow fadeInUp" data-wow-delay=".8s"
                                      data-wow-duration="1.3s">
                                      <div class="banner__btn">
-                                         <a class="bd-btn is-bg-gradient" href="{{ route('my-project') }}"><span class="">Ver lo que estoy construyendo<i class="contentHidden"></i></span></a>
+                                         <a class="bd-btn is-bg-gradient" href="{{ route('my-project') }}"><span class="">Explore what I'm building<i class="contentHidden"></i></span></a>
                                      </div>
                                      <div class="banner__btn">
                                          <a class="bd-btn is-border-gradient is-bg-none" href="#build-logs"><span
-                                                 class="">Conocer el proceso<i class="contentHidden"></i></span></a>
+                                                 class="">Follow the journey<i class="contentHidden"></i></span></a>
                                      </div>
                                  </div>
                              </div>

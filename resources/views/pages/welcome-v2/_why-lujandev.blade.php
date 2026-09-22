@@ -11,22 +11,23 @@
                     <div class="section__title-wrapper mb-25">
 
                         <span class="section__subtitle bg-field">
-                            ¿POR QUÉ LUJANDEV?
+                            WHY LUJANDEV?
                         </span>
 
                         <h2 class="section__title">
-                            Productos reales. Proceso abierto.
+                            Real products. Open process.
                         </h2>
 
                     </div>
 
                     <p>
-                        LujanDev es el espacio desde el que convierto ideas en
-                        productos digitales, aprendiendo de cada decisión,
-                        cada error y cada lanzamiento.
+                        LujanDev is where I learn how to find real problems, test ideas and build digital products.
+                    </p>
+                    <p>
+                        I share the decisions, mistakes and lessons along the way.
                     </p>
 
-                    <div class="faq__style-five">
+                    <div class="faq__style-five py-5">
                         <div class="bd__faq">
                             <div class="accordion" id="whyLujanDevAccordion">
 
@@ -45,7 +46,7 @@
                                             aria-expanded="true"
                                             aria-controls="whyCollapseOne"
                                         >
-                                            Construcción de principio a fin
+                                            Building from start to finish
                                         </button>
                                     </h5>
 
@@ -57,11 +58,9 @@
                                     >
                                         <div class="accordion-body">
                                             <p>
-                                                No me quedo únicamente en la idea
-                                                o en el código. Trabajo el producto,
-                                                las integraciones, la automatización,
-                                                el despliegue y todo lo necesario
-                                                para llevarlo hasta producción.
+                                                I don't stop at the idea or the code. I work on the product,
+                                                integrations, automation, deployment and everything needed
+                                                to get it into production.
                                             </p>
                                         </div>
                                     </div>
@@ -83,7 +82,7 @@
                                             aria-expanded="false"
                                             aria-controls="whyCollapseTwo"
                                         >
-                                            Decisiones basadas en problemas reales
+                                            Start with the problem
                                         </button>
                                     </h5>
 
@@ -95,11 +94,8 @@
                                     >
                                         <div class="accordion-body">
                                             <p>
-                                                Cada mejora parte de algo que ya
-                                                existe: una limitación, un error,
-                                                una dependencia innecesaria o una
-                                                necesidad detectada mientras el
-                                                software está funcionando.
+                                                I'm learning to look for real problems before building the solution.
+                                                Less guessing, more evidence.
                                             </p>
                                         </div>
                                     </div>
@@ -121,7 +117,7 @@
                                             aria-expanded="false"
                                             aria-controls="whyCollapseThree"
                                         >
-                                            El proceso también forma parte del producto
+                                            The process is part of the product
                                         </button>
                                     </h5>
 
@@ -133,11 +129,7 @@
                                     >
                                         <div class="accordion-body">
                                             <p>
-                                                Comparto el código, las decisiones
-                                                técnicas, los lanzamientos, los errores
-                                                y los resultados para mostrar cómo una
-                                                idea evoluciona hasta convertirse en
-                                                software real.
+                                                I share what happens behind the scenes: decisions, bugs, experiments, things that work and things that don't.
                                             </p>
                                         </div>
                                     </div>

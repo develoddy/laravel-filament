@@ -10,6 +10,13 @@ export default defineConfig({
         }),
     ],
 
+    server: {
+        host: '127.0.0.1',
+        cors: {
+            origin: 'https://laravel-filament.test',
+        },
+    },
+
     optimizeDeps: {
         include: ['jquery'], // Convierte jQuery a ESM en desarrollo
     },

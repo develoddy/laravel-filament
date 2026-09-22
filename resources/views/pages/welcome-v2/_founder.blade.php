@@ -12,7 +12,7 @@
                         <div class="testimonial__bg"></div>
 
                         <img src="{{ Vite::asset('resources/imgs/testimonial/testimonial-01.png') }}"
-                            alt="Eddy Luján, desarrollador y creador de LujanDev">
+                            alt="Eddy Luján, developer and founder of LujanDev">
 
                     </div>
 
@@ -29,7 +29,7 @@
                         </span>
 
                         <h2 class="section__title">
-                            Hola, soy Eddy Luján.
+                            Hi, I'm Eddy Luján.
                         </h2>
 
                         <p>
@@ -49,33 +49,30 @@
                                     <div class="testimonial__text">
 
                                         <p>
-                                            Trabajo como Software Engineer y,
-                                            cuando termina mi jornada, sigo
-                                            construyendo productos propios.
+                                            I work as a Software Developer and, after work,
+                                            I build my own products.
                                         </p>
 
                                         <p>
-                                            LujanDev es la marca desde la que diseño, desarrollo y lanzo
-                                            productos digitales reales, ocupándome del código, las
-                                            integraciones y las decisiones necesarias para llevarlos
-                                            a producción.
+                                            LujanDev is where I build and test real digital products.
+                                            I work on the code, integrations and all the decisions
+                                            needed to take a product from an idea to production.
                                         </p>
 
                                         <p>
-                                            Ya he completado el recorrido de un primer producto y ahora
-                                            continúo mejorando lo construido, aprendiendo qué merece la
-                                            pena mantener, simplificar o cambiar.
+                                            I started by building first and validating later.
+                                            Now I'm learning to do it differently: find real problems,
+                                            look for evidence and then decide what is worth building.
                                         </p>
 
                                         <p>
-                                            Comparto públicamente el proceso porque los errores, las
-                                            decisiones y los aprendizajes también forman parte de
-                                            construir un producto real.
+                                            I share the process in public: the bugs, decisions,
+                                            experiments, things that work and things that don't.
                                         </p>
 
 
                                         <small>
-                                            Building real products in public.
+                                            Developer → Builder. Learning the founder side.
                                         </small>
 
                                     </div>

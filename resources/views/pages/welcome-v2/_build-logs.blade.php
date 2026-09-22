@@ -12,13 +12,11 @@
                     </span>
 
                     <h2 class="section__title mb-20">
-                        Lo que ocurre mientras construyo.
+                        What happens while I build.
                     </h2>
 
                     <p class="section__paragraph is-br-none">
-                        Cada Build Log documenta un problema real, una decisión
-                        técnica y el resultado obtenido mientras construyo,
-                        lanzo y mejoro productos digitales.
+                        Each Build Log shares a real problem, a decision and what happened next. Not only the wins.
                     </p>
 
                 </div>
@@ -47,14 +45,12 @@
 
                         <h5 class="service__title underline">
                             <a href="#build-logs">
-                                El primer flujo completo
+                                The first complete flow
                             </a>
                         </h5>
 
                         <p>
-                            Una compra de prueba recorrió el sistema completo:
-                            pago, creación del pedido, producción, seguimiento
-                            y entrega.
+                            A test order went through the full system: payment, order creation, production, tracking and delivery.
                         </p>
 
                         <div class="contentHidden">
@@ -96,14 +92,12 @@
 
                         <h5 class="service__title underline">
                             <a href="#build-logs">
-                                Conectar todo el recorrido
+                                Connecting the full flow
                             </a>
                         </h5>
 
                         <p>
-                            Stripe, Printful y los webhooks conectaron el pago,
-                            la producción y las actualizaciones del pedido dentro
-                            de un único flujo automatizado.
+                            Stripe, Printful and webhooks connected payment, production and order updates in one automated flow.
                         </p>
 
                         <div class="contentHidden">
@@ -145,14 +139,12 @@
 
                         <h5 class="service__title underline">
                             <a href="#build-logs">
-                                Saber qué ocurre en producción
+                                Knowing what's happening in production
                             </a>
                         </h5>
 
                         <p>
-                            Reportes, alertas, trazabilidad y reintentos permiten
-                            detectar fallos, entender cada pedido y actuar cuando
-                            algo no funciona.
+                            Reports, alerts, tracking and retries help me find problems, understand each order and act when something breaks.
                         </p>
 
                         <div class="contentHidden">
@@ -194,14 +186,12 @@
 
                         <h5 class="service__title underline">
                             <a href="#build-logs">
-                                Separando el backend por dominios
+                                Splitting the backend by domains
                             </a>
                         </h5>
 
                         <p>
-                            Estoy reorganizando responsabilidades existentes
-                            para reducir el acoplamiento y conseguir servicios
-                            más pequeños, claros y fáciles de mantener.
+                             I'm reorganizing existing responsibilities to reduce coupling and make services smaller, clearer and easier to maintain.
                         </p>
 
                         <div class="contentHidden">

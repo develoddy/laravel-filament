@@ -10,7 +10,7 @@
     {{-- 2. Qué se está construyendo ahora --}}
     @include('pages.welcome-v2._now-building')
     
-    {{-- 3. Qué productos existen sobre esa base --}}
+    {{-- 3. Products & experiments --}}
     @include('pages.welcome-v2._products')
 
     {{-- 4. Cómo se llegó hasta aquí --}}

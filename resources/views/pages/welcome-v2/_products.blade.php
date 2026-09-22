@@ -14,17 +14,15 @@
                 <div class="section__title-wrapper">
 
                     <span class="section__subtitle">
-                        LO QUE ESTOY CONSTRUYENDO
+                        PRODUCTS & EXPERIMENTS
                     </span>
 
                     <h2 class="section__title">
-                        Productos digitales, del código a producción.
+                        Things I'm building and testing.
                     </h2>
 
                     <p>
-                        Aquí documento los productos y proyectos que construyo:
-                        el problema que intentan resolver, las decisiones técnicas,
-                        los errores y todo lo que aprendo al llevarlos a la práctica.
+                        Real products and experiments. I share the problem, what I built, what happened and what I learned.
                     </p>
 
                 </div>
@@ -40,11 +38,11 @@
                         <span class="bd-btn-inner">
 
                             <span class="bd-btn-normal">
-                                Ver todos los proyectos
+                                View all products
                             </span>
 
                             <span class="bd-btn-hover">
-                                Ver todos los proyectos
+                                View all products
                             </span>
 
                             <i class="contentHidden"></i>

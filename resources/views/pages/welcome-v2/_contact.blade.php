@@ -30,16 +30,17 @@
                 <div class="section__title-wrapper section__title-space">
 
                     <span class="section__subtitle mb-15">
-                        HABLEMOS
+                        LET'S TALK
                     </span>
 
                     <h2 class="section__title">
-                        ¿Tienes una idea que quieres convertir en producto?
+                        Building something? <br>
+                        Let's connect.
                     </h2>
 
                     <p class="mt-3">
-                        Puedo ayudarte a desarrollar, integrar o mejorar un producto
-                        digital: backend, pagos, automatizaciones e integraciones.
+                        I'm always open to talk about products, software,
+                        collaborations or things you're building.
                     </p>
 
                 </div>
@@ -112,7 +113,7 @@
                                         for="contact-subject"
                                         class="floating-label"
                                     >
-                                        Asunto*
+                                        Subject*
                                     </label>
 
                                 </div>
@@ -133,7 +134,7 @@
                                             for="contact-message"
                                             class="floating-label-two"
                                         >
-                                            Cuéntame qué estás construyendo*
+                                            Tell me what's on your mind.*
                                         </label>
 
                                     </div>
@@ -147,7 +148,7 @@
                                 type="submit"
                                 class="bd-btn w-100"
                             >
-                                Enviar mensaje
+                                Send message
                             </button>
                         </div>
 
@@ -198,12 +199,11 @@
                         </div>
 
                         <h4 class="text-white mb-3">
-                            Construyamos algo real.
+                            Let's build something real.
                         </h4>
 
                         <p class="text-white-50 mb-4 fs-5">
-                            Disponible para proyectos, colaboraciones y
-                            conversaciones sobre software y producto.
+                            Open to projects, collaborations and conversations about software and products.
                         </p>
 
                     </div>
@@ -222,7 +222,7 @@
 
                                     <div class="contact__info-content">
                                         <h6>
-                                            Madrid, España
+                                            Madrid, Spain
                                         </h6>
                                     </div>
 
@@ -260,7 +260,7 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white"
-                                aria-label="Ver perfil de LujanDev en X"
+                                aria-label="View LujanDev on X"
                             >
                                 <i
                                     class="icon-twiter"
@@ -273,7 +273,7 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white"
-                                aria-label="Ver perfil de LujanDev en LinkedIn"
+                                aria-label="View LujanDev on LinkedIn"
                             >
                                 <i
                                     class="fa-brands fa-linkedin"
@@ -286,7 +286,7 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white"
-                                aria-label="Ver perfil de LujanDev en Instagram"
+                                aria-label="View LujanDev on Instagram"
                             >
                                 <i
                                     class="fa-brands fa-instagram"
