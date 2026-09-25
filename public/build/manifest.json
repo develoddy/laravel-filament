@@ -165,15 +165,15 @@
   },
   "resources/imgs/award/award-2.jpg": {
     "file": "assets/award-2-8aa78151.jpg",
-    "src": "resources/imgs/award/award-3.jpg"
+    "src": "resources/imgs/award/award-4.jpg"
   },
   "resources/imgs/award/award-3.jpg": {
     "file": "assets/award-2-8aa78151.jpg",
-    "src": "resources/imgs/award/award-3.jpg"
+    "src": "resources/imgs/award/award-4.jpg"
   },
   "resources/imgs/award/award-4.jpg": {
     "file": "assets/award-2-8aa78151.jpg",
-    "src": "resources/imgs/award/award-3.jpg"
+    "src": "resources/imgs/award/award-4.jpg"
   },
   "resources/imgs/banner/banner-01-OLLD.png": {
     "file": "assets/banner-01-OLLD-50638ea0.png",
@@ -433,7 +433,7 @@
   },
   "resources/imgs/blog/masonary/blog-masonary-01.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-07.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-08.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-02.png": {
     "file": "assets/blog-masonary-02-1bbbada6.png",
@@ -457,11 +457,11 @@
   },
   "resources/imgs/blog/masonary/blog-masonary-07.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-07.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-08.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-08.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-07.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-08.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-09.png": {
     "file": "assets/blog-masonary-02-1bbbada6.png",
@@ -485,27 +485,27 @@
   },
   "resources/imgs/blog/post/sidebar/sidebar-post-blog-01.png": {
     "file": "assets/sidebar-post-blog-01-5f5c05a8.png",
-    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png"
+    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png"
   },
   "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png": {
     "file": "assets/sidebar-post-blog-01-5f5c05a8.png",
-    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png"
+    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png"
   },
   "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png": {
     "file": "assets/sidebar-post-blog-01-5f5c05a8.png",
-    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png"
+    "src": "resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png"
   },
   "resources/imgs/blog/post/slider/postblog-slider-01.png": {
     "file": "assets/postblog-slider-01-6ffb233c.png",
-    "src": "resources/imgs/blog/post/slider/postblog-slider-03.png"
+    "src": "resources/imgs/blog/post/slider/postblog-slider-02.png"
   },
   "resources/imgs/blog/post/slider/postblog-slider-02.png": {
     "file": "assets/postblog-slider-01-6ffb233c.png",
-    "src": "resources/imgs/blog/post/slider/postblog-slider-03.png"
+    "src": "resources/imgs/blog/post/slider/postblog-slider-02.png"
   },
   "resources/imgs/blog/post/slider/postblog-slider-03.png": {
     "file": "assets/postblog-slider-01-6ffb233c.png",
-    "src": "resources/imgs/blog/post/slider/postblog-slider-03.png"
+    "src": "resources/imgs/blog/post/slider/postblog-slider-02.png"
   },
   "resources/imgs/brand/01/brand-01-old.png": {
     "file": "assets/brand-01-old-289c09ab.png",
@@ -797,39 +797,39 @@
   },
   "resources/imgs/landing/home/coming-soon.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-01.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-02.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-03.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-04.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-05.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-06.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-07.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-08.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/icon-star.svg": {
     "file": "assets/icon-star-16dab87b.svg",
@@ -1113,15 +1113,15 @@
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-16.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-22.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-23.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-17.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-22.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-23.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-18.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-22.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-23.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-19.png": {
     "file": "assets/portfolio-masonary-19-8f4c24d7.png",
@@ -1133,15 +1133,15 @@
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-21.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-22.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-23.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-22.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-22.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-23.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-23.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-22.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-23.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-24.png": {
     "file": "assets/portfolio-masonary-14-9cb5ee61.png",
@@ -1629,15 +1629,15 @@
   },
   "resources/imgs/team/team-05.png": {
     "file": "assets/team-05-1b5925f1.png",
-    "src": "resources/imgs/team/team-06.png"
+    "src": "resources/imgs/team/team-07.png"
   },
   "resources/imgs/team/team-06.png": {
     "file": "assets/team-05-1b5925f1.png",
-    "src": "resources/imgs/team/team-06.png"
+    "src": "resources/imgs/team/team-07.png"
   },
   "resources/imgs/team/team-07.png": {
     "file": "assets/team-05-1b5925f1.png",
-    "src": "resources/imgs/team/team-06.png"
+    "src": "resources/imgs/team/team-07.png"
   },
   "resources/imgs/testimonial/testimonial-01-old.png": {
     "file": "assets/testimonial-01-old-2df35b6f.png",
@@ -1732,7 +1732,7 @@
     "src": "resources/imgs/video/video-bg-02.png"
   },
   "resources/js/app.css": {
-    "file": "assets/app-69866cf7.css",
+    "file": "assets/app-6c52aed0.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
@@ -1759,14 +1759,14 @@
       "assets/icomoon-a8521ad4.svg"
     ],
     "css": [
-      "assets/app-69866cf7.css"
+      "assets/app-6c52aed0.css"
     ],
-    "file": "assets/app-eab3cad5.js",
+    "file": "assets/app-0b107477.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/scss/app.scss": {
-    "file": "assets/app-c8d3869d.css",
+    "file": "assets/app-fd0c18fb.css",
     "isEntry": true,
     "src": "resources/scss/app.scss"
   }
