@@ -3,189 +3,85 @@
 @section('content')
 <!-- Body main wrapper start -->
 <main>
-
-    @php
-        $isExperiment = $portfolio->category?->slug === 'experiment';
-        $categoryLabel = $isExperiment ? 'EXPERIMENT' : 'PRODUCT';
-
-        $ctaLabel = $isExperiment
-            ? 'View Live Experiment'
-            : 'Visit Product';
-    @endphp
-
-
-    {{-- ============================================================
-        HERO / PROJECT HEADER
-    ============================================================ --}}
-    <section class="project-detail-hero section-space">
+    <!-- portfolio area start -->
+    <section class="bd-portfolio__area section-space">
         <div class="container">
-
-            <div class="project-detail-hero__content">
-
-                {{-- Category --}}
-                <span class="section__subtitle bg-field mb-20">
-                    {{ $categoryLabel }}
-                </span>
-
-                {{-- Title --}}
-                <h1 class="project-detail-hero__title">
-                    {{ $detail->title ?? $portfolio->titulo }}
-                </h1>
-
-                {{-- Short description from Portfolio --}}
-                @if(!empty($portfolio->descripcion))
-                    <div class="project-detail-hero__intro">
-                        {!! $portfolio->descripcion !!}
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <div class="portfolio__details-sec-wrapper">
+                        <div class="section__title-wrapper">
+                            <div class="section__title-wrapper mb-15">
+                                <span class="section__subtitle bg-field">{{ strtoupper($detail->category ?? 'BUILD') }}</span>
+                                <h2 class="portfolio__details-title">{{ $detail->title ?? 'Project Name' }}</h2>
+                            </div>
+                            <p>{!! $detail->description ?? '' !!}</p>
+                        </div>
+                        @if(!empty($detail->mvp_url))
+                        <div class="portfolio__details-btn">
+                            <a class="bd-btn is-btn-anim" href="{{ $detail->mvp_url }}" target="_blank" rel="noopener noreferrer">
+                                <span class="bd-btn-inner">
+                                    <span class="bd-btn-normal">Launch Product</span>
+                                    <span class="bd-btn-hover">Launch Product</span>
+                                    <i class="contentHidden"></i>
+                                </span>
+                            </a>
+                        </div>
+                        @endif
                     </div>
-                @endif
-
-
-                {{-- Metadata --}}
-                <div class="project-detail-meta">
-
-                    <div class="project-detail-meta__item">
-                        <span class="project-detail-meta__label">
-                            <i class="fa-regular fa-user"></i>
-                            Builder
-                        </span>
-
-                        <strong>@lujandev</strong>
-                    </div>
-
-
-                    <div class="project-detail-meta__item">
-                        <span class="project-detail-meta__label">
-                            <i class="fa-light fa-award"></i>
-                            Status
-                        </span>
-
-                        <strong>
-                            {{ $detail->status ?? 'Coming Soon' }}
-                        </strong>
-                    </div>
-
-
-                    <div class="project-detail-meta__item">
-                        <span class="project-detail-meta__label">
-                            <i class="fa-sharp fa-light fa-layer-group"></i>
-                            Stack
-                        </span>
-
-                        <strong>
-                            {{ $detail->stack ?? 'N/A' }}
-                        </strong>
-                    </div>
-
-
-                    <div class="project-detail-meta__item">
-                        <span class="project-detail-meta__label">
-                            <i class="fa-light fa-calendar-days"></i>
-                            Launched
-                        </span>
-
-                        <strong>
-                            {{ $detail->launched_at
-                                ? \Carbon\Carbon::parse($detail->launched_at)->format('M d, Y')
-                                : 'Coming Soon'
-                            }}
-                        </strong>
-                    </div>
-
                 </div>
-
-
-                {{-- CTA --}}
-                @if(!empty($detail->mvp_url))
-                    <div class="project-detail-hero__cta">
-
-                        <a
-                            class="bd-btn is-btn-anim"
-                            href="{{ $detail->mvp_url }}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span class="bd-btn-inner">
-
-                                <span class="bd-btn-normal">
-                                    {{ $ctaLabel }}
+                <div class="col-lg-5">
+                    <div class="portfolio__details-meta">
+                        <div class="portfolio__details-meta-item">
+                            <div class="portfolio__details-meta-icon">
+                                <span>
+                                    <i class="fa-regular fa-user"></i>
                                 </span>
-
-                                <span class="bd-btn-hover">
-                                    {{ $ctaLabel }}
+                            </div>
+                            <div class="portfolio__details-meta-content">
+                                <h5>Builder:</h5>
+                                <span>@lujandev</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__details-meta-item">
+                            <div class="portfolio__details-meta-icon">
+                                <span>
+                                    <i class="fa-light fa-award"></i>
                                 </span>
+                            </div>
+                            <div class="portfolio__details-meta-content">
+                                <h5>Status:</h5>
+                                <span>{{ $detail->status ?? 'Coming Soon' }}</span>
+                            </div>
+                        </div>
 
-                                <i class="contentHidden"></i>
-
-                            </span>
-                        </a>
-
+                        <div class="portfolio__details-meta-item">
+                            <div class="portfolio__details-meta-icon">
+                                <span>
+                                    <i class="fa-sharp fa-light fa-layer-group"></i>
+                                </span>
+                            </div>
+                            <div class="portfolio__details-meta-content">
+                                <h5>Stack:</h5>
+                                <span>{{ $detail->stack ?? 'N/A' }}</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__details-meta-item">
+                            <div class="portfolio__details-meta-icon">
+                                <span>
+                                    <i class="fa-light fa-calendar-days"></i>
+                                </span>
+                            </div>
+                            <div class="portfolio__details-meta-content">
+                                <h5>Launched:</h5>
+                                <span>{{ $detail->launched_at ? \Carbon\Carbon::parse($detail->launched_at)->format('M d, Y') : 'Coming Soon' }}</span>
+                            </div>
+                        </div>
                     </div>
-                @endif
-
+                </div>
             </div>
-
         </div>
     </section>
-
-
-    {{-- ============================================================
-        CASE STUDY
-    ============================================================ --}}
-    @if(!empty($detail->description))
-
-        <section class="project-case-study section-space-bottom">
-
-            <div class="container">
-
-                <div class="project-case-study__wrapper">
-
-                    <div class="project-case-study__label">
-                        {{ $isExperiment ? 'CASE STUDY' : 'BUILD DETAILS' }}
-                    </div>
-
-                    <article class="project-case-study__content">
-                        {!! $detail->description !!}
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    @endif
-
-
-    {{-- ============================================================
-        EXPERIMENT / PRODUCT VISUALS
-    ============================================================ --}}
-
-    @if($detail && is_array($detail->images) && count($detail->images) > 0)
-
-        <div class="project-visuals-heading">
-
-            <div class="container">
-
-                <div class="project-visuals-heading__inner">
-
-                    <span class="project-case-study__label">
-                        {{ $isExperiment ? 'EXPERIMENT VISUALS' : 'PRODUCT VISUALS' }}
-                    </span>
-
-                    <h3>
-                        {{ $isExperiment
-                            ? 'How the experiment was tested'
-                            : 'Inside the build'
-                        }}
-                    </h3>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    @endif
+    <!-- portfolio area end -->
 
     <!-- portfolio slider area start -->
     <div class="bd-portfoli-details-area section-space-bottom fix">
@@ -431,13 +327,7 @@
                 <div class="col-12">
                     <div class="postbox__comment-form">
                         <h4 class="postbox__comment-form-title">Share Your Feedback 💡</h4>
-                        <p>
-                            @if($isExperiment)
-                                I'd love to hear your thoughts. What do you think about this experiment? Any suggestions?
-                            @else
-                                I'd love to hear your thoughts. What do you think about this product? Any suggestions?
-                            @endif
-                        </p>
+                        <p>I'd love to hear your thoughts! What do you think about this product? Any suggestions?</p>
                         <form action="{{ route('contact.send') }}" method="POST" id="contact-form">
                             @csrf
                             <div class="row">
@@ -453,7 +343,7 @@
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-12">
                                     <div class="postbox__comment-input">
-                                        <input type="text" name="subject" placeholder="URL*" required>
+                                        <input type="text" name="subject" placeholder="Product URL*" required>
                                     </div>
                                 </div>
                                 <div class="col-xxl-12">
