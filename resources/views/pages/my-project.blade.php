@@ -42,10 +42,10 @@
                                 <button class="active" id="view-tab" data-bs-toggle="tab" data-bs-target="#view" type="button" role="tab" aria-controls="view" aria-selected="true">All Builds</button>
                             </li>
                             <li class="bd__btn-item" role="presentation">
-                                <button id="brand-tab" data-bs-toggle="tab" data-bs-target="#brand" type="button" role="tab" aria-controls="brand" aria-selected="false">Brand</button>
+                                <button id="products-tab" data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab" aria-controls="products" aria-selected="false">Products</button>
                             </li>
                             <li class="bd__btn-item" role="presentation">
-                                <button id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button" role="tab" aria-controls="project" aria-selected="false">Projects</button>
+                                <button id="experiments-tab" data-bs-toggle="tab" data-bs-target="#experiments" type="button" role="tab" aria-controls="experiments" aria-selected="false">Experiments</button>
                             </li>
                             <li class="bd__btn-item d-none" role="presentation">
                                 <button id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab" aria-controls="digital" aria-selected="false">Digital Art</button>
@@ -63,6 +63,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="tab-content wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s" id="myTabContent">
+
                         {{-- View all tab --}}
                         <div class="tab-pane fade show active" id="view" role="tabpanel" aria-labelledby="view-tab">
                             <div class="row g-5">
@@ -97,8 +98,8 @@
                             </div>
                         </div>
 
-                        {{-- Brand tab --}}
-                        <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="brand-tab">
+                        {{-- Product tab --}}
+                        <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
                             <div class="row  g-5">
                                 @foreach ($brandPortfolios as $portfolio)
                                     <div class="col-lg-4 col-md-6">
@@ -129,8 +130,8 @@
                             </div>
                         </div>
 
-                        {{-- Project tab --}}
-                        <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
+                        {{-- Experiments tab --}}
+                        <div class="tab-pane fade" id="experiments" role="tabpanel" aria-labelledby="experiments-tab">
                             <div class="row g-5">
                                 @foreach ($projectPortfolios as $portfolio)
                                     <div class="col-lg-4 col-md-6">

@@ -38,11 +38,11 @@
                         <span class="bd-btn-inner">
 
                             <span class="bd-btn-normal">
-                                View all products
+                                View all builds
                             </span>
 
                             <span class="bd-btn-hover">
-                                View all products
+                                View all builds
                             </span>
 
                             <i class="contentHidden"></i>

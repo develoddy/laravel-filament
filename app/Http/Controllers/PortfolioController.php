@@ -15,20 +15,22 @@ class PortfolioController extends Controller
     public function index()
     {
         
-        // Obtener todas las categorías
+        // Categorías disponibles
         $categories = Category::all();
 
-        // Obtener todos los portafolios con su categoría correspondiente
-        $portfolios = Portfolio::with('category')->get();
+        // Todos los portfolios: más recientes primero
+        $portfolios = Portfolio::with('category')
+            ->latest()
+            ->get();
 
-        // Filtrar los portafolios por categoría
+        // Products
         $brandPortfolios = $portfolios->filter(function ($portfolio) {
-            return $portfolio->category && $portfolio->category->title === 'Brand';
+            return $portfolio->category && $portfolio->category->title === 'Product';
         });
 
-        // Filtrar los portafolios por categoría
+        // Experiments
         $projectPortfolios = $portfolios->filter(function ($portfolio) {
-            return $portfolio->category && $portfolio->category->title === 'Projects';
+            return $portfolio->category && $portfolio->category->title === 'Experiment';
         });
 
         return view('pages.my-project', 
