@@ -50,7 +50,7 @@ Write-Host ""
 Write-Host "2/2 - Desplegando en produccion..." -ForegroundColor Yellow
 Write-Host ""
 
-$RemoteCommand = "cd $RemoteProject && ./.devtools/deploy.sh"
+$RemoteCommand = "cd $RemoteProject && bash ./.devtools/deploy.sh"
 
 & ssh "$RemoteUser@$RemoteHost" $RemoteCommand
 $DeployExitCode = $LASTEXITCODE
