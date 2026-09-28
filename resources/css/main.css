@@ -5454,7 +5454,7 @@ input:checked + .switch:before {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .banner-height.style-six {
-    padding: 65px 0 0px;
+    padding: 100px 0 0px;
     min-height: 500px;
   }
 }
