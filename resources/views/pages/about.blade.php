@@ -33,7 +33,7 @@
     <!-- about style 02 start -->
     {{-- <section class="bd-about__area section-space-bottom"> --}}
     {{-- <section class="bd-about__area section-space"> --}}
-    <section class="bd-about__area section-space-bottom">
+    <section class="bd-about__area section-space">
         <div class="container">
             {{-- About Style 02 template header removed --}}
             <div class="row g-5">
@@ -139,7 +139,7 @@
                 <div class="col-xl-6 col-lg-6">
                     <div class="about__thumb-wrapper wow fadeInRight" data-wow-delay=".3s">
                         <div class="about__thumb">
-                            <img src="{{ Vite::asset('resources/imgs/about/about-09.png') }}" alt="Developer building products">
+                            <img src="{{ Vite::asset('resources/imgs/about/founder-lujandev.png') }}" alt="Developer building products">
                         </div>
                     </div>
                 </div>
@@ -171,59 +171,52 @@
                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-01.png')}}" alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/01-lujandev-ecommerce-builder.png')}}" alt="Building the product" title="Building the product">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-02.png')}}" alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/02-lujandev-workspace-setup.png')}}" alt="Workspace setup" title="Workspace setup">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-03.png')}}" alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/03-lujandev-coding-laptop.png')}}" alt="Coding on the laptop" title="Coding on the laptop">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-04.png')}}" alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/04-lujandev-debugging-code.png')}}" alt="Debugging code" title="Debugging code">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-05.png')}}" alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/05-lujandev-product-delivery.png')}}" alt="Product delivery" title="Product delivery">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-06.png')}}" alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/06-lujandev-building-anywhere.png')}}" alt="Building anywhere" title="Building anywhere">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-07.png')}}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
+                                {{--<div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-08.png')}}" alt="">
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <!-- If we need navigation buttons -->
                             <div class="portfolio__navigation d-none d-sm-block">

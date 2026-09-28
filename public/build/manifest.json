@@ -143,6 +143,10 @@
     "file": "assets/about_why-lujandev-2be6973c.png",
     "src": "resources/imgs/about/about_why-lujandev.png"
   },
+  "resources/imgs/about/founder-lujandev.png": {
+    "file": "assets/founder-lujandev-14612f4c.png",
+    "src": "resources/imgs/testimonial/founder-lujandev.png"
+  },
   "resources/imgs/about/platform_lujandev-v1.png": {
     "file": "assets/platform_lujandev-v1-78bb009c.png",
     "src": "resources/imgs/about/platform_lujandev-v1.png"
@@ -205,7 +209,7 @@
   },
   "resources/imgs/banner/banner-03.png": {
     "file": "assets/banner-03-014836ca.png",
-    "src": "resources/imgs/bg/banner-bg-05.png"
+    "src": "resources/imgs/bg/banner-bg-06.png"
   },
   "resources/imgs/banner/banner-04.png": {
     "file": "assets/banner-04-5a81f9f3.png",
@@ -229,11 +233,11 @@
   },
   "resources/imgs/bg/banner-bg-01.png": {
     "file": "assets/banner-03-014836ca.png",
-    "src": "resources/imgs/bg/banner-bg-05.png"
+    "src": "resources/imgs/bg/banner-bg-06.png"
   },
   "resources/imgs/bg/banner-bg-02.png": {
     "file": "assets/banner-03-014836ca.png",
-    "src": "resources/imgs/bg/banner-bg-05.png"
+    "src": "resources/imgs/bg/banner-bg-06.png"
   },
   "resources/imgs/bg/banner-bg-03.png": {
     "file": "assets/banner-bg-03-0bdfcb5e.png",
@@ -241,15 +245,15 @@
   },
   "resources/imgs/bg/banner-bg-04.png": {
     "file": "assets/banner-03-014836ca.png",
-    "src": "resources/imgs/bg/banner-bg-05.png"
+    "src": "resources/imgs/bg/banner-bg-06.png"
   },
   "resources/imgs/bg/banner-bg-05.png": {
     "file": "assets/banner-03-014836ca.png",
-    "src": "resources/imgs/bg/banner-bg-05.png"
+    "src": "resources/imgs/bg/banner-bg-06.png"
   },
   "resources/imgs/bg/banner-bg-06.png": {
     "file": "assets/banner-03-014836ca.png",
-    "src": "resources/imgs/bg/banner-bg-05.png"
+    "src": "resources/imgs/bg/banner-bg-06.png"
   },
   "resources/imgs/bg/contact-bg-01.png": {
     "file": "assets/contact-bg-01-8dcfda11.png",
@@ -445,15 +449,15 @@
   },
   "resources/imgs/blog/masonary/blog-masonary-04.png": {
     "file": "assets/blog-masonary-04-16942d48.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-06.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-04.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-05.png": {
     "file": "assets/blog-masonary-04-16942d48.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-06.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-04.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-06.png": {
     "file": "assets/blog-masonary-04-16942d48.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-06.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-04.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-07.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
@@ -497,15 +501,15 @@
   },
   "resources/imgs/blog/post/slider/postblog-slider-01.png": {
     "file": "assets/postblog-slider-01-6ffb233c.png",
-    "src": "resources/imgs/blog/post/slider/postblog-slider-02.png"
+    "src": "resources/imgs/blog/post/slider/postblog-slider-03.png"
   },
   "resources/imgs/blog/post/slider/postblog-slider-02.png": {
     "file": "assets/postblog-slider-01-6ffb233c.png",
-    "src": "resources/imgs/blog/post/slider/postblog-slider-02.png"
+    "src": "resources/imgs/blog/post/slider/postblog-slider-03.png"
   },
   "resources/imgs/blog/post/slider/postblog-slider-03.png": {
     "file": "assets/postblog-slider-01-6ffb233c.png",
-    "src": "resources/imgs/blog/post/slider/postblog-slider-02.png"
+    "src": "resources/imgs/blog/post/slider/postblog-slider-03.png"
   },
   "resources/imgs/brand/01/brand-01-old.png": {
     "file": "assets/brand-01-old-289c09ab.png",
@@ -963,6 +967,30 @@
     "file": "assets/menu-home-8-19857091.jpg",
     "src": "resources/imgs/menu/menu-home-8.jpg"
   },
+  "resources/imgs/portfolio/large/01-lujandev-ecommerce-builder.png": {
+    "file": "assets/01-lujandev-ecommerce-builder-03b4b38e.png",
+    "src": "resources/imgs/portfolio/large/01-lujandev-ecommerce-builder.png"
+  },
+  "resources/imgs/portfolio/large/02-lujandev-workspace-setup.png": {
+    "file": "assets/02-lujandev-workspace-setup-d994abff.png",
+    "src": "resources/imgs/portfolio/large/02-lujandev-workspace-setup.png"
+  },
+  "resources/imgs/portfolio/large/03-lujandev-coding-laptop.png": {
+    "file": "assets/03-lujandev-coding-laptop-4584503b.png",
+    "src": "resources/imgs/portfolio/large/03-lujandev-coding-laptop.png"
+  },
+  "resources/imgs/portfolio/large/04-lujandev-debugging-code.png": {
+    "file": "assets/04-lujandev-debugging-code-21152b97.png",
+    "src": "resources/imgs/portfolio/large/04-lujandev-debugging-code.png"
+  },
+  "resources/imgs/portfolio/large/05-lujandev-product-delivery.png": {
+    "file": "assets/05-lujandev-product-delivery-6b7731e1.png",
+    "src": "resources/imgs/portfolio/large/05-lujandev-product-delivery.png"
+  },
+  "resources/imgs/portfolio/large/06-lujandev-building-anywher.png": {
+    "file": "assets/06-lujandev-building-anywher-a6b00348.png",
+    "src": "resources/imgs/portfolio/large/06-lujandev-building-anywher.png"
+  },
   "resources/imgs/portfolio/large/29.png": {
     "file": "assets/29-d96f5888.png",
     "src": "resources/imgs/portfolio/large/29.png"
@@ -1125,11 +1153,11 @@
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-19.png": {
     "file": "assets/portfolio-masonary-19-8f4c24d7.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-20.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-19.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-20.png": {
     "file": "assets/portfolio-masonary-19-8f4c24d7.png",
-    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-20.png"
+    "src": "resources/imgs/portfolio/masonary/portfolio-masonary-19.png"
   },
   "resources/imgs/portfolio/masonary/portfolio-masonary-21.png": {
     "file": "assets/portfolio-masonary-16-daa890c6.png",
@@ -1639,6 +1667,14 @@
     "file": "assets/team-05-1b5925f1.png",
     "src": "resources/imgs/team/team-07.png"
   },
+  "resources/imgs/testimonial/23129EEB-700E-4B32-8062-3D9E6A699B6C.png": {
+    "file": "assets/23129EEB-700E-4B32-8062-3D9E6A699B6C-e4af0fd9.png",
+    "src": "resources/imgs/testimonial/23129EEB-700E-4B32-8062-3D9E6A699B6C.png"
+  },
+  "resources/imgs/testimonial/founder-lujandev.png": {
+    "file": "assets/founder-lujandev-14612f4c.png",
+    "src": "resources/imgs/testimonial/founder-lujandev.png"
+  },
   "resources/imgs/testimonial/testimonial-01-old.png": {
     "file": "assets/testimonial-01-old-2df35b6f.png",
     "src": "resources/imgs/testimonial/testimonial-01-old.png"
@@ -1657,7 +1693,7 @@
   },
   "resources/imgs/testimonial/testimonial-03.png": {
     "file": "assets/testimonial-03-acf85fe6.png",
-    "src": "resources/imgs/testimonial/testimonial-05.png"
+    "src": "resources/imgs/testimonial/testimonial-03.png"
   },
   "resources/imgs/testimonial/testimonial-04.png": {
     "file": "assets/error-1b834962.png",
@@ -1665,7 +1701,7 @@
   },
   "resources/imgs/testimonial/testimonial-05.png": {
     "file": "assets/testimonial-03-acf85fe6.png",
-    "src": "resources/imgs/testimonial/testimonial-05.png"
+    "src": "resources/imgs/testimonial/testimonial-03.png"
   },
   "resources/imgs/user/user-01.png": {
     "file": "assets/user-01-9747eaa7.png",
@@ -1717,11 +1753,11 @@
   },
   "resources/imgs/video/Diseño sin título (1).mp4": {
     "file": "assets/about-lujandev-79a26e02.mp4",
-    "src": "resources/imgs/video/about-lujandev.mp4"
+    "src": "resources/imgs/video/Diseño sin título (1).mp4"
   },
   "resources/imgs/video/about-lujandev.mp4": {
     "file": "assets/about-lujandev-79a26e02.mp4",
-    "src": "resources/imgs/video/about-lujandev.mp4"
+    "src": "resources/imgs/video/Diseño sin título (1).mp4"
   },
   "resources/imgs/video/video-bg-01.png": {
     "file": "assets/video-bg-01-025d1d45.png",

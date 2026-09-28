@@ -11,7 +11,7 @@
 
                         <div class="testimonial__bg"></div>
 
-                        <img src="{{ Vite::asset('resources/imgs/testimonial/testimonial-01.png') }}"
+                        <img src="{{ Vite::asset('resources/imgs/testimonial/founder-lujandev.png') }}"
                             alt="Eddy Luján, developer and founder of LujanDev">
 
                     </div>
