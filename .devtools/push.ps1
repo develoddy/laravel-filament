@@ -7,25 +7,25 @@ Write-Host "======================================"
 Write-Host ""
 
 # Ir siempre a la raiz del repositorio
-$ProjectRoot = git rev-parse --show-toplevel
+$repoRoot = git rev-parse --show-toplevel 2>$null
 
-if (-not $ProjectRoot) {
+if (-not $repoRoot) {
     Write-Host "ERROR: No estas dentro de un repositorio Git."
     exit 1
 }
 
-Set-Location $ProjectRoot
+Set-Location $repoRoot
 
-$Branch = git branch --show-current
+$branch = git branch --show-current
 
-Write-Host "Proyecto: $ProjectRoot"
-Write-Host "Rama: $Branch"
+Write-Host "Proyecto: $repoRoot"
+Write-Host "Rama: $branch"
 Write-Host ""
 
 # Comprobar cambios
-$Changes = git status --porcelain
+$changes = git status --short
 
-if (-not $Changes) {
+if (-not $changes) {
     Write-Host "No hay cambios para subir."
     exit 0
 }
@@ -34,23 +34,54 @@ Write-Host "Cambios detectados:"
 git status --short
 Write-Host ""
 
+# Actualizar informacion del remoto sin modificar archivos locales
+Write-Host "Comprobando origin/$branch..."
+git fetch origin $branch
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "ERROR: No se pudo consultar origin/$branch."
+    exit 1
+}
+
+# Comprobar si el remoto tiene commits que local todavia no tiene
+$behind = git rev-list --count "HEAD..origin/$branch"
+
+if ([int]$behind -gt 0) {
+    Write-Host ""
+    Write-Host "ERROR: origin/$branch tiene $behind commit(s) que no existen en local."
+    Write-Host "Actualiza primero tu repositorio antes de hacer el deploy."
+    exit 1
+}
+
+Write-Host "Repositorio local sincronizado con origin/$branch."
+Write-Host ""
+
 # Preparar cambios
 Write-Host "Preparando cambios..."
-git add -A
+git add .
 
-# Commit automatico con fecha/hora
-$Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
-$CommitMessage = "chore: update $Timestamp"
+# Commit automatico
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+$commitMessage = "chore: update $timestamp"
+
+Write-Host "Commit: $commitMessage"
+git commit -m $commitMessage
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "ERROR: No se pudo crear el commit."
+    exit 1
+}
 
 Write-Host ""
-Write-Host "Commit: $CommitMessage"
-
-git commit -m $CommitMessage
 
 # Push
-Write-Host ""
-Write-Host "Subiendo a origin/$Branch..."
-git push origin $Branch
+Write-Host "Subiendo a origin/$branch..."
+git push origin $branch
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "ERROR: El push ha fallado."
+    exit 1
+}
 
 Write-Host ""
 Write-Host "======================================"
