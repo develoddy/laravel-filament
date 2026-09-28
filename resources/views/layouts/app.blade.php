@@ -17,7 +17,7 @@
 
         <!-- Incluir estilos y scripts compilados con Vite -->
         {{-- @vite(['resources/scss/app.scss', 'resources/js/app.js']) --}}
-        @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+        @vite(['resources/js/app.js'])
     </head>
     <body>
 
