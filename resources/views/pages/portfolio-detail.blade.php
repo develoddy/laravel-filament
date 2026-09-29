@@ -440,38 +440,60 @@
                         </p>
                         <form action="{{ route('contact.send') }}" method="POST" id="contact-form">
                             @csrf
+
+                            {{-- El asunto se genera automáticamente según el experimento/producto --}}
+                            <input
+                                type="hidden"
+                                name="subject"
+                                value="Feedback — {{ $detail->title ?? $portfolio->titulo }}"
+                            >
+
                             <div class="row">
-                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                                     <div class="postbox__comment-input">
-                                        <input type="text" name="name" placeholder="Your Name*" required>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            value="{{ old('name') }}"
+                                            placeholder="Your Name*"
+                                            autocomplete="name"
+                                            required
+                                        >
                                     </div>
                                 </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                                     <div class="postbox__comment-input">
-                                        <input type="email" name="email" placeholder="Your Email*" required>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            value="{{ old('email') }}"
+                                            placeholder="Your Email*"
+                                            autocomplete="email"
+                                            required
+                                        >
                                     </div>
                                 </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-12">
-                                    <div class="postbox__comment-input">
-                                        <input type="text" name="subject" placeholder="URL*" required>
-                                    </div>
-                                </div>
+
                                 <div class="col-xxl-12">
                                     <div class="postbox__comment-input">
-                                        <textarea name="message" placeholder="Your feedback, questions, or ideas..." required></textarea>
+                                        <textarea
+                                            name="message"
+                                            placeholder="Your feedback, questions, or ideas..."
+                                            required
+                                        >{{ old('message') }}</textarea>
                                     </div>
                                 </div>
-                                <div class="col-xxl-12">
-                                    <div class="postbox__comment-agree d-flex align-items-start mb-25">
-                                        <input class="e-check-input" type="checkbox" id="e-agree">
-                                        <label class="e-check-label" for="e-agree">Keep me updated on new products and features</label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-12">
-                                    <div class="postbox__comment-form-btn">
-                                        <button type="submit" class="bd-btn">Send Feedback</button>
-                                    </div>
-                                </div>
+
+                            </div>
+
+                            @include('components._form-security')
+
+                            <div class="postbox__comment-form-btn">
+                                <button type="submit" class="bd-btn">
+                                    Send Feedback
+                                </button>
                             </div>
                         </form>
                     </div>
