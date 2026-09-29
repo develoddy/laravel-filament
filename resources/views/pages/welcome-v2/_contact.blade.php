@@ -39,8 +39,8 @@
                     </h2>
 
                     <p class="mt-3">
-                        I'm always open to talk about products, software,
-                        collaborations or things you're building.
+                        I'm always open to talk about products, experiments, problems worth solving or
+                        things you're building.
                     </p>
 
                 </div>
@@ -226,7 +226,7 @@
                         </h4>
 
                         <p class="text-white-50 mb-4 fs-5">
-                            Open to projects, collaborations and conversations about software and products.
+                            Building products, running experiments and sharing what I learn along the way.
                         </p>
 
                     </div>

@@ -14,7 +14,8 @@
                         <div class="breadcrumb__title-wrapperr">
                             <h1 class="breadcrumb__title mb-25">Let's Connect</h1>
                             <p class="mb-15">
-                                Have a project idea? Want to collaborate? Share your feedback or just say hi.
+                                Have feedback on something I'm building?
+                                Want to talk products, experiments or ideas? Say hi.
                             </p>
                         </div>
                         <div class="breadcrumb__menu">
@@ -33,7 +34,7 @@
     <!-- breadcrumb area  end -->
 
     <!-- contact area start -->
-    <div class="contact__area section-space">
+    {{-- <div class="contact__area section-space">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -62,29 +63,18 @@
                         </div>
                     </div>
                 </div>
-                {{-- Phone number removed from public view for privacy --}}
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- contact area end -->
 
-    {{-- Map with exact address removed from public view for privacy --}}
-    {{-- <!-- map area start -->
-    <div class="bd__map p-relative section-spacing-top fix d-none">
-        <div class="bd__google-map">
-            {{-- 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12797.802464900029!2d-83.13319788146339!3d36.68770817009452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885b172234e50f17%3A0x89b2bd832c241ea9!2sJonesville%2C%20VA%2024263%2C%20USA!5e0!3m2!1sen!2sbd!4v1692792416975!5m2!1sen!2sbd" width="1920" height="580" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
-
-            {{-- 
-            <iframe loading="lazy" title="Paseo de la chopera 76, alcobendas" aria-label="Paseo de la chopera 76, alcobendas" data-src="https://maps.google.com/maps?q=Paseo%20de%20la%20chopera%2076%2C%20alcobendas&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near" class=" lazyloaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe>
-            --}}
-            <iframe src="https://maps.google.com/maps?q=Paseo%20de%20la%20chopera%2076%2C%20alcobendas&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near" width="1920" height="580" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Paseo de la chopera 76, alcobendas" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe>
-        </div>
-    </div>
+    
+    <!-- map area start -->
+    {{-- <iframe src="https://maps.google.com/maps?q=Paseo%20de%20la%20chopera%2076%2C%20alcobendas&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near" width="1920" height="580" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Paseo de la chopera 76, alcobendas" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe> --}}
     <!-- map area end -->
 
     <!-- cta area start -->
-    <div class="cta__area section-space fix">
+    {{-- <div class="cta__area section-space fix">
         <div class="container">
             <div class="cta__wrapper cta__item is-sec-space">
                 <div class="cta__bg"></div>
@@ -130,8 +120,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- cta area end -->
+
+    {{-- Reutilizamos el mismo formulario protegido de la Home --}}
+    @include('pages.welcome-v2._contact')
 
 </main>
 <!-- Body main wrapper end -->
