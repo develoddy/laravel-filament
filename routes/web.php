@@ -60,4 +60,6 @@ Route::get('/my-project/{portfolio:slug}', [PortfolioController::class, 'show'])
 
 Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('blog.show');
 
-Route::post('/contacto', [ContactController::class, 'sendMail'])->name('contact.send');
+Route::post('/contacto', [ContactController::class, 'sendMail'])
+    ->middleware('throttle:5,1')
+    ->name('contact.send');
