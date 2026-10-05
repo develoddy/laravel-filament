@@ -5,7 +5,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactController;
 
 /*
@@ -20,11 +20,7 @@ use App\Http\Controllers\ContactController;
 */
 
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
-Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // -- About
 Route::group(['prefix' => 'about'], function () {
@@ -43,7 +39,7 @@ Route::group(['prefix' => 'service'], function () {
 
 // -- Contact
 Route::get('/contact', function () {
-    return view('pages.contact');
+    return view('pages.contact.index');
 })->name('contact');
 
 // -- My Project / Portfolio
@@ -63,3 +59,12 @@ Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('blog.sho
 Route::post('/contacto', [ContactController::class, 'sendMail'])
     ->middleware('throttle:5,1')
     ->name('contact.send');
+
+Route::view('/legal-notice', 'pages.legal.legal-notice')
+    ->name('legal.notice');
+
+Route::view('/privacy-policy', 'pages.legal.privacy-policy')
+    ->name('legal.privacy');
+
+Route::view('/cookie-policy', 'pages.legal.cookie-policy')
+    ->name('legal.cookies');

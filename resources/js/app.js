@@ -6,3 +6,6 @@ import './bootstrap';
 import '../scss/app.scss';
 import './styles';
 import './main.js';
+import './pages/about.js';
+import './components/cookie-consent.js';
+import './components/analytics.js';

@@ -437,7 +437,7 @@
   },
   "resources/imgs/blog/masonary/blog-masonary-01.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-07.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-08.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-02.png": {
     "file": "assets/blog-masonary-02-1bbbada6.png",
@@ -461,11 +461,11 @@
   },
   "resources/imgs/blog/masonary/blog-masonary-07.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-07.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-08.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-08.png": {
     "file": "assets/blog-masonary-01-fae278c0.png",
-    "src": "resources/imgs/blog/masonary/blog-masonary-07.png"
+    "src": "resources/imgs/blog/masonary/blog-masonary-08.png"
   },
   "resources/imgs/blog/masonary/blog-masonary-09.png": {
     "file": "assets/blog-masonary-02-1bbbada6.png",
@@ -801,39 +801,39 @@
   },
   "resources/imgs/landing/home/coming-soon.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-01.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-02.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-03.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-04.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-05.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-06.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-07.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/home/landing-home-08.png": {
     "file": "assets/coming-soon-68acc396.png",
-    "src": "resources/imgs/landing/home/landing-home-07.png"
+    "src": "resources/imgs/landing/home/landing-home-08.png"
   },
   "resources/imgs/landing/icon-star.svg": {
     "file": "assets/icon-star-16dab87b.svg",
@@ -1657,15 +1657,15 @@
   },
   "resources/imgs/team/team-05.png": {
     "file": "assets/team-05-1b5925f1.png",
-    "src": "resources/imgs/team/team-07.png"
+    "src": "resources/imgs/team/team-06.png"
   },
   "resources/imgs/team/team-06.png": {
     "file": "assets/team-05-1b5925f1.png",
-    "src": "resources/imgs/team/team-07.png"
+    "src": "resources/imgs/team/team-06.png"
   },
   "resources/imgs/team/team-07.png": {
     "file": "assets/team-05-1b5925f1.png",
-    "src": "resources/imgs/team/team-07.png"
+    "src": "resources/imgs/team/team-06.png"
   },
   "resources/imgs/testimonial/23129EEB-700E-4B32-8062-3D9E6A699B6C.png": {
     "file": "assets/23129EEB-700E-4B32-8062-3D9E6A699B6C-e4af0fd9.png",
@@ -1768,7 +1768,7 @@
     "src": "resources/imgs/video/video-bg-02.png"
   },
   "resources/js/app.css": {
-    "file": "assets/app-61207062.css",
+    "file": "assets/app-1fc37cdd.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
@@ -1795,9 +1795,9 @@
       "assets/icomoon-a8521ad4.svg"
     ],
     "css": [
-      "assets/app-61207062.css"
+      "assets/app-1fc37cdd.css"
     ],
-    "file": "assets/app-28aeecaa.js",
+    "file": "assets/app-0748229f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

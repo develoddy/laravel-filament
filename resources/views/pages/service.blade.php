@@ -19,7 +19,7 @@
                             <div class="breadcrumb__menu text-center">
                                 <nav>
                                     <ul>
-                                        <li><span><a href="{{ route('welcome') }}">Home</a></span></li>
+                                        <li><span><a href="{{ route('home') }}">Home</a></span></li>
                                         <li><span>Process</span></li>
                                     </ul>
                                 </nav>

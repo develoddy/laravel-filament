@@ -33,7 +33,7 @@ class PortfolioController extends Controller
             return $portfolio->category && $portfolio->category->title === 'Experiment';
         });
 
-        return view('pages.my-project', 
+        return view('pages.builds.index', 
             compact(
                 'portfolios', 
                 'brandPortfolios', 
@@ -65,8 +65,6 @@ class PortfolioController extends Controller
     public function show(Portfolio $portfolio)
     {
         // Buscar el registro de PortfolioDetail que tenga el mismo portfolio_id
-        //$detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
-        //return view('pages.portfolio-detail', compact('portfolio', 'detail'));
 
         $detail = PortfolioDetail::where('portfolio_id', $portfolio->id)->first();
 
@@ -80,7 +78,7 @@ class PortfolioController extends Controller
             abort(404);
         }
 
-        return view('pages.portfolio-detail', compact('portfolio', 'detail'));
+        return view('pages.builds.show', compact('portfolio', 'detail'));
     }
 
     /**

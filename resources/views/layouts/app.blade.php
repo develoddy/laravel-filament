@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
         <title>{{ config('app.name', 'LujanDev') }}</title>
 
@@ -16,7 +15,6 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Incluir estilos y scripts compilados con Vite -->
-        {{-- @vite(['resources/scss/app.scss', 'resources/js/app.js']) --}}
         @vite(['resources/js/app.js'])
     </head>
     <body>
@@ -46,7 +44,7 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="{{ route('welcome') }}">
+                                <a href="{{ route('home') }}">
                                     <img src="{{ Vite::asset('resources/imgs/logo/logo-white-v2.png') }}" alt="LujanDev | One platform. Multiple products." title="LujanDev | One platform. Multiple products.">
                                 </a>
                             </div>
@@ -62,20 +60,8 @@
                         <div class="offcanvas__social">
                             <h4 class="offcanvas__title mb-20">Subscribe & Follow</h4>
                             <div class="theme__social">
-                                {{-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> --}}
                                 <a href="https://x.com/lujandev/"><i class="icon-twiter"></i></a>
-                                <a href="https://www.instagram.com/lujandev/"><i class="fa-brands fa-linkedin"></i></a>
-                                {{-- <a href="#"><i class="fa-brands fa-behance"></i></a> --}}
-                            </div>
-                        </div>
-                        <div class="offcanvas__btn d-none">
-                            <div class="header__btn-wrap">
-                                <a class="bd-btn is-btn-anim" href="#">
-                                    <span class="bd-btn-inner"><span class="bd-btn-normal">Purchase now</span>
-                                    <span class="bd-btn-hover">Purchase now</span>
-                                    <i class="contentHidden"></i>
-                                    </span>
-                                </a>
+                                <a href="https://www.instagram.com/lujandev/"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -86,16 +72,16 @@
         <div class="offcanvas__overlay-white"></div>
         <!-- Offcanvas area end-->
 
-
-        {{-- Aquí puedes incluir tu header o navegación --}}
-        @include('partials.navigation')
-
+        {{-- Navegación --}}
+        @include('layouts.partials.navigation')
         
         {{-- Contenido de la página --}}
         @yield('content')
        
+        {{-- Footer --}}
+        @include('layouts.partials.footer')
 
-        {{-- Aquí puedes incluir tu footer --}}
-        @include('partials.footer')
+        {{-- Cookie Consent --}}
+        @include('components.cookie-consent')
     </body>
 </html>

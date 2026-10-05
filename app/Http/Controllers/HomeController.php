@@ -1,21 +1,28 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
-use App\Models\Blog;
-use App\Models\BlogDetail;
-class BlogController extends Controller
+
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
-    {
-        $blogs = Blog::all();
-        return view('pages.blog.index', 
-            compact('blogs'), 
-        );
+    {   
+        // Get featured product with relationships
+        $featuredProduct = Portfolio::with(['category', 'details'])
+            ->where('featured', true)
+            ->first();
+        
+        // Get portfolios marked for home display with relationships
+        $homePortfolios = Portfolio::with(['category', 'details'])
+            ->where('show_on_home', true)
+            ->latest()
+            ->get();
+        
+        return view('pages.home.index', compact('featuredProduct', 'homePortfolios'));
     }
 
     /**
@@ -37,12 +44,9 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Blog $blog)
+    public function show(string $id)
     {
-        $detail = BlogDetail::where('blog_id', $blog->id)->first();
-        //@dd($detail);
-        return view('pages.blog.show', compact('blog', 'detail'));
-    
+        //
     }
 
     /**
