@@ -15,7 +15,12 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Incluir estilos y scripts compilados con Vite -->
-        @vite(['resources/js/app.js'])
+        {{-- @vite(['resources/js/app.js']) --}}
+        @vite([
+            'resources/css/styles.css',
+            'resources/scss/app.scss',
+            'resources/js/app.js',
+        ])
     </head>
     <body>
 
